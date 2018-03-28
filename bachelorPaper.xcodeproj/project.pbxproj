@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD93323F435FC9B7E2927252 /* libPods-bachelorPaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */; };
+		CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */; };
+		CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */; };
+		CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD42063E8C90099E61B /* AppDelegate.m */; };
+		CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD72063E8C90099E61B /* SearchViewController.m */; };
+		CB325BDB2063E8C90099E61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB325BD92063E8C90099E61B /* Main.storyboard */; };
+		CB325BE02063E8C90099E61B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB325BDE2063E8C90099E61B /* LaunchScreen.storyboard */; };
+		CB325BE32063E8C90099E61B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BE22063E8C90099E61B /* main.m */; };
+		CB325BEC206414400099E61B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BEB206414400099E61B /* LoginViewController.m */; };
+		CB325BEF2064145D0099E61B /* SavedSearchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BEE2064145D0099E61B /* SavedSearchesViewController.m */; };
+		CB325BF22064146E0099E61B /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BF12064146E0099E61B /* FavoritesViewController.m */; };
+		CB325BF5206414810099E61B /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BF4206414810099E61B /* FeedbackViewController.m */; };
+		CB325BF9206414D00099E61B /* LocalizationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BF7206414D00099E61B /* LocalizationSystem.m */; };
+		CB325C00206415D10099E61B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB325C02206415D10099E61B /* Localizable.strings */; };
+		CB325C0720641F2C0099E61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB325C0620641F2C0099E61B /* Assets.xcassets */; };
+		CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C0B2064F7AC0099E61B /* MenuViewController.m */; };
+		CB325C12206508540099E61B /* MenuItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C11206508540099E61B /* MenuItemTableViewCell.m */; };
+		CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */; };
+		CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */; };
+		CB325C2320657E3A0099E61B /* SwitchParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bachelorPaper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB20F0AF2068C3FE00DB216C /* LoginInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInputTableViewCell.h; sourceTree = "<group>"; };
+		CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInputTableViewCell.m; sourceTree = "<group>"; };
+		CB20F0B22068C46300DB216C /* ForgetPasswordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordTableViewCell.h; sourceTree = "<group>"; };
+		CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordTableViewCell.m; sourceTree = "<group>"; };
+		CB325BD02063E8C90099E61B /* bachelorPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bachelorPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB325BD32063E8C90099E61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB325BD42063E8C90099E61B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB325BD62063E8C90099E61B /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		CB325BD72063E8C90099E61B /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		CB325BDA2063E8C90099E61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB325BDF2063E8C90099E61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB325BE12063E8C90099E61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB325BE22063E8C90099E61B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB325BEA206414400099E61B /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CB325BEB206414400099E61B /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CB325BED2064145D0099E61B /* SavedSearchesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavedSearchesViewController.h; sourceTree = "<group>"; };
+		CB325BEE2064145D0099E61B /* SavedSearchesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedSearchesViewController.m; sourceTree = "<group>"; };
+		CB325BF02064146E0099E61B /* FavoritesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		CB325BF12064146E0099E61B /* FavoritesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		CB325BF3206414810099E61B /* FeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		CB325BF4206414810099E61B /* FeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		CB325BF7206414D00099E61B /* LocalizationSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationSystem.m; sourceTree = "<group>"; };
+		CB325BF8206414D00099E61B /* LocalizationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationSystem.h; sourceTree = "<group>"; };
+		CB325BFB2064151C0099E61B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CB325BFD2064153E0099E61B /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CB325C01206415D10099E61B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB325C03206415D50099E61B /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB325C0620641F2C0099E61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = bachelorPaper/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		CB325C0A2064F7AC0099E61B /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		CB325C0B2064F7AC0099E61B /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		CB325C10206508540099E61B /* MenuItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItemTableViewCell.h; sourceTree = "<group>"; };
+		CB325C11206508540099E61B /* MenuItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuItemTableViewCell.m; sourceTree = "<group>"; };
+		CB325C1B206571E50099E61B /* SegmentedControlTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedControlTableViewCell.h; sourceTree = "<group>"; };
+		CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlTableViewCell.m; sourceTree = "<group>"; };
+		CB325C1E20657B170099E61B /* RoomCountParameterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomCountParameterTableViewCell.h; sourceTree = "<group>"; };
+		CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomCountParameterTableViewCell.m; sourceTree = "<group>"; };
+		CB325C2120657E3A0099E61B /* SwitchParameterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchParameterTableViewCell.h; sourceTree = "<group>"; };
+		CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchParameterTableViewCell.m; sourceTree = "<group>"; };
+		D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
+		D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB325BCD2063E8C90099E61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD93323F435FC9B7E2927252 /* libPods-bachelorPaper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DD138A899E9AF2F1887D49D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */,
+				D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAC326AD80ED19B057186CE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB325BC72063E8C80099E61B = {
+			isa = PBXGroup;
+			children = (
+				CB325BD22063E8C90099E61B /* bachelorPaper */,
+				CB325BD12063E8C90099E61B /* Products */,
+				6DD138A899E9AF2F1887D49D /* Pods */,
+				AAC326AD80ED19B057186CE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB325BD12063E8C90099E61B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB325BD02063E8C90099E61B /* bachelorPaper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB325BD22063E8C90099E61B /* bachelorPaper */ = {
+			isa = PBXGroup;
+			children = (
+				CB325BE12063E8C90099E61B /* Info.plist */,
+				CB325C05206416160099E61B /* UI */,
+				CB325C04206415F20099E61B /* Supporting Files */,
+				CB325BF6206414870099E61B /* Localization */,
+				CB325C0F206508210099E61B /* Cells */,
+				CB325BE92063E8F30099E61B /* Controllers */,
+				CB325BD32063E8C90099E61B /* AppDelegate.h */,
+				CB325BD42063E8C90099E61B /* AppDelegate.m */,
+			);
+			path = bachelorPaper;
+			sourceTree = "<group>";
+		};
+		CB325BE92063E8F30099E61B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB325BD62063E8C90099E61B /* SearchViewController.h */,
+				CB325BD72063E8C90099E61B /* SearchViewController.m */,
+				CB325BEA206414400099E61B /* LoginViewController.h */,
+				CB325BEB206414400099E61B /* LoginViewController.m */,
+				CB325BED2064145D0099E61B /* SavedSearchesViewController.h */,
+				CB325BEE2064145D0099E61B /* SavedSearchesViewController.m */,
+				CB325BF02064146E0099E61B /* FavoritesViewController.h */,
+				CB325BF12064146E0099E61B /* FavoritesViewController.m */,
+				CB325BF3206414810099E61B /* FeedbackViewController.h */,
+				CB325BF4206414810099E61B /* FeedbackViewController.m */,
+				CB325C0A2064F7AC0099E61B /* MenuViewController.h */,
+				CB325C0B2064F7AC0099E61B /* MenuViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB325BF6206414870099E61B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CB325BF8206414D00099E61B /* LocalizationSystem.h */,
+				CB325BF7206414D00099E61B /* LocalizationSystem.m */,
+				CB325C02206415D10099E61B /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		CB325C04206415F20099E61B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB325BE22063E8C90099E61B /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB325C05206416160099E61B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CB325C0620641F2C0099E61B /* Assets.xcassets */,
+				CB325BDE2063E8C90099E61B /* LaunchScreen.storyboard */,
+				CB325BD92063E8C90099E61B /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CB325C0F206508210099E61B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB325C10206508540099E61B /* MenuItemTableViewCell.h */,
+				CB325C11206508540099E61B /* MenuItemTableViewCell.m */,
+				CB325C1B206571E50099E61B /* SegmentedControlTableViewCell.h */,
+				CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */,
+				CB325C1E20657B170099E61B /* RoomCountParameterTableViewCell.h */,
+				CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */,
+				CB325C2120657E3A0099E61B /* SwitchParameterTableViewCell.h */,
+				CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */,
+				CB20F0AF2068C3FE00DB216C /* LoginInputTableViewCell.h */,
+				CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */,
+				CB20F0B22068C46300DB216C /* ForgetPasswordTableViewCell.h */,
+				CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB325BCF2063E8C90099E61B /* bachelorPaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB325BE62063E8C90099E61B /* Build configuration list for PBXNativeTarget "bachelorPaper" */;
+			buildPhases = (
+				2D9ABA245E776B5105F28FD0 /* [CP] Check Pods Manifest.lock */,
+				CB325BCC2063E8C90099E61B /* Sources */,
+				CB325BCD2063E8C90099E61B /* Frameworks */,
+				CB325BCE2063E8C90099E61B /* Resources */,
+				0B4D9F597712F3A6AE3AF8B5 /* [CP] Embed Pods Frameworks */,
+				B7A1CF5F37810B23DFBB696F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bachelorPaper;
+			productName = bachelorPaper;
+			productReference = CB325BD02063E8C90099E61B /* bachelorPaper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB325BC82063E8C80099E61B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = TSI;
+				TargetAttributes = {
+					CB325BCF2063E8C90099E61B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CB325BCB2063E8C80099E61B /* Build configuration list for PBXProject "bachelorPaper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				lv,
+			);
+			mainGroup = CB325BC72063E8C80099E61B;
+			productRefGroup = CB325BD12063E8C90099E61B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB325BCF2063E8C90099E61B /* bachelorPaper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB325BCE2063E8C90099E61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB325BE02063E8C90099E61B /* LaunchScreen.storyboard in Resources */,
+				CB325C00206415D10099E61B /* Localizable.strings in Resources */,
+				CB325C0720641F2C0099E61B /* Assets.xcassets in Resources */,
+				CB325BDB2063E8C90099E61B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B4D9F597712F3A6AE3AF8B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D9ABA245E776B5105F28FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bachelorPaper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7A1CF5F37810B23DFBB696F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB325BCC2063E8C90099E61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB325BEC206414400099E61B /* LoginViewController.m in Sources */,
+				CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */,
+				CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */,
+				CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */,
+				CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */,
+				CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */,
+				CB325BF22064146E0099E61B /* FavoritesViewController.m in Sources */,
+				CB325BF5206414810099E61B /* FeedbackViewController.m in Sources */,
+				CB325BE32063E8C90099E61B /* main.m in Sources */,
+				CB325BF9206414D00099E61B /* LocalizationSystem.m in Sources */,
+				CB325C12206508540099E61B /* MenuItemTableViewCell.m in Sources */,
+				CB325BEF2064145D0099E61B /* SavedSearchesViewController.m in Sources */,
+				CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */,
+				CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */,
+				CB325C2320657E3A0099E61B /* SwitchParameterTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB325BD92063E8C90099E61B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB325BDA2063E8C90099E61B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB325BDE2063E8C90099E61B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB325BDF2063E8C90099E61B /* Base */,
+				CB325BFB2064151C0099E61B /* ru */,
+				CB325BFD2064153E0099E61B /* lv */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB325C02206415D10099E61B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB325C01206415D10099E61B /* ru */,
+				CB325C03206415D50099E61B /* lv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB325BE42063E8C90099E61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB325BE52063E8C90099E61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB325BE72063E8C90099E61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMZBV5976W;
+				INFOPLIST_FILE = bachelorPaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TSI.bachelorPaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CB325BE82063E8C90099E61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMZBV5976W;
+				INFOPLIST_FILE = bachelorPaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TSI.bachelorPaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB325BCB2063E8C80099E61B /* Build configuration list for PBXProject "bachelorPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB325BE42063E8C90099E61B /* Debug */,
+				CB325BE52063E8C90099E61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB325BE62063E8C90099E61B /* Build configuration list for PBXNativeTarget "bachelorPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB325BE72063E8C90099E61B /* Debug */,
+				CB325BE82063E8C90099E61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB325BC82063E8C80099E61B /* Project object */;
+}

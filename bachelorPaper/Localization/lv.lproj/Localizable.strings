@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  bachelorPaper
+
+  Created by Lilija Kazutina on 22/03/2018.
+  Copyright © 2018 TSI. All rights reserved.
+*/
+
+//controllers titles
+"search" = " Meklēt";
+"clear" = "Dzēst visu";
+"rent" = "Izīrē";
+"sale" = "Pardod";
+"rooms_count" = "Istabu skaits";
+"email_or_phone" = "Epasts vai talrunis";
+"password" = "Parole";
+"forget_password" = "Atgadināt paroli?";
+
+//menu items
+
+"login" = "Ienākt";
+"advertisement_search" = "Sludinājumu meklēšana";
+"new_buildings_catalog" = "Jaunbūves katalogs";
+"saved_searches" = "Saglabātas meklešanas";
+"favorites" = "Favorīti";
+"my_advertisements" = "Mani sludinājumi";
+"add_advertisement" = "Pievienot slidinājumu";
+"feedback" = "Atsauksmes";
+"close" = "Закрыть";

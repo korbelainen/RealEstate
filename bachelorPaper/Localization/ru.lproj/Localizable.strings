@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  bachelorPaper
+
+  Created by Lilija Kazutina on 22/03/2018.
+  Copyright © 2018 TSI. All rights reserved.
+*/
+
+//controllers titles
+"search" = " Поиск";
+"clear" = "Очистить";
+"rent" = "Аренда";
+"sale" = "Продажа";
+"rooms_count" = "Количество комнат";
+"email_or_phone" = "Эл. почта или телефон";
+"password" = "пароль";
+"forget_password" = "Забыли пароль?";
+
+//menu items
+
+"login" = "Войти";
+"advertisement_search" = "Поиск объявлений";
+"new_buildings_catalog" = "Каталог новостроек";
+"saved_searches" = "Сохраненные поиски";
+"favorites" = "Избранное";
+"my_advertisements" = "Мои объявления";
+"add_advertisement" = "Добавить объявление";
+"feedback" = "Обратная связь";
+"close" = "Закрыть";
