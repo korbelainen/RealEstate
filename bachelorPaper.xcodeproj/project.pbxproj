@@ -27,6 +27,11 @@
 		CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */; };
 		CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */; };
 		CB325C2320657E3A0099E61B /* SwitchParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */; };
+		CB4B2D052073ADEB00AD575B /* MailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D042073ADEB00AD575B /* MailManager.m */; };
+		CB4B2D082073AE3500AD575B /* FromToParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D062073AE3500AD575B /* FromToParameterTableViewCell.m */; };
+		CB4B2D0F2073AF0300AD575B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0B2073AF0300AD575B /* RootViewController.m */; };
+		CB4B2D102073AF0300AD575B /* UserProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0C2073AF0300AD575B /* UserProfileTableViewController.m */; };
+		CB4B2D112073AF0300AD575B /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +74,16 @@
 		CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomCountParameterTableViewCell.m; sourceTree = "<group>"; };
 		CB325C2120657E3A0099E61B /* SwitchParameterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchParameterTableViewCell.h; sourceTree = "<group>"; };
 		CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchParameterTableViewCell.m; sourceTree = "<group>"; };
+		CB4B2D032073ADEB00AD575B /* MailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailManager.h; sourceTree = "<group>"; };
+		CB4B2D042073ADEB00AD575B /* MailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailManager.m; sourceTree = "<group>"; };
+		CB4B2D062073AE3500AD575B /* FromToParameterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromToParameterTableViewCell.m; sourceTree = "<group>"; };
+		CB4B2D072073AE3500AD575B /* FromToParameterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromToParameterTableViewCell.h; sourceTree = "<group>"; };
+		CB4B2D092073AF0200AD575B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CB4B2D0A2073AF0300AD575B /* UserProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileTableViewController.h; sourceTree = "<group>"; };
+		CB4B2D0B2073AF0300AD575B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CB4B2D0C2073AF0300AD575B /* UserProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileTableViewController.m; sourceTree = "<group>"; };
+		CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
+		CB4B2D0E2073AF0300AD575B /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
 		D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
 		D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +138,7 @@
 		CB325BD22063E8C90099E61B /* bachelorPaper */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B2D022073ADB600AD575B /* Managers */,
 				CB325BE12063E8C90099E61B /* Info.plist */,
 				CB325C05206416160099E61B /* UI */,
 				CB325C04206415F20099E61B /* Supporting Files */,
@@ -138,6 +154,12 @@
 		CB325BE92063E8F30099E61B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B2D092073AF0200AD575B /* RootViewController.h */,
+				CB4B2D0B2073AF0300AD575B /* RootViewController.m */,
+				CB4B2D0E2073AF0300AD575B /* SearchResultsTableViewController.h */,
+				CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */,
+				CB4B2D0A2073AF0300AD575B /* UserProfileTableViewController.h */,
+				CB4B2D0C2073AF0300AD575B /* UserProfileTableViewController.m */,
 				CB325BD62063E8C90099E61B /* SearchViewController.h */,
 				CB325BD72063E8C90099E61B /* SearchViewController.m */,
 				CB325BEA206414400099E61B /* LoginViewController.h */,
@@ -185,6 +207,8 @@
 		CB325C0F206508210099E61B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B2D072073AE3500AD575B /* FromToParameterTableViewCell.h */,
+				CB4B2D062073AE3500AD575B /* FromToParameterTableViewCell.m */,
 				CB325C10206508540099E61B /* MenuItemTableViewCell.h */,
 				CB325C11206508540099E61B /* MenuItemTableViewCell.m */,
 				CB325C1B206571E50099E61B /* SegmentedControlTableViewCell.h */,
@@ -199,6 +223,15 @@
 				CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB4B2D022073ADB600AD575B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B2D032073ADEB00AD575B /* MailManager.h */,
+				CB4B2D042073ADEB00AD575B /* MailManager.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,18 +361,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4B2D082073AE3500AD575B /* FromToParameterTableViewCell.m in Sources */,
 				CB325BEC206414400099E61B /* LoginViewController.m in Sources */,
 				CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */,
 				CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */,
 				CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */,
 				CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */,
 				CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */,
+				CB4B2D052073ADEB00AD575B /* MailManager.m in Sources */,
 				CB325BF22064146E0099E61B /* FavoritesViewController.m in Sources */,
 				CB325BF5206414810099E61B /* FeedbackViewController.m in Sources */,
 				CB325BE32063E8C90099E61B /* main.m in Sources */,
 				CB325BF9206414D00099E61B /* LocalizationSystem.m in Sources */,
 				CB325C12206508540099E61B /* MenuItemTableViewCell.m in Sources */,
 				CB325BEF2064145D0099E61B /* SavedSearchesViewController.m in Sources */,
+				CB4B2D102073AF0300AD575B /* UserProfileTableViewController.m in Sources */,
+				CB4B2D0F2073AF0300AD575B /* RootViewController.m in Sources */,
+				CB4B2D112073AF0300AD575B /* SearchResultsTableViewController.m in Sources */,
 				CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */,
 				CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */,
 				CB325C2320657E3A0099E61B /* SwitchParameterTableViewCell.m in Sources */,

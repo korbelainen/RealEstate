@@ -17,20 +17,29 @@
     self.roomCountLabel.text = AMLocalizedString(@"rooms_count", nil);
 
     self.oneRoom.layer.cornerRadius = 3;
-    self.oneRoom.layer.borderColor = CFBridgingRetain([UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0]);
-    self.oneRoom.layer.borderWidth = 1;
+    self.oneRoom.layer.borderColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0].CGColor;
+    self.oneRoom.layer.borderWidth = 1.0;
+    self.oneRoom.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    self.oneRoom.tintColor = [UIColor whiteColor];
 
     self.twoRooms.layer.cornerRadius = 3;
-    self.twoRooms.layer.borderColor = CFBridgingRetain([UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0]);
-    self.twoRooms.layer.borderWidth = 1;
+    self.twoRooms.layer.borderColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0].CGColor;
+    self.twoRooms.layer.borderWidth = 1.0;
+    self.twoRooms.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    self.twoRooms.tintColor = [UIColor whiteColor];
 
     self.threeRomms.layer.cornerRadius = 3;
-    self.threeRomms.layer.borderColor = CFBridgingRetain([UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0]);
-    self.threeRomms.layer.borderWidth = 1;
+    self.threeRomms.layer.borderColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0].CGColor;
+    self.threeRomms.layer.borderWidth = 1.0;
+    self.threeRomms.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    self.threeRomms.tintColor = [UIColor whiteColor];
 
     self.fourRooms.layer.cornerRadius = 3;
-    self.fourRooms.layer.borderColor = CFBridgingRetain([UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0]);
-    self.fourRooms.layer.borderWidth = 1;
+    self.fourRooms.layer.borderColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0].CGColor;
+    self.fourRooms.layer.borderWidth = 1.0;
+    self.fourRooms.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    self.fourRooms.tintColor = [UIColor whiteColor];
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

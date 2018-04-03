@@ -21,9 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self.closeButton setTitle: AMLocalizedString(@"close", nil)];
+    self.loginButton.tintColor = [UIColor whiteColor];
     [self.loginButton setTitle:AMLocalizedString(@"login", nil)];
+    self.title = AMLocalizedString(@"login", nil);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

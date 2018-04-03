@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "MenuItemTableViewCell.h"
 #import "LocalizationSystem.h"
+#import "MailManager.h"
 
 static NSArray *menuIcons;
 static NSArray *activeMenuIcons;
@@ -25,13 +26,24 @@ static NSArray *menuTitles;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *language = [defaults objectForKey:@"language"];
+    if([language isEqualToString:@"lv"]){
+        LocalizationSetLanguage(@"lv");
+    }else if ([language isEqualToString:@"ru"]){
+        LocalizationSetLanguage(@"ru");
+    }
+
     self.activeMenuItem = 0;
+    self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.backgroundColor = [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0];
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 + (void)initialize
 {
     menuIcons = @[@"white-user_male_circle",
+                  @"white-search",
                   @"white-skyscrapers",
                   @"white-bookmark",
                   @"white-star",
@@ -42,6 +54,7 @@ static NSArray *menuTitles;
                   @"latvian"];
 
     activeMenuIcons = @[@"red-user_male_circle",
+                        @"red-search",
                         @"red-skyscrapers",
                         @"red-bookmark",
                         @"red-star",
@@ -58,49 +71,71 @@ static NSArray *menuTitles;
                    AMLocalizedString(@"favorites", nil),
                    AMLocalizedString(@"my_advertisements", nil),
                    AMLocalizedString(@"add_advertisement", nil),
-                   AMLocalizedString(@"feedack", nil)
+                   AMLocalizedString(@"feedback", nil),
+                   @"По-русски",
+                   @"Latviski"
                    ];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    switch (section) {
-        case 0:
-            return 1;
-        case 1:
-            return 2;
-        case 2:
-            return 4;
-        case 3:
-            return 3;
-            break;
-        default:
-            return 0;
-    }
+    return menuIcons.count;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 54;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 56;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *view = [[UIView alloc]init];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MenuItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuItemCellIdentifier" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0];
 
     if (self.activeMenuItem == indexPath.row) {
-        cell.menuItemLabel.text = [menuTitles objectAtIndex:indexPath.row];
+        cell.menuItemLabel.text = AMLocalizedString([menuTitles objectAtIndex:indexPath.row], nil);
         cell.menuItemLabel.textColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
         cell.menuItemIcon.image = [UIImage imageNamed:[activeMenuIcons objectAtIndex:indexPath.row]];
     } else {
-        cell.textLabel.font = [menuTitles objectAtIndex:indexPath.row];
-        cell.textLabel.textColor = [UIColor whiteColor];
-        cell.imageView.image = [UIImage imageNamed:[menuIcons objectAtIndex:indexPath.row]];
+        cell.menuItemLabel.text = AMLocalizedString([menuTitles objectAtIndex:indexPath.row], nil);
+        cell.menuItemLabel.textColor = [UIColor whiteColor];
+        cell.menuItemIcon.image = [UIImage imageNamed:[menuIcons objectAtIndex:indexPath.row]];
     }
 
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    self.activeMenuItem = indexPath.row;
+
+    if (indexPath.row == 7) {
+        MailManager *mailManager = [[MailManager alloc]init];
+        [mailManager sendFeedback];
+    } else if (indexPath.row == 8) {
+         LocalizationSetLanguage(@"ru");
+    } else if (indexPath.row == 9) {
+         LocalizationSetLanguage(@"lv");
+    }
+     [self.tableView reloadData];
+}
 /*
 #pragma mark - Navigation
 
