@@ -34,6 +34,7 @@
 		CB4B2D112073AF0300AD575B /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */; };
 		CB60A0B02074EA2000070F94 /* EmailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60A0AF2074EA2000070F94 /* EmailTableViewCell.m */; };
 		CB60A0B32074EA7000070F94 /* FeedbackDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */; };
+		CB60A0B92075045200070F94 /* FavoritesListItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,8 @@
 		CB60A0AF2074EA2000070F94 /* EmailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailTableViewCell.m; sourceTree = "<group>"; };
 		CB60A0B12074EA7000070F94 /* FeedbackDescriptionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackDescriptionTableViewCell.h; sourceTree = "<group>"; };
 		CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		CB60A0B72075045200070F94 /* FavoritesListItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesListItemTableViewCell.h; sourceTree = "<group>"; };
+		CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesListItemTableViewCell.m; sourceTree = "<group>"; };
 		D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
 		D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +234,8 @@
 				CB60A0AF2074EA2000070F94 /* EmailTableViewCell.m */,
 				CB60A0B12074EA7000070F94 /* FeedbackDescriptionTableViewCell.h */,
 				CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */,
+				CB60A0B72075045200070F94 /* FavoritesListItemTableViewCell.h */,
+				CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */,
 				CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */,
 				CB4B2D052073ADEB00AD575B /* MailManager.m in Sources */,
+				CB60A0B92075045200070F94 /* FavoritesListItemTableViewCell.m in Sources */,
 				CB325BF22064146E0099E61B /* FavoritesViewController.m in Sources */,
 				CB325BF5206414810099E61B /* FeedbackViewController.m in Sources */,
 				CB325BE32063E8C90099E61B /* main.m in Sources */,

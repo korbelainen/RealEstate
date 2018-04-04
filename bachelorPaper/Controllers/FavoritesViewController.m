@@ -7,8 +7,12 @@
 //
 
 #import "FavoritesViewController.h"
+#import "LocalizationSystem.h"
+#import "FavoritesListItemTableViewCell.h"
 
 @interface FavoritesViewController ()
+
+@property (strong, nonatomic) NSArray *favorites;
 
 @end
 
@@ -16,14 +20,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.title = AMLocalizedString(@"favorites", nil);
+    [self getFavorites];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.favorites.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 239;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    FavoritesListItemTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"FavoritesListItemTableViewCellIdentifier" forIndexPath:indexPath];
+    NSArray *apartmentParameters = [self.favorites objectAtIndex:indexPath.row];
+    cell.appartmentPhotosImaveView.image = [UIImage imageNamed:[apartmentParameters objectAtIndex:0]];
+    cell.priceLabel.text = [apartmentParameters objectAtIndex:1];
+    cell.addressLabel.text = [apartmentParameters objectAtIndex:2];
+    cell.sizeLabel.text = [apartmentParameters objectAtIndex:3];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self performSegueWithIdentifier:@"openDetailsSegue" sender:nil];
+}
+
+- (void)getFavorites {
+     self.favorites = @[@[@"camera", @"50 000", @"Baker street 221b", @"45 m2"], @[@"camera", @"70 000", @"Medison square gardens", @"64 m2"]];
+}
 /*
 #pragma mark - Navigation
 

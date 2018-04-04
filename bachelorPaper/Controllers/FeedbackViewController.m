@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = AMLocalizedString(@"feedback", nil);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
