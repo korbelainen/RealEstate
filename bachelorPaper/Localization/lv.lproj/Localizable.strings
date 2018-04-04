@@ -26,6 +26,8 @@
 "my_advertisements" = "Mani sludinājumi";
 "add_advertisement" = "Pievienot slidinājumu";
 "feedback" = "Atsauksmes";
+
+// other
 "close" = "Закрыть";
 "category" = "Рубрика";
 "type" = "Tips";
@@ -47,3 +49,8 @@
 "building_material" = "Nama materiāls";
 "building_type" = "Nama tips";
 "building_class" = "Nama klase";
+"add_screenshot" = "Pielikt bildi";
+"description_placeholder" = "Aprakstiet problēmas, kuri paradījas aplikācījas lietošanas laikā";
+"email_placeholder" = "Epasts (Nav obligāti)";
+"email_comment" = "Ievādiet epastu, lai mes varētu jums atbildēt";
+"send" = "Sūtīt";

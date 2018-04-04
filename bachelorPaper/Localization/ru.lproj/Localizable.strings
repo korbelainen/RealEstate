@@ -26,6 +26,8 @@
 "my_advertisements" = "Мои объявления";
 "add_advertisement" = "Добавить объявление";
 "feedback" = "Обратная связь";
+
+// other
 "close" = "Закрыть";
 "category" = "Рубрика";
 "type" = "Тип";
@@ -47,3 +49,8 @@
 "building_material" = "Материал дома";
 "building_type" = "Тип дома";
 "building_class" = "Класс дома";
+"add_screenshot" = "Добавить скриншот";
+"description_placeholder" = "Опишите проблемы, возникшие при работе с приложением";
+"email_placeholder" = "Эл. почта (Необязательно)";
+"email_comment" = "Оставьте адрес эл.почты, чтобы мы могли ответить вам";
+"send" = "Отправить";

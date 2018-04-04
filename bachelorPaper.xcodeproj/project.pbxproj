@@ -32,6 +32,8 @@
 		CB4B2D0F2073AF0300AD575B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0B2073AF0300AD575B /* RootViewController.m */; };
 		CB4B2D102073AF0300AD575B /* UserProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0C2073AF0300AD575B /* UserProfileTableViewController.m */; };
 		CB4B2D112073AF0300AD575B /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */; };
+		CB60A0B02074EA2000070F94 /* EmailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60A0AF2074EA2000070F94 /* EmailTableViewCell.m */; };
+		CB60A0B32074EA7000070F94 /* FeedbackDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,10 @@
 		CB4B2D0C2073AF0300AD575B /* UserProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileTableViewController.m; sourceTree = "<group>"; };
 		CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		CB4B2D0E2073AF0300AD575B /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		CB60A0AE2074EA2000070F94 /* EmailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailTableViewCell.h; sourceTree = "<group>"; };
+		CB60A0AF2074EA2000070F94 /* EmailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailTableViewCell.m; sourceTree = "<group>"; };
+		CB60A0B12074EA7000070F94 /* FeedbackDescriptionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackDescriptionTableViewCell.m; sourceTree = "<group>"; };
 		D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
 		D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +227,10 @@
 				CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */,
 				CB20F0B22068C46300DB216C /* ForgetPasswordTableViewCell.h */,
 				CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */,
+				CB60A0AE2074EA2000070F94 /* EmailTableViewCell.h */,
+				CB60A0AF2074EA2000070F94 /* EmailTableViewCell.m */,
+				CB60A0B12074EA7000070F94 /* FeedbackDescriptionTableViewCell.h */,
+				CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -378,9 +388,11 @@
 				CB4B2D102073AF0300AD575B /* UserProfileTableViewController.m in Sources */,
 				CB4B2D0F2073AF0300AD575B /* RootViewController.m in Sources */,
 				CB4B2D112073AF0300AD575B /* SearchResultsTableViewController.m in Sources */,
+				CB60A0B02074EA2000070F94 /* EmailTableViewCell.m in Sources */,
 				CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */,
 				CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */,
 				CB325C2320657E3A0099E61B /* SwitchParameterTableViewCell.m in Sources */,
+				CB60A0B32074EA7000070F94 /* FeedbackDescriptionTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
