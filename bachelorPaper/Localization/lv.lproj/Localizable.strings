@@ -54,3 +54,5 @@
 "email_placeholder" = "Epasts (Nav obligāti)";
 "email_comment" = "Ievādiet epastu, lai mes varētu jums atbildēt";
 "send" = "Sūtīt";
+"done" = "Done";
+"registration" = "Reģistrācija";

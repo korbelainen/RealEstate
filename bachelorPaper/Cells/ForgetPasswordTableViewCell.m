@@ -7,12 +7,14 @@
 //
 
 #import "ForgetPasswordTableViewCell.h"
+#import "LocalizationSystem.h"
 
 @implementation ForgetPasswordTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    [self.forgetPasswordButton setTitle:AMLocalizedString(@"forget_password", nil) forState:UIControlStateNormal];
+    [self.forgetPasswordButton setTitle:AMLocalizedString(@"forget_password", nil)  forState:UIControlStateHighlighted];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

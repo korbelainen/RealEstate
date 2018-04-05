@@ -11,9 +11,16 @@
 #import "LoginInputTableViewCell.h"
 #import "ForgetPasswordTableViewCell.h"
 
+typedef enum {
+    LoginViewMode        = 1,
+    RegistrationViewMode = 2
+    
+} ControllerViewMode;
+
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *loginButton;
+@property (assign, nonatomic) NSInteger currentViewMode;
 
 @end
 
@@ -22,8 +29,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.loginButton.tintColor = [UIColor whiteColor];
-    [self.loginButton setTitle:AMLocalizedString(@"login", nil)];
-    self.title = AMLocalizedString(@"login", nil);
+    
+    self.currentViewMode = 1;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    if (self.currentViewMode == LoginViewMode) {
+        [self.loginButton setTitle:AMLocalizedString(@"login", nil)];
+        self.title = AMLocalizedString(@"login", nil);
+    } else {
+        [self.loginButton setTitle:AMLocalizedString(@"done", nil)];
+        self.title = AMLocalizedString(@"registration", nil);
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -37,8 +54,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     if (indexPath.row > 1) {
-        ForgetPasswordTableViewCell *forgetPasswordCell = [tableView dequeueReusableCellWithIdentifier:@"ForgetPasswodCellIdentifier" forIndexPath:indexPath];
-        return forgetPasswordCell;
+        if (self.currentViewMode == 1) {
+            ForgetPasswordTableViewCell *forgetPasswordCell = [tableView dequeueReusableCellWithIdentifier:@"ForgetPasswodCellIdentifier" forIndexPath:indexPath];
+            return forgetPasswordCell;
+        } else {
+            UITableViewCell *cell = [[UITableViewCell alloc]init];
+            return cell;
+        }
+       
     } else {
         LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
         if (indexPath.row == 0) {

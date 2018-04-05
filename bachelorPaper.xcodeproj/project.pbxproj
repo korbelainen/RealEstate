@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A9C20652076828500905C96 /* WebserviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C20642076828500905C96 /* WebserviceManager.m */; };
 		AD93323F435FC9B7E2927252 /* libPods-bachelorPaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */; };
 		CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */; };
 		CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */; };
@@ -38,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A9C20632076828500905C96 /* WebserviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebserviceManager.h; sourceTree = "<group>"; };
+		4A9C20642076828500905C96 /* WebserviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebserviceManager.m; sourceTree = "<group>"; };
 		8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bachelorPaper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB20F0AF2068C3FE00DB216C /* LoginInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInputTableViewCell.h; sourceTree = "<group>"; };
 		CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInputTableViewCell.m; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 			children = (
 				CB4B2D032073ADEB00AD575B /* MailManager.h */,
 				CB4B2D042073ADEB00AD575B /* MailManager.m */,
+				4A9C20632076828500905C96 /* WebserviceManager.h */,
+				4A9C20642076828500905C96 /* WebserviceManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */,
 				CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */,
 				CB4B2D052073ADEB00AD575B /* MailManager.m in Sources */,
+				4A9C20652076828500905C96 /* WebserviceManager.m in Sources */,
 				CB60A0B92075045200070F94 /* FavoritesListItemTableViewCell.m in Sources */,
 				CB325BF22064146E0099E61B /* FavoritesViewController.m in Sources */,
 				CB325BF5206414810099E61B /* FeedbackViewController.m in Sources */,
