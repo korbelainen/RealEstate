@@ -98,6 +98,7 @@
                     }
                     case 6: {
                         FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                        cell.parameterLabel.text = AMLocalizedString(@"price", nil);
                         return cell;
                     }
                     case 7: {
@@ -110,26 +111,58 @@
                 }
         }
         case 1: {
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
-             cell.textLabel.text = @"test 1";
-            return cell;
-        }
-        case 2: {
-            if (indexPath.row == 1 || indexPath.row == 2) {
-                SwitchParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchParameterTableViewCellIdentifier" forIndexPath:indexPath];
+            if (indexPath.row == 0) {
+                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
+                cell.textLabel.text = AMLocalizedString(@"district", nil);
                 return cell;
             } else {
-                FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
-                return cell;
+                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
+                cell.textLabel.text = AMLocalizedString(@"street", nil);
             }
         }
+        case 2: {
+            if (indexPath.row == 1) {
+                SwitchParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                cell.parameterLabel.text = AMLocalizedString(@"not_first", nil);
+                return cell;
+            } else if (indexPath.row == 2) {
+                SwitchParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                cell.parameterLabel.text = AMLocalizedString(@"not_last", nil);
+                return cell;
+            } else if (indexPath.row == 0) {
+                FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                cell.parameterLabel.text = AMLocalizedString(@"floor",  nil);
+                return cell;
+            } else if (indexPath.row == 3) {
+                FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
+               cell.parameterLabel.text = AMLocalizedString(@"floor_count", nil);
+                return cell;
+            }
+            }
         case 3: {
-            FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
-            return cell;
-
+            switch (indexPath.row) {
+                case 0: {
+                    FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                     cell.parameterLabel.text = AMLocalizedString(@"total_area", nil);
+                    return cell;
+                }
+                case 1: {
+                    FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                     cell.parameterLabel.text = AMLocalizedString(@"living_area", nil);
+                    return cell;
+                }
+                case 2: {
+                    FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                     cell.parameterLabel.text = AMLocalizedString(@"kitchen_area", nil);
+                    return cell;
+                }
+                default:
+                    break;
+            }
         }
         case 4: {
             FromToParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FromToParameterTableViewCellIdentifier" forIndexPath:indexPath];
+             cell.parameterLabel.text = AMLocalizedString(@"year_of_construction", nil);
             return cell;
         }
 
@@ -220,4 +253,7 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end

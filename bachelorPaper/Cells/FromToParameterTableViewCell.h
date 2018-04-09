@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FromToParameterTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *parameterLabel;
 
 @end

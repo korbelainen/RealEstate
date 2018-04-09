@@ -29,11 +29,26 @@
 
 // other
 "close" = "Закрыть";
+"send" = "Отправить";
+"done" = "Готово";
+"registration" = "Регистрация";
+
+// search
 "category" = "Рубрика";
 "type" = "Тип";
 "location" = "Место положения";
 "studio" = "Студия";
 "price" = "Цена";
+"floor" = "Этаж";
+"floor_count" = "Этажность";
+"total_area" = "Общая площадь";
+"living_area" = "Жилая площадь";
+"kitchen_area" = "Площадь кухни";
+"year_of_construction" = "Год постройки";
+"district" = "Район";
+"street" = " Улица";
+"not_first" = "Не первый";
+"not_last" = "Не последний";
 "with_photos" = "С фото";
 "author" = " Автор объявления";
 "date" = "Дата публикации";
@@ -50,9 +65,9 @@
 "building_type" = "Тип дома";
 "building_class" = "Класс дома";
 "add_screenshot" = "Добавить скриншот";
+
+// feedback
 "description_placeholder" = "Опишите проблемы, возникшие при работе с приложением";
 "email_placeholder" = "Эл. почта (Необязательно)";
 "email_comment" = "Оставьте адрес эл.почты, чтобы мы могли ответить вам";
-"send" = "Отправить";
-"done" = "Готово";
-"registration" = "Регистрация";
+

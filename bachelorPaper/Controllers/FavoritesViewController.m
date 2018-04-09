@@ -49,7 +49,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self performSegueWithIdentifier:@"openDetailsSegue" sender:nil];
+    [self performSegueWithIdentifier:@"apartmentDetailsSegueIdentifier" sender:nil];
 }
 
 - (void)getFavorites {

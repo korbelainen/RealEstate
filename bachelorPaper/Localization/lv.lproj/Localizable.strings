@@ -29,6 +29,12 @@
 
 // other
 "close" = "Закрыть";
+"send" = "Sūtīt";
+"done" = "Done";
+"registration" = "Reģistrācija";
+
+//search
+
 "category" = "Рубрика";
 "type" = "Tips";
 "location" = "Atrašanas vieta";
@@ -49,10 +55,20 @@
 "building_material" = "Nama materiāls";
 "building_type" = "Nama tips";
 "building_class" = "Nama klase";
+"floor" = "Stāvs";
+"floor_count" = "Stāvu skaits";
+"total_area" = " ";
+"living_area" = " ";
+"kitchen_area" = " ";
+"year_of_construction" = "Celšanas gads";
+"not_first" = "Nav pirmais";
+"not_last" = "Nav pēdējais";
+"district" = " Rajons";
+"street" = " Iela";
+
+//feedback
 "add_screenshot" = "Pielikt bildi";
 "description_placeholder" = "Aprakstiet problēmas, kuri paradījas aplikācījas lietošanas laikā";
 "email_placeholder" = "Epasts (Nav obligāti)";
 "email_comment" = "Ievādiet epastu, lai mes varētu jums atbildēt";
-"send" = "Sūtīt";
-"done" = "Done";
-"registration" = "Reģistrācija";
+
