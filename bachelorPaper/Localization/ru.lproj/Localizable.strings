@@ -34,36 +34,16 @@
 "registration" = "Регистрация";
 
 // search
-"category" = "Рубрика";
-"type" = "Тип";
-"location" = "Место положения";
+
 "studio" = "Студия";
 "price" = "Цена";
 "floor" = "Этаж";
-"floor_count" = "Этажность";
-"total_area" = "Общая площадь";
-"living_area" = "Жилая площадь";
-"kitchen_area" = "Площадь кухни";
-"year_of_construction" = "Год постройки";
+"total_area" = "Площадь";
+"city" = "Город";
 "district" = "Район";
 "street" = " Улица";
-"not_first" = "Не первый";
-"not_last" = "Не последний";
-"with_photos" = "С фото";
-"author" = " Автор объявления";
-"date" = "Дата публикации";
-"bargain_possible" = "Возможен торг";
-"mortgage_possible" = "Возможна ипотека";
-"change" = "Обмен";
-"clean_sale" = "Чистая продажа";
+"heating_type" = "Тип отопления";
 "balcony" = "Балкон";
-"loggia" = "Лоджия";
-"layout" = "Планировка";
-"bathroom" = "Санузел";
-"apartment_type" = "Тип квартиры";
-"building_material" = "Материал дома";
-"building_type" = "Тип дома";
-"building_class" = "Класс дома";
 "add_screenshot" = "Добавить скриншот";
 
 // feedback

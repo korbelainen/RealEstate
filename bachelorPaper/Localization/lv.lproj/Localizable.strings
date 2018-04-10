@@ -34,35 +34,12 @@
 "registration" = "Reģistrācija";
 
 //search
-
-"category" = "Рубрика";
-"type" = "Tips";
-"location" = "Atrašanas vieta";
 "studio" = "Studija";
 "price" = "Cena";
-"with_photos" = "Ar bildem";
-"author" = "Slūdinājuma autors";
-"date" = "Publikācijas datums";
-"bargain_possible" = "Возможен торг";
-"mortgage_possible" = "Возможна ипотека";
-"change" = "Обмен";
-"clean_sale" = "Чистая продажа";
-"balcony" = "Балкон";
-"loggia" = "Лоджия";
-"layout" = "Планировка";
-"bathroom" = "Санузел";
-"apartment_type" = "Dzīvokļa tips";
-"building_material" = "Nama materiāls";
-"building_type" = "Nama tips";
-"building_class" = "Nama klase";
+"heating_type" = "Apkurēs tips";
 "floor" = "Stāvs";
-"floor_count" = "Stāvu skaits";
 "total_area" = " ";
-"living_area" = " ";
-"kitchen_area" = " ";
-"year_of_construction" = "Celšanas gads";
-"not_first" = "Nav pirmais";
-"not_last" = "Nav pēdējais";
+"city" = "Pilsēta";
 "district" = " Rajons";
 "street" = " Iela";
 
