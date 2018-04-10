@@ -10,4 +10,6 @@
 
 @interface SimpleParameterOptionsTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSString *selectedParameter;
+
 @end

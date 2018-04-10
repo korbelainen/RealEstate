@@ -13,7 +13,7 @@
 "sale" = "Продажа";
 "rooms_count" = "Количество комнат";
 "email_or_phone" = "Эл. почта или телефон";
-"password" = "пароль";
+"password" = "Пароль";
 "forget_password" = "Забыли пароль?";
 
 //menu items
@@ -41,8 +41,12 @@
 "total_area" = "Площадь";
 "city" = "Город";
 "district" = "Район";
-"street" = " Улица";
+"street" = "Улица";
 "heating_type" = "Тип отопления";
+"any" = "Любое";
+"central" = "Центральное";
+"gas" = "Газовое";
+"wood" = "Дровяное";
 "balcony" = "Балкон";
 "add_screenshot" = "Добавить скриншот";
 

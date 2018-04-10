@@ -28,7 +28,7 @@
 "feedback" = "Atsauksmes";
 
 // other
-"close" = "Закрыть";
+"close" = "Slēgt";
 "send" = "Sūtīt";
 "done" = "Done";
 "registration" = "Reģistrācija";
@@ -37,8 +37,12 @@
 "studio" = "Studija";
 "price" = "Cena";
 "heating_type" = "Apkurēs tips";
+"any" = "Jebkurš";
+"central" = "Cenrālais";
+"gas" = "Gazes";
+"wood" = "Malkas";
 "floor" = "Stāvs";
-"total_area" = " ";
+"total_area" = "Platība";
 "city" = "Pilsēta";
 "district" = " Rajons";
 "street" = " Iela";

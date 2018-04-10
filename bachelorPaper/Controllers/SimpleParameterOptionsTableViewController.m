@@ -7,6 +7,7 @@
 //
 
 #import "SimpleParameterOptionsTableViewController.h"
+#import "LocalizationSystem.h"
 
 @interface SimpleParameterOptionsTableViewController ()
 
@@ -34,7 +35,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"optionCellIdentifier" forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.options objectAtIndex:indexPath.row];
+    cell.textLabel.text = AMLocalizedString([self.options objectAtIndex:indexPath.row], nil);
     
     return cell;
 }
@@ -46,13 +47,11 @@
 }
 
 - (void)defineOptions {
-    
-    self.options = @[@"1", @"2"];
-    
-//    @[@"Жилая", @"Коммерческая", @"Дачи,участки", @"Гаражи,парковки", @"Земля"];
-//    @[@"Любой", @"Комнаты", @"Вторичка", @"Новостройки", @"Коттеджи, дома"];
-//    @[@"Любой", @"Бизнес", @"Комфорт", @"Эконом", @"Элитный"];
-//    @[@"Любая", @"Другое", @"Изолированная", @"Свободная", @"Смежная", @"Смежно-изоблированная"];
+    if ([self.selectedParameter isEqualToString:@"heatingType"]) {
+        self.options = @[@"any", @"central", @"gas", @"wood"];
+    } else {
+        self.options = @[@"1", @"2"];
+    }
 
 }
 @end

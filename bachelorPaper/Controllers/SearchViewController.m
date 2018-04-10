@@ -12,10 +12,14 @@
 #import "SwitchParameterTableViewCell.h"
 #import "FromToParameterTableViewCell.h"
 #import "RoomCountParameterTableViewCell.h"
+#import "SimpleParameterOptionsTableViewController.h"
 
 @interface SearchViewController () <UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *clearBarButton;
+
+@property (strong, nonatomic) NSString *selectedParameter;
 
 @end
 
@@ -120,5 +124,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    if () {
+//        ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
+//    }
 }
 @end
+
