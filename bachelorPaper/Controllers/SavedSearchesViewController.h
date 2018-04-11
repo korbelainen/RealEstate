@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SavedSearchesViewController : UIViewController
+@interface SavedSearchesViewController : UITableViewController
 
 @end

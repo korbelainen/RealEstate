@@ -7,7 +7,7 @@
 */
 
 //controllers titles
-"search" = " Поиск";
+"search" = "Поиск";
 "clear" = "Очистить";
 "rent" = "Аренда";
 "sale" = "Продажа";

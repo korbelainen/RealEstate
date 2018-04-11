@@ -18,6 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *clearBarButton;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
 
 @property (strong, nonatomic) NSString *selectedParameter;
 @property (assign, nonatomic) BOOL isInRentMode;
@@ -30,6 +31,7 @@
 
     self.title = AMLocalizedString(@"search", nil);
     [self.clearBarButton setTitle:AMLocalizedString(@"clear", nil)];
+    [self configureSearchButton];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -182,5 +184,17 @@
     //        ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
     //    }
 }
+
+- (void)configureSearchButton {
+    self.searchButton.layer.cornerRadius = 3;
+    self.searchButton.tintColor = [UIColor whiteColor];
+    self.searchButton.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    [self.searchButton setTitle:AMLocalizedString(@"search", nil) forState:UIControlStateNormal];
+    [self.searchButton setTitle:AMLocalizedString(@"search", nil) forState:UIControlStateHighlighted];
+}
+
+- (IBAction)searchButtonPressed:(id)sender {
+}
+
 @end
 

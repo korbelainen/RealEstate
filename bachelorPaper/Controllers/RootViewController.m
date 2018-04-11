@@ -48,10 +48,6 @@ NSInteger kMenuButtonWidth = 35;
             identifier = @"search";
             break;
         }
-        case Catalog: {
-            identifier = @"catalog";
-            break;
-        }
         case SavedSearches: {
             identifier = @"savedSearches";
             break;

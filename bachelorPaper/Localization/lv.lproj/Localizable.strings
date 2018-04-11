@@ -7,7 +7,7 @@
 */
 
 //controllers titles
-"search" = " Meklēt";
+"search" = "Meklēt";
 "clear" = "Dzēst visu";
 "rent" = "Izīrē";
 "sale" = "Pardod";
@@ -43,12 +43,13 @@
 "floor" = "Stāvs";
 "total_area" = "Platība";
 "city" = "Pilsēta";
-"district" = " Rajons";
-"street" = " Iela";
+"district" = "Rajons";
+"street" = "Iela";
 "furniture" = "Mēbeles";
 "fridge" = "Ledusskapis";
 "internet" = "Internēts";
 "communal_payments" = "Komunālie māksājumi";
+"balcony" = "Balkons";
 
 //feedback
 "add_screenshot" = "Pielikt bildi";

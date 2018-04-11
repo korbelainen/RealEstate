@@ -13,6 +13,8 @@
 		AD93323F435FC9B7E2927252 /* libPods-bachelorPaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */; };
 		CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */; };
 		CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */; };
+		CB2F671A207E03810097C152 /* AddAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */; };
+		CB2F671C207E0D300097C152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F671B207E0D300097C152 /* Assets.xcassets */; };
 		CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD42063E8C90099E61B /* AppDelegate.m */; };
 		CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD72063E8C90099E61B /* SearchViewController.m */; };
 		CB325BDB2063E8C90099E61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB325BD92063E8C90099E61B /* Main.storyboard */; };
@@ -24,7 +26,6 @@
 		CB325BF5206414810099E61B /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BF4206414810099E61B /* FeedbackViewController.m */; };
 		CB325BF9206414D00099E61B /* LocalizationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BF7206414D00099E61B /* LocalizationSystem.m */; };
 		CB325C00206415D10099E61B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB325C02206415D10099E61B /* Localizable.strings */; };
-		CB325C0720641F2C0099E61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB325C0620641F2C0099E61B /* Assets.xcassets */; };
 		CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C0B2064F7AC0099E61B /* MenuViewController.m */; };
 		CB325C12206508540099E61B /* MenuItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C11206508540099E61B /* MenuItemTableViewCell.m */; };
 		CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */; };
@@ -52,6 +53,9 @@
 		CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInputTableViewCell.m; sourceTree = "<group>"; };
 		CB20F0B22068C46300DB216C /* ForgetPasswordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordTableViewCell.h; sourceTree = "<group>"; };
 		CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordTableViewCell.m; sourceTree = "<group>"; };
+		CB2F6718207E03810097C152 /* AddAdvertisementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAdvertisementViewController.h; sourceTree = "<group>"; };
+		CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAdvertisementViewController.m; sourceTree = "<group>"; };
+		CB2F671B207E0D300097C152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = bachelorPaper/Assets.xcassets; sourceTree = "<group>"; };
 		CB325BD02063E8C90099E61B /* bachelorPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bachelorPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB325BD32063E8C90099E61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB325BD42063E8C90099E61B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,7 +79,6 @@
 		CB325BFD2064153E0099E61B /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CB325C01206415D10099E61B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB325C03206415D50099E61B /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CB325C0620641F2C0099E61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = bachelorPaper/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		CB325C0A2064F7AC0099E61B /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		CB325C0B2064F7AC0099E61B /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CB325C10206508540099E61B /* MenuItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItemTableViewCell.h; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 		CB325BC72063E8C80099E61B = {
 			isa = PBXGroup;
 			children = (
+				CB2F671B207E0D300097C152 /* Assets.xcassets */,
 				CB325BD22063E8C90099E61B /* bachelorPaper */,
 				CB325BD12063E8C90099E61B /* Products */,
 				6DD138A899E9AF2F1887D49D /* Pods */,
@@ -194,6 +198,8 @@
 				4A9C206720781D1D00905C96 /* ApartmentDetailsTableViewController.m */,
 				4A09946E207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.h */,
 				4A09946F207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.m */,
+				CB2F6718207E03810097C152 /* AddAdvertisementViewController.h */,
+				CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,7 +225,6 @@
 		CB325C05206416160099E61B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CB325C0620641F2C0099E61B /* Assets.xcassets */,
 				CB325BDE2063E8C90099E61B /* LaunchScreen.storyboard */,
 				CB325BD92063E8C90099E61B /* Main.storyboard */,
 			);
@@ -328,7 +333,7 @@
 			files = (
 				CB325BE02063E8C90099E61B /* LaunchScreen.storyboard in Resources */,
 				CB325C00206415D10099E61B /* Localizable.strings in Resources */,
-				CB325C0720641F2C0099E61B /* Assets.xcassets in Resources */,
+				CB2F671C207E0D300097C152 /* Assets.xcassets in Resources */,
 				CB325BDB2063E8C90099E61B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +416,7 @@
 				CB325BEF2064145D0099E61B /* SavedSearchesViewController.m in Sources */,
 				CB4B2D102073AF0300AD575B /* UserProfileTableViewController.m in Sources */,
 				CB4B2D0F2073AF0300AD575B /* RootViewController.m in Sources */,
+				CB2F671A207E03810097C152 /* AddAdvertisementViewController.m in Sources */,
 				CB4B2D112073AF0300AD575B /* SearchResultsTableViewController.m in Sources */,
 				CB60A0B02074EA2000070F94 /* EmailTableViewCell.m in Sources */,
 				CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */,

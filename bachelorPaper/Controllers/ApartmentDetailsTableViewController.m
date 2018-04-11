@@ -21,9 +21,9 @@
     
     self.title = self.address;
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   UIBarButtonItem *favoritesButton = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(manageFavorites:)];
+    favoritesButton.image = [UIImage imageNamed:@"add_to_favorites"];
+     self.navigationItem.rightBarButtonItem = favoritesButton;
 }
 
 #pragma mark - Table view data source
@@ -78,6 +78,9 @@
  return cell;
  }
 
+- (void)manageFavorites: (UIButton *)sender {
+    NSLog(@"!!!");
+}
 /*
  #pragma mark - Navigation
  

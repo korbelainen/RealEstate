@@ -123,12 +123,12 @@ static NSArray *menuTitles;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.activeMenuItem = indexPath.row;
 
-    if (indexPath.row == 7) {
+    if (indexPath.row == 6) {
         MailManager *mailManager = [[MailManager alloc]init];
         [mailManager sendFeedback];
-    } else if (indexPath.row == 8) {
+    } else if (indexPath.row == 7) {
          LocalizationSetLanguage(@"ru");
-    } else if (indexPath.row == 9) {
+    } else if (indexPath.row == 8) {
          LocalizationSetLanguage(@"lv");
     }
      [self.tableView reloadData];
