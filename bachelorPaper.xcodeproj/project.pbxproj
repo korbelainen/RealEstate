@@ -15,6 +15,7 @@
 		CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */; };
 		CB2F671A207E03810097C152 /* AddAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */; };
 		CB2F671C207E0D300097C152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F671B207E0D300097C152 /* Assets.xcassets */; };
+		CB2F671F207E1F620097C152 /* TextFieldParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */; };
 		CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD42063E8C90099E61B /* AppDelegate.m */; };
 		CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD72063E8C90099E61B /* SearchViewController.m */; };
 		CB325BDB2063E8C90099E61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB325BD92063E8C90099E61B /* Main.storyboard */; };
@@ -56,6 +57,8 @@
 		CB2F6718207E03810097C152 /* AddAdvertisementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAdvertisementViewController.h; sourceTree = "<group>"; };
 		CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAdvertisementViewController.m; sourceTree = "<group>"; };
 		CB2F671B207E0D300097C152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = bachelorPaper/Assets.xcassets; sourceTree = "<group>"; };
+		CB2F671D207E1F620097C152 /* TextFieldParameterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldParameterTableViewCell.h; sourceTree = "<group>"; };
+		CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldParameterTableViewCell.m; sourceTree = "<group>"; };
 		CB325BD02063E8C90099E61B /* bachelorPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bachelorPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB325BD32063E8C90099E61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB325BD42063E8C90099E61B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -254,6 +257,8 @@
 				CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */,
 				CB60A0B72075045200070F94 /* FavoritesListItemTableViewCell.h */,
 				CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */,
+				CB2F671D207E1F620097C152 /* TextFieldParameterTableViewCell.h */,
+				CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 				CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */,
 				CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */,
 				CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */,
+				CB2F671F207E1F620097C152 /* TextFieldParameterTableViewCell.m in Sources */,
 				CB4B2D052073ADEB00AD575B /* MailManager.m in Sources */,
 				4A9C206820781D1D00905C96 /* ApartmentDetailsTableViewController.m in Sources */,
 				4A9C20652076828500905C96 /* WebserviceManager.m in Sources */,

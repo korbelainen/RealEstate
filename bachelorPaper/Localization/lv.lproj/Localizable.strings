@@ -57,3 +57,13 @@
 "email_placeholder" = "Epasts (Nav obligāti)";
 "email_comment" = "Ievādiet epastu, lai mes varētu jums atbildēt";
 
+// user profile
+"company" = "Uzņēmuma nosaukums";
+"address" = "Adrese";
+"web_site" = "Mājas lapa";
+"user_type" = "Lietotāja tips";
+"region" = "Reģions";
+"name" = "Vārds";
+"email" = "Epasts";
+"phone" = "Tālrunis";
+"logout" = "Iziet";
