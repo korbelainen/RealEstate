@@ -45,6 +45,10 @@
 "city" = "Pilsēta";
 "district" = " Rajons";
 "street" = " Iela";
+"furniture" = "Mēbeles";
+"fridge" = "Ledusskapis";
+"internet" = "Internēts";
+"communal_payments" = "Komunālie māksājumi";
 
 //feedback
 "add_screenshot" = "Pielikt bildi";

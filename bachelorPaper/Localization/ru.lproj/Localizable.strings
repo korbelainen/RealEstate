@@ -47,6 +47,10 @@
 "gas" = "Газовое";
 "wood" = "Дровяное";
 "balcony" = "Балкон";
+"furniture" = "Мебель";
+"fridge" = "Холодильник";
+"internet" = "Интернет";
+"communal_payments" = "Коммунальные платежи";
 "add_screenshot" = "Добавить скриншот";
 
 // feedback

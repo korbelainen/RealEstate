@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *clearBarButton;
 
 @property (strong, nonatomic) NSString *selectedParameter;
-
+@property (assign, nonatomic) BOOL isInRentMode;
 @end
 
 @implementation SearchViewController
@@ -38,7 +38,11 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    if (self.isInRentMode == false) {
+        return 3;
+    } else {
+        return 4;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -48,6 +52,8 @@
         case 1:
             return 3;
         case 2:
+            return 4;
+        case 3:
             return 4;
         default:
             return 1;
@@ -60,6 +66,7 @@
             switch (indexPath.row) {
                 case 0: {
                     SegmentedControlTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SegementedControlCellIdentifier" forIndexPath:indexPath];
+                    [cell.dealTypeSegmentedControl addTarget:self action:@selector(segmentedControlValueDidChange:) forControlEvents:UIControlEventValueChanged];
                     return cell;
                 }
                 case 1: {
@@ -114,7 +121,34 @@
                 return cell;
             }
         }
+        case 3: {
+            switch (indexPath.row) {
+                case 0: {
+                    SwitchParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                    cell.parameterLabel.text = AMLocalizedString(@"furniture", nil);
+                    return cell;
+                }
+                case 1: {
+                    SwitchParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                    cell.parameterLabel.text = AMLocalizedString(@"fridge", nil);
+                    return cell;
+                }
+                case 2: {
+                    SwitchParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                    cell.parameterLabel.text = AMLocalizedString(@"communal_payments", nil);
+                    return cell;
+                }
+                case 3: {
+                    SwitchParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchParameterTableViewCellIdentifier" forIndexPath:indexPath];
+                    cell.parameterLabel.text = AMLocalizedString(@"internet", nil);
+                    return cell;
+                }
+                    break;
 
+                default:
+                    break;
+            }
+        }
         default: {
             UITableViewCell *cell;
             return cell;
@@ -127,10 +161,26 @@
 
 }
 
+-(void)segmentedControlValueDidChange:(UISegmentedControl *)segment
+{
+    switch (segment.selectedSegmentIndex) {
+        case 0: {
+            self.isInRentMode = NO;
+            [self.tableView reloadData];
+            break;
+        }
+        case 1: {
+            self.isInRentMode = YES;
+            [self.tableView reloadData];
+            break;
+        }
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if () {
-//        ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
-//    }
+    //    if () {
+    //        ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
+    //    }
 }
 @end
 
