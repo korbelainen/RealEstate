@@ -44,7 +44,6 @@ static NSArray *menuTitles;
 {
     menuIcons = @[@"white-user_male_circle",
                   @"white-search",
-                  @"white-skyscrapers",
                   @"white-bookmark",
                   @"white-star",
                   @"white-documents",
@@ -55,7 +54,6 @@ static NSArray *menuTitles;
 
     activeMenuIcons = @[@"red-user_male_circle",
                         @"red-search",
-                        @"red-skyscrapers",
                         @"red-bookmark",
                         @"red-star",
                         @"red-documents",
@@ -66,7 +64,6 @@ static NSArray *menuTitles;
 
     menuTitles = @[AMLocalizedString(@"login", nil),
                   AMLocalizedString(@"advertisement_search", nil),
-                   AMLocalizedString(@"new_buildings_catalog", nil),
                    AMLocalizedString(@"saved_searches", nil),
                    AMLocalizedString(@"favorites", nil),
                    AMLocalizedString(@"my_advertisements", nil),
