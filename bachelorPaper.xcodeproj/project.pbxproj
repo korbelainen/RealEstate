@@ -16,6 +16,7 @@
 		CB2F671A207E03810097C152 /* AddAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */; };
 		CB2F671C207E0D300097C152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F671B207E0D300097C152 /* Assets.xcassets */; };
 		CB2F671F207E1F620097C152 /* TextFieldParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */; };
+		CB2F6722207E2D0B0097C152 /* ParameterWithActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F6721207E2D0B0097C152 /* ParameterWithActionTableViewCell.m */; };
 		CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD42063E8C90099E61B /* AppDelegate.m */; };
 		CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD72063E8C90099E61B /* SearchViewController.m */; };
 		CB325BDB2063E8C90099E61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB325BD92063E8C90099E61B /* Main.storyboard */; };
@@ -59,6 +60,8 @@
 		CB2F671B207E0D300097C152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = bachelorPaper/Assets.xcassets; sourceTree = "<group>"; };
 		CB2F671D207E1F620097C152 /* TextFieldParameterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldParameterTableViewCell.h; sourceTree = "<group>"; };
 		CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldParameterTableViewCell.m; sourceTree = "<group>"; };
+		CB2F6720207E2D0B0097C152 /* ParameterWithActionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParameterWithActionTableViewCell.h; sourceTree = "<group>"; };
+		CB2F6721207E2D0B0097C152 /* ParameterWithActionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParameterWithActionTableViewCell.m; sourceTree = "<group>"; };
 		CB325BD02063E8C90099E61B /* bachelorPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bachelorPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB325BD32063E8C90099E61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB325BD42063E8C90099E61B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -259,6 +262,8 @@
 				CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */,
 				CB2F671D207E1F620097C152 /* TextFieldParameterTableViewCell.h */,
 				CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */,
+				CB2F6720207E2D0B0097C152 /* ParameterWithActionTableViewCell.h */,
+				CB2F6721207E2D0B0097C152 /* ParameterWithActionTableViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				CB325BF5206414810099E61B /* FeedbackViewController.m in Sources */,
 				CB325BE32063E8C90099E61B /* main.m in Sources */,
 				CB325BF9206414D00099E61B /* LocalizationSystem.m in Sources */,
+				CB2F6722207E2D0B0097C152 /* ParameterWithActionTableViewCell.m in Sources */,
 				CB325C12206508540099E61B /* MenuItemTableViewCell.m in Sources */,
 				CB325BEF2064145D0099E61B /* SavedSearchesViewController.m in Sources */,
 				CB4B2D102073AF0300AD575B /* UserProfileTableViewController.m in Sources */,
