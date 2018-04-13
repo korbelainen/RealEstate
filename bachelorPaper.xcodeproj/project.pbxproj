@@ -17,6 +17,7 @@
 		CB2F671C207E0D300097C152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F671B207E0D300097C152 /* Assets.xcassets */; };
 		CB2F671F207E1F620097C152 /* TextFieldParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */; };
 		CB2F6722207E2D0B0097C152 /* ParameterWithActionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F6721207E2D0B0097C152 /* ParameterWithActionTableViewCell.m */; };
+		CB2F67262080C7180097C152 /* AddPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2F67252080C7180097C152 /* AddPhotosViewController.m */; };
 		CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD42063E8C90099E61B /* AppDelegate.m */; };
 		CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325BD72063E8C90099E61B /* SearchViewController.m */; };
 		CB325BDB2063E8C90099E61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB325BD92063E8C90099E61B /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 		CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldParameterTableViewCell.m; sourceTree = "<group>"; };
 		CB2F6720207E2D0B0097C152 /* ParameterWithActionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParameterWithActionTableViewCell.h; sourceTree = "<group>"; };
 		CB2F6721207E2D0B0097C152 /* ParameterWithActionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParameterWithActionTableViewCell.m; sourceTree = "<group>"; };
+		CB2F67242080C7180097C152 /* AddPhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPhotosViewController.h; sourceTree = "<group>"; };
+		CB2F67252080C7180097C152 /* AddPhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPhotosViewController.m; sourceTree = "<group>"; };
 		CB325BD02063E8C90099E61B /* bachelorPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bachelorPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB325BD32063E8C90099E61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB325BD42063E8C90099E61B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,6 +147,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB2F67232080C6E30097C152 /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
+				CB2F6718207E03810097C152 /* AddAdvertisementViewController.h */,
+				CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */,
+				CB2F67242080C7180097C152 /* AddPhotosViewController.h */,
+				CB2F67252080C7180097C152 /* AddPhotosViewController.m */,
+			);
+			path = Advertisement;
+			sourceTree = "<group>";
+		};
 		CB325BC72063E8C80099E61B = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +196,7 @@
 		CB325BE92063E8F30099E61B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB2F67232080C6E30097C152 /* Advertisement */,
 				CB4B2D092073AF0200AD575B /* RootViewController.h */,
 				CB4B2D0B2073AF0300AD575B /* RootViewController.m */,
 				CB4B2D0E2073AF0300AD575B /* SearchResultsTableViewController.h */,
@@ -204,8 +219,6 @@
 				4A9C206720781D1D00905C96 /* ApartmentDetailsTableViewController.m */,
 				4A09946E207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.h */,
 				4A09946F207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.m */,
-				CB2F6718207E03810097C152 /* AddAdvertisementViewController.h */,
-				CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -411,6 +424,7 @@
 				CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */,
 				CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */,
 				CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */,
+				CB2F67262080C7180097C152 /* AddPhotosViewController.m in Sources */,
 				CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */,
 				CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */,
 				CB2F671F207E1F620097C152 /* TextFieldParameterTableViewCell.m in Sources */,

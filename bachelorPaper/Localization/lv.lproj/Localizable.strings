@@ -31,6 +31,7 @@
 "send" = "Sūtīt";
 "done" = "Done";
 "registration" = "Reģistrācija";
+"next" = "Talāk";
 
 //search
 "studio" = "Studija";
@@ -67,3 +68,14 @@
 "email" = "Epasts";
 "phone" = "Tālrunis";
 "logout" = "Iziet";
+
+// add advertisement
+"deal_type" = "Darišanas tips";
+"house_number" = "Nams";
+"house_type" = "Nama tips";
+"house_material" = "Nama materials";
+"floors_count" = "Stāvu skaits";
+"new_advertisement" = "Jauns slūdinājums";
+"add_photos" = "Pielikt bildes";
+"add_photos_button" = "Pielikt";
+"add_photos_comment" = "Slūdinājumi ar fotogrāfijam ir apskatiti 3 reizes biežāk";

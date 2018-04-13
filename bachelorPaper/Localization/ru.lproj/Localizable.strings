@@ -31,6 +31,7 @@
 "send" = "Отправить";
 "done" = "Готово";
 "registration" = "Регистрация";
+"next" = "Далее";
 
 // search
 
@@ -68,3 +69,15 @@
 "email" = "Адрес эл. почты";
 "phone" = "Телефон";
 "logout" = "Выйти";
+
+// add advertisement
+"deal_type" = "Тип сделки";
+"house_number" = "Дом";
+"house_type" = "Тип дома";
+"house_material" = "Материал дома";
+"floors_count" = "Этажность";
+"new_advertisemement" = "Новое объявление";
+"add_photos_button" = "Добавить";
+"add_photos" = "Добавить фотографии";
+"add_photos_comment" = "Обьявления с фотографиями просматриваются в 3 раза чаще";
+
