@@ -34,6 +34,7 @@
 		CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */; };
 		CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */; };
 		CB325C2320657E3A0099E61B /* SwitchParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */; };
+		CB409F732087848900452CC4 /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB409F722087848900452CC4 /* DescriptionViewController.m */; };
 		CB4B2D052073ADEB00AD575B /* MailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D042073ADEB00AD575B /* MailManager.m */; };
 		CB4B2D082073AE3500AD575B /* FromToParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D062073AE3500AD575B /* FromToParameterTableViewCell.m */; };
 		CB4B2D0F2073AF0300AD575B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2D0B2073AF0300AD575B /* RootViewController.m */; };
@@ -98,6 +99,8 @@
 		CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomCountParameterTableViewCell.m; sourceTree = "<group>"; };
 		CB325C2120657E3A0099E61B /* SwitchParameterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchParameterTableViewCell.h; sourceTree = "<group>"; };
 		CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchParameterTableViewCell.m; sourceTree = "<group>"; };
+		CB409F712087848900452CC4 /* DescriptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DescriptionViewController.h; sourceTree = "<group>"; };
+		CB409F722087848900452CC4 /* DescriptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescriptionViewController.m; sourceTree = "<group>"; };
 		CB4B2D032073ADEB00AD575B /* MailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailManager.h; sourceTree = "<group>"; };
 		CB4B2D042073ADEB00AD575B /* MailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailManager.m; sourceTree = "<group>"; };
 		CB4B2D062073AE3500AD575B /* FromToParameterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromToParameterTableViewCell.m; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				CB2F6719207E03810097C152 /* AddAdvertisementViewController.m */,
 				CB2F67242080C7180097C152 /* AddPhotosViewController.h */,
 				CB2F67252080C7180097C152 /* AddPhotosViewController.m */,
+				CB409F712087848900452CC4 /* DescriptionViewController.h */,
+				CB409F722087848900452CC4 /* DescriptionViewController.m */,
 			);
 			path = Advertisement;
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				CB60A0B02074EA2000070F94 /* EmailTableViewCell.m in Sources */,
 				CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */,
 				CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */,
+				CB409F732087848900452CC4 /* DescriptionViewController.m in Sources */,
 				CB325C2320657E3A0099E61B /* SwitchParameterTableViewCell.m in Sources */,
 				CB60A0B32074EA7000070F94 /* FeedbackDescriptionTableViewCell.m in Sources */,
 			);
