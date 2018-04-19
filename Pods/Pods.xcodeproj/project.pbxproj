@@ -7,70 +7,296 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E35BAC387A40B8162643705463D7092 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F138C8A00CC583BE668A5A7D144978B /* AMSlideMenuRightTableViewController.m */; };
-		2C4DEEA8A61C5C518928C1B87CD7A99D /* Pods-bachelorPaper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9F2FB7DA08547419B65742A91696B8 /* Pods-bachelorPaper-dummy.m */; };
-		32912D0B8059F674302C322457EBE3D6 /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0390C3373F2B64B3F84F5FBD0A175152 /* AMSlideMenuContentSegue.m */; };
-		4DC9E6287EFF1B0F9279541C722D3C98 /* AMSlideMenuRightMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5360A95478DC01E165BAE6797093587E /* AMSlideMenuRightMenuSegue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		515C85472C42687F0143C8772B1C49BE /* UIViewController+AMSlideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 415AC3C36C7B5F0DD48F1DC8A3296B82 /* UIViewController+AMSlideMenu.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8485915D60B113FA552FD6C3514DDB9D /* AMSlideMenuLeftTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 344E8B20A735844EE4354AB1586D177F /* AMSlideMenuLeftTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		849EAFF082BDE83A3748D6995C055CCB /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F7740386513BA3AD0B5171E85F2255F3 /* UIViewController+AMSlideMenu.m */; };
-		916DABCB44ABA1F89FE3F2CF2CB47A37 /* AMSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB1172EB05E4C793B4A289AC33CBF72 /* AMSlideMenu-dummy.m */; };
-		A8D789140AF77B9AEA7F282D1A228A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B123927EFB249EAE49952E366C0FCD70 /* AMSlideMenuMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D88A9E70BE801D876D62F96D9C15B3F /* AMSlideMenuMainViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C4B146A34B3DE8FC6AA4AC4569246939 /* AMSlideMenuProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C1C92D211BD50BB6CCA56F9181C4BA /* AMSlideMenuProtocols.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C5F27559975EBBDCECE1AB211EDF2F7C /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E5B0F49838BB4A5258ACEFA90AA90 /* AMSlideMenuRightMenuSegue.m */; };
-		CB36DF3B155E75E1F896819E3C292DA9 /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 009F0DEFF63EE1E09571B9ABA24E8128 /* AMSlideMenuLeftMenuSegue.m */; };
-		CCDDC32BBD7A6992858A314182BD971E /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842D480D25429519D6A176420DB650C /* AMSlideMenuLeftTableViewController.m */; };
-		D0AE17A3EF7F15889C91C29384329151 /* AMSlideMenuContentSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = C54A272F8E4ED79695BDB211583CD903 /* AMSlideMenuContentSegue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D5CB3AC107493EB4100CD71CB6247332 /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0898DA631F882AC5F1F59F4F1AB7D7EE /* AMSlideMenuMainViewController.m */; };
-		F5214E7967B53818B1401E02BD9161A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F91319F9A3D303371E25828F72EDF67E /* AMSlideMenuLeftMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E59111ACD7913834CC9E71C2D035990 /* AMSlideMenuLeftMenuSegue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FB20A01B3C0B072E5004EAA0B04B4332 /* AMSlideMenuRightTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 783B7FF349F55558EBEFB38F64A07619 /* AMSlideMenuRightTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		061139C097BF12405ADF4C35BC61C05F /* BUKCameraImageCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F8981F6E43D0066BD502160F112A5E /* BUKCameraImageCollectionViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12783DB304BDE1C7992C20F11053EE44 /* FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F96CD4075192EC7FE34D446AC080A8 /* FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		1364B084D1A4E44E9D74DAF71222E403 /* FastttFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AF8EDF262A85E39AACD11A1B44C8C5 /* FastttFocus.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		13C1509515ABF981B7740671EF9D439C /* BUKCameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E429E0A0948B23E07170585621FA0EA3 /* BUKCameraCollectionViewCell.m */; };
+		15170B3371A19EF80FCFF55ECFF5A3E2 /* take-picture-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 112467AC874176D387A84050F602E5EF /* take-picture-button.png */; };
+		171B567144B65CCD2170629D32692AE6 /* flash-button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 011AB76EE44EBA8EF605E14888A14085 /* flash-button@3x.png */; };
+		178701200092426C9127A5BFB23E7056 /* delete-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C3276D7EEC3BBF9C892114FD7E959E /* delete-button.png */; };
+		1E35BAC387A40B8162643705463D7092 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970C28C3C8E303C6C37273CEDC59642 /* AMSlideMenuRightTableViewController.m */; };
+		268515BA4FDBCCE0133A3F28ABFA1C2F /* UIImage+FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C69847867F4F0B6811825AFBADF64BD7 /* UIImage+FastttCamera.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27D8C764941550EC795503A356EED97B /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4AE24D317D5AC62CFF2A1B47C04F7182 /* en.lproj */; };
+		2BE8851EB06EEF3DFD684479C150E30B /* FastttFocus.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68201AE19EDBF523A91E0CAE2D0632 /* FastttFocus.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E869F85E162062541BA97CD92443A3B /* BUKCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7989C94D41CE3D2904ED0DEAA981329 /* BUKCheckmarkView.m */; };
+		2E99255F5A47CB3BF303C3AFF14E47F8 /* device-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FC8E71B4EB457D698BB82C1FD59B83 /* device-button@2x.png */; };
+		31DBFF0870C82AD80BF5C60E34D988CB /* BUKAssetCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6342938908EDF84F6BAEA17359583BC0 /* BUKAssetCollectionViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32912D0B8059F674302C322457EBE3D6 /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F38AF8B9C555C4D6D3ADA19700CE4 /* AMSlideMenuContentSegue.m */; };
+		39DDDAE0FC898FFABCECB4F021A3C08A /* delete-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FCB80D79556703D9EBF034DCA0DE15 /* delete-button@2x.png */; };
+		3A2946EB915126BE021CE09DB73DBE02 /* BUKVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27DE04EB6F1786CDCAB4B604C4C830 /* BUKVideoIndicatorView.m */; };
+		3E3A12D53405D81C9D4DBB1FFF2F5282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75295DEAF156308DE8CD0BA24F62DD06 /* Foundation.framework */; };
+		3F10A2E5BAB56673F967DADE54C0A4FD /* BUKNoAssetsPlaceholderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2347C4FB9738DE2E15086FA3001D8FCA /* BUKNoAssetsPlaceholderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4384FEC6087844ACA8656A020D30C1EE /* BUKVideoIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A2CCD2C7BA6310C147A5F5010DB104 /* BUKVideoIndicatorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		442ABCAD9B7D3001E7495A121D3C7A99 /* FastttCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F7FE5871FCABC74A571100855D1740 /* FastttCamera-dummy.m */; };
+		46B6C3025BF0074ABD75A79C382CAF7D /* BUKImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = E110FFFC67868AEDF299823D0C9E20BB /* BUKImagePickerController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		49ACEA268F1C10A516FC4849E11CC26F /* BUKAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9AA387A8E227FDF851564A445BEF9 /* BUKAssetsManager.m */; };
+		4B1FECA91BD448EE0CCAC32CFA05E010 /* FastttCapturedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B00B7243505B2A16887961D8A400B9E9 /* FastttCapturedImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4DC9E6287EFF1B0F9279541C722D3C98 /* AMSlideMenuRightMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 97FFB59A20A0838F9DD980B84F883FEE /* AMSlideMenuRightMenuSegue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		512691EE1E55B5B78F92D5174DF830C1 /* BUKAccessDeniedPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B58F6C77E4DCEEC535D4CC65B1DD7 /* BUKAccessDeniedPlaceholderView.m */; };
+		515C85472C42687F0143C8772B1C49BE /* UIViewController+AMSlideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F362CCC42822799CED11F4E1AFD8D5 /* UIViewController+AMSlideMenu.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57D47CF8831F62AC5F5F1BC006383AE8 /* BUKAlbumTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 25BB5016B17E2C0668732800D0D3A195 /* BUKAlbumTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5AEBD541E260AA0BF1EBAB8434BB4E9A /* BUKAssetsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC234D6E09707A13F06DE1765FD669D /* BUKAssetsManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E472581FC7242083C6D7109403E35BB /* BUKVideoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BE19CB383DD35F074F93471EC7D3B4 /* BUKVideoIconView.m */; };
+		5FD56D8B452BE066775C2C22653692F8 /* BUKImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0040878FFDE36C00DC7702273B0C3FC9 /* BUKImagePickerController-dummy.m */; };
+		5FF7B512EA6636097335681DDF4F770D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77292048A7E3FB887A162FBA2EC2685D /* AVFoundation.framework */; };
+		60F2C796D16A42942AEF0188C36E108F /* AVCaptureDevice+FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA0968D302185C91369B300A2BA8451 /* AVCaptureDevice+FastttCamera.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		646C33D55F37AA31A9F7D735E917054A /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 23A53F4DF5B9F2303203372917DDDB5C /* zh-Hans.lproj */; };
+		6829037F49DAC7AE7C00AE924943D5CE /* delete-button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CC019BA2E0A2C2598FF36B755627CF /* delete-button@3x.png */; };
+		688420D526253D4ED658B862B99CA96C /* BUKNoAssetsPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F48ACD07B3AB51A6565E4AD30375 /* BUKNoAssetsPlaceholderView.m */; };
+		6955B4B99F6BA6701F91BCCCD84D14D7 /* UIImage+BUKImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E597C4D29DD48DAEEE1F782A988F158 /* UIImage+BUKImagePickerController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6960357904E8A7FC0A71539D8FB89726 /* UIColor+BUKImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208F1153FA8BA068669C2883473D921D /* UIColor+BUKImagePickerController.m */; };
+		6E730C49E5945CA8C26993DDE7AF5600 /* IFTTTDeviceOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 124BF572B0D85BD3042CB86F4E25FEB9 /* IFTTTDeviceOrientation.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		70C43E876CEC2EB918EF72F628ACD032 /* BUKAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E80531F9B5AD2F5CEC4E9BB43884D7E /* BUKAlbumTableViewCell.m */; };
+		74CA3205043914E7DC92D836CB17E891 /* FastttCameraTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0750C6BD017D0C1FEFBD2939167B2AF3 /* FastttCameraTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76602D14EE830E0C6BF92C24BFAB7573 /* BUKImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E62C0B14DF283D246A0FAC1D7A451 /* BUKImagePickerController.m */; };
+		77857B8299F6F2F763FB17B5C5CCD927 /* FastttCapturedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B429EE00F957F08605693DC2A2C44A /* FastttCapturedImage.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		7C47B8CB5BD4C28AD1FDBF867A0794A4 /* BUKPlaceholderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 933A87AA53715C08438A7B636640A2C6 /* BUKPlaceholderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		826512E979E66286248B80818DD6DF5D /* BUKCameraImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F8925734E4DC93C2AB00AC460B8AF5 /* BUKCameraImageCollectionViewCell.m */; };
+		82B61631118AA3C5838A6A236F996D1C /* BUKVideoIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 73380F8F0F0E780320EE8367835447B1 /* BUKVideoIconView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8485915D60B113FA552FD6C3514DDB9D /* AMSlideMenuLeftTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB6E38106F3A8EEBBACB808CD69BCB2 /* AMSlideMenuLeftTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		849EAFF082BDE83A3748D6995C055CCB /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E7D45A4612474434D8943B20CFCE03 /* UIViewController+AMSlideMenu.m */; };
+		8703CBFEDEA8BE2B7A966CB3050BDAE4 /* Pods-bachelorPaper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9F2FB7DA08547419B65742A91696B8 /* Pods-bachelorPaper-dummy.m */; };
+		8A2617457AA58AF23BA38ED7D2582A25 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF16D283B492C0BECB8F7A2BB7A9255B /* camera-icon.png */; };
+		8C972413839DDA8925F12F31B499B813 /* UIImage+FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2765FBB334F02E8F2AE2793512159E /* UIImage+FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		8E1BBDFA102407FA5873EE2A5937593C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4107E340ACDCCB6892812CC0A6A2FABF /* AssetsLibrary.framework */; };
+		916DABCB44ABA1F89FE3F2CF2CB47A37 /* AMSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D432E063433A872FBDE1AC980A0E1CD3 /* AMSlideMenu-dummy.m */; };
+		9190ADA599CA7CFE72A6C3F369F91331 /* camera-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 258F4186D45A7A875119A9F3BD0E4C9F /* camera-icon@2x.png */; };
+		949DF312179BD5DB45B28F9C7C3F2FBD /* flash-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 388646EB77E4C15720C27BEF556EDEAA /* flash-button@2x.png */; };
+		94E13D17DC64FA5C6712EA0D6F64E8CE /* NSBundle+BUKImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = E14631442100D1EBFECF1E3943B6669A /* NSBundle+BUKImagePickerController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		97E7B66B1C9ED426C95CB8B3B4E0A006 /* BUKCameraCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 78B26F95F68AA2DF6869B76724147006 /* BUKCameraCollectionViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98BDA06CFA844C616907D04213A5153D /* NSBundle+BUKImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6864D05B5A7D8753C0A274BC654154D5 /* NSBundle+BUKImagePickerController.m */; };
+		9C07A52A743C868CA9F12C3DAF7F923A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E3AB2CAF56E9C8D92FC5E1B2746B92 /* CoreMotion.framework */; };
+		9D02EEB266253A158DB5C9A86B75A449 /* FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8F2663C2CA4115FA62832183447C76 /* FastttCamera.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F471FAFB89F088CA283EBC4FCC7E867 /* BUKAlbumsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 820527DF9E00A03A238482C380447D54 /* BUKAlbumsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F6A30D602B6F3EDE661CFED3E394F47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75295DEAF156308DE8CD0BA24F62DD06 /* Foundation.framework */; };
+		A4D97683A44BFEFD2D28B3CD62B69150 /* UIViewController+FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC14643FF5C084D93667669F3425E3A /* UIViewController+FastttCamera.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A56FAB624B92B974583245B238376CBD /* take-picture-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7F86174F8FEAB4CA9B5CC546A8947 /* take-picture-button@2x.png */; };
+		A656791EC8C5D64E684A19FA6B4BCDE3 /* BUKAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F248D188254A6EF63AF1261F6C81918A /* BUKAssetCollectionViewCell.m */; };
+		A69DA53B34315780248D906DFA68E35B /* BUKCameraComfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C69748451D5A7B0FEFC5E11FFA93E7B /* BUKCameraComfirmViewController.m */; };
+		A8D789140AF77B9AEA7F282D1A228A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75295DEAF156308DE8CD0BA24F62DD06 /* Foundation.framework */; };
+		ABB308D9C2706C03D08BE8233374F9AC /* FastttZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F76ADD04D3891FCAA80B3A7EE318A /* FastttZoom.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		AD8E2FA768F454CC493CB259B7D0723D /* BUKCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E37CE073E99BFE88DA4FB49ECFF214 /* BUKCameraViewController.m */; };
+		B123927EFB249EAE49952E366C0FCD70 /* AMSlideMenuMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4319C60237E49DA25CBAAC4889B1943B /* AMSlideMenuMainViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1C2C283E4F0115FA51E4067D0641721 /* BUKAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BBCEA06F6A121E45DDC4FBB5CF4FF3 /* BUKAssetsViewController.m */; };
+		BE0966EB847A411844734AB26605B0AA /* UIImage+BUKImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68035B38F56E7F686F5872E4560C015 /* UIImage+BUKImagePickerController.m */; };
+		BFA60EA96C81E776FBC8D3AA10175867 /* BUKCheckmarkView.h in Headers */ = {isa = PBXBuildFile; fileRef = A111C5CE271B2CBD6A285C3D4BF4CF36 /* BUKCheckmarkView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0C9024C6444DE8A5C5F407546B4487D /* UIViewController+FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE9D9969086B063E741BCF4527B8D7 /* UIViewController+FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		C25B68040E2168255E3111B43858A801 /* FastttCapturedImage+Process.h in Headers */ = {isa = PBXBuildFile; fileRef = E04D626302FD5ECF3079DAD3DB16D14A /* FastttCapturedImage+Process.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4AF57424987913EF12E348F0D4980C5 /* UIColor+BUKImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3887990EC5574B9BD0380FB9535BD5 /* UIColor+BUKImagePickerController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4B146A34B3DE8FC6AA4AC4569246939 /* AMSlideMenuProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = E47CF89A4B26F52042833966D3A0B627 /* AMSlideMenuProtocols.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C561B01245637F13F221530EF41A26FB /* BUKCameraViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E216A50EAB2D976FD3B4B9A37B7257 /* BUKCameraViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5F27559975EBBDCECE1AB211EDF2F7C /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B54AC5F0187413772F5C77B386B9E7 /* AMSlideMenuRightMenuSegue.m */; };
+		C71571775D3AECF4B337B5F22607220E /* BUKCameraConfirmViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E41B0F15C163E90C88371D714890EBE /* BUKCameraConfirmViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB36DF3B155E75E1F896819E3C292DA9 /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D532C447CD3E6FD0B1E8051EC83E280A /* AMSlideMenuLeftMenuSegue.m */; };
+		CCDDC32BBD7A6992858A314182BD971E /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C546AD1FD5FDAA7D7DF2B8999863C4 /* AMSlideMenuLeftTableViewController.m */; };
+		CED6950B46E07C9ECB56CDE954192D49 /* device-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2337C6552D131949313AC72729DAD8B1 /* device-button.png */; };
+		D0AE17A3EF7F15889C91C29384329151 /* AMSlideMenuContentSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = DB756150B9E6233D37F802119937A4E6 /* AMSlideMenuContentSegue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5CB3AC107493EB4100CD71CB6247332 /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C7142B24584228AC712FF6BC6D96FE /* AMSlideMenuMainViewController.m */; };
+		D7DE34AC98186F4DEA9C754732FD12DE /* BUKAssetsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 307EF49E210E20CA9C1A226851440E0A /* BUKAssetsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE779FF420FBE6FEF692284E4B12545F /* BUKAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9AFB4AE79EB2D49299B4F64F914870 /* BUKAlbumsViewController.m */; };
+		DF91934E9A74D85B1E19FECE6C2AFFC6 /* flash-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D236DD14A7B7FD450960A574E2ACE2F2 /* flash-button.png */; };
+		E4D415126F0634CA4E8AA70202A8B68D /* AVCaptureDevice+FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1B34E4A2FEF3AD553479EA50D45595 /* AVCaptureDevice+FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		E4D7B151C370BA25150C4156AB1C2AB6 /* BUKPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9E2770F77283E963915156A7769D1 /* BUKPlaceholderView.m */; };
+		E672B0122E3730F6CF40A290985DE8A6 /* camera-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B185AA72A84400D1A53EFCB05D51826E /* camera-icon@3x.png */; };
+		E680A636EE888BE04CB49A9C4B18024E /* FastttCameraInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 980EBF49D836B97181F899A69D525613 /* FastttCameraInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8160E65DB0F47AC4AD510A376B5BBBF /* BUKAccessDeniedPlaceholderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B8FEB08505ADBAE5E78882EA67A73E /* BUKAccessDeniedPlaceholderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1A3F2315E61DF58CC773584836C1FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75295DEAF156308DE8CD0BA24F62DD06 /* Foundation.framework */; };
+		F288D9AE37BD2EEDBBF85FB33141919D /* device-button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 576D8A5F85D1BA952FAC623F0ECD7EC3 /* device-button@3x.png */; };
+		F66AC9BC5C3623A8B1F00A7F3E4B4653 /* take-picture-button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D38006EC97F387E76C7BF144F59C570B /* take-picture-button@3x.png */; };
+		F6B4DA61321A3EA16EC43E5C5951B9B8 /* IFTTTDeviceOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E737B2A0146953F7537FD10DFD82CD /* IFTTTDeviceOrientation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F819D073AE43CB33AB37D8DE81C543F0 /* FastttCapturedImage+Process.m in Sources */ = {isa = PBXBuildFile; fileRef = 54794DD667D7E4381C38F097A12939A1 /* FastttCapturedImage+Process.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		F91319F9A3D303371E25828F72EDF67E /* AMSlideMenuLeftMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC86F5968B77C5016744C3670E27CF8A /* AMSlideMenuLeftMenuSegue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA73F16F281DC3C3D67AC8AC16EAC461 /* FastttZoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B2E0C36F614B930D7222175CA26667 /* FastttZoom.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB20A01B3C0B072E5004EAA0B04B4332 /* AMSlideMenuRightTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BF4807386D449A7092284092220BB7 /* AMSlideMenuRightTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB54D52490717F65CCA319CAA6A3B67F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8511B51D85D5E503C53B108CB485E /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3BC5E4CBFA69B53A6C8CE2CF626BEDBB /* PBXContainerItemProxy */ = {
+		0666A0E61CFAE338E38E91BD78AA5E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A1360D9E3CD5E6E55DD10A0C1E61CD;
+			remoteInfo = FastttCamera;
+		};
+		6D5A8567F77E85B816D381D604491431 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A3FB809AFEAA58563619050EC8C27F1C;
 			remoteInfo = AMSlideMenu;
 		};
+		B3CB6684CD904DAF5638981601E10902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE60C317BE618CDA92054E6FFD6E58E1;
+			remoteInfo = "BUKImagePickerController-BUKImagePickerController";
+		};
+		BF0EEF1AEA5225B5C21CD6218076B97E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A1360D9E3CD5E6E55DD10A0C1E61CD;
+			remoteInfo = FastttCamera;
+		};
+		EC6B79D74DE97CBA46457ECAEE796216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4F343DD6FD75466C4DDFDAAFE006A7;
+			remoteInfo = BUKImagePickerController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009F0DEFF63EE1E09571B9ABA24E8128 /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftMenuSegue.m; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
-		0390C3373F2B64B3F84F5FBD0A175152 /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuContentSegue.m; path = AMSlideMenu/AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
-		0898DA631F882AC5F1F59F4F1AB7D7EE /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuMainViewController.m; path = AMSlideMenu/AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
+		0040878FFDE36C00DC7702273B0C3FC9 /* BUKImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BUKImagePickerController-dummy.m"; sourceTree = "<group>"; };
+		011AB76EE44EBA8EF605E14888A14085 /* flash-button@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flash-button@3x.png"; path = "BUKImagePickerController/Assets/flash-button@3x.png"; sourceTree = "<group>"; };
+		04E37CE073E99BFE88DA4FB49ECFF214 /* BUKCameraViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKCameraViewController.m; path = BUKImagePickerController/Classes/BUKCameraViewController.m; sourceTree = "<group>"; };
+		06CCC93018AF9EE30F14057E9E21F8EF /* AMSlideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMSlideMenu.xcconfig; sourceTree = "<group>"; };
+		0750C6BD017D0C1FEFBD2939167B2AF3 /* FastttCameraTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCameraTypes.h; path = FastttCamera/FastttCameraTypes.h; sourceTree = "<group>"; };
+		07E216A50EAB2D976FD3B4B9A37B7257 /* BUKCameraViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKCameraViewController.h; path = BUKImagePickerController/Classes/BUKCameraViewController.h; sourceTree = "<group>"; };
+		0970C28C3C8E303C6C37273CEDC59642 /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightTableViewController.m; path = AMSlideMenu/AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
+		09C546AD1FD5FDAA7D7DF2B8999863C4 /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftTableViewController.m; path = AMSlideMenu/AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
+		0C0F76ADD04D3891FCAA80B3A7EE318A /* FastttZoom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttZoom.m; path = FastttCamera/FastttZoom.m; sourceTree = "<group>"; };
+		0C69748451D5A7B0FEFC5E11FFA93E7B /* BUKCameraComfirmViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKCameraComfirmViewController.m; path = BUKImagePickerController/Classes/BUKCameraComfirmViewController.m; sourceTree = "<group>"; };
 		0EB7D6FEEDE83552191D3490DD92A037 /* Pods-bachelorPaper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bachelorPaper-acknowledgements.plist"; sourceTree = "<group>"; };
-		1DF8DD15543814E46235B6962A9547BC /* libAMSlideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAMSlideMenu.a; path = libAMSlideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E59111ACD7913834CC9E71C2D035990 /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftMenuSegue.h; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		112467AC874176D387A84050F602E5EF /* take-picture-button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "take-picture-button.png"; path = "BUKImagePickerController/Assets/take-picture-button.png"; sourceTree = "<group>"; };
+		124BF572B0D85BD3042CB86F4E25FEB9 /* IFTTTDeviceOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFTTTDeviceOrientation.m; path = FastttCamera/IFTTTDeviceOrientation.m; sourceTree = "<group>"; };
+		146B58F6C77E4DCEEC535D4CC65B1DD7 /* BUKAccessDeniedPlaceholderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKAccessDeniedPlaceholderView.m; path = BUKImagePickerController/Classes/BUKAccessDeniedPlaceholderView.m; sourceTree = "<group>"; };
+		149FF8D51777D11AEFD2F806A6AC1D05 /* BUKImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BUKImagePickerController.xcconfig; sourceTree = "<group>"; };
+		1B27DE04EB6F1786CDCAB4B604C4C830 /* BUKVideoIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKVideoIndicatorView.m; path = BUKImagePickerController/Classes/BUKVideoIndicatorView.m; sourceTree = "<group>"; };
+		1E80531F9B5AD2F5CEC4E9BB43884D7E /* BUKAlbumTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKAlbumTableViewCell.m; path = BUKImagePickerController/Classes/BUKAlbumTableViewCell.m; sourceTree = "<group>"; };
+		208F1153FA8BA068669C2883473D921D /* UIColor+BUKImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BUKImagePickerController.m"; path = "BUKImagePickerController/Classes/UIColor+BUKImagePickerController.m"; sourceTree = "<group>"; };
 		2100E2A2C2F710E5D6980C7F08267E04 /* Pods-bachelorPaper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-bachelorPaper-acknowledgements.markdown"; sourceTree = "<group>"; };
-		344E8B20A735844EE4354AB1586D177F /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftTableViewController.h; path = AMSlideMenu/AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
-		415AC3C36C7B5F0DD48F1DC8A3296B82 /* UIViewController+AMSlideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AMSlideMenu.h"; path = "AMSlideMenu/UIViewController+AMSlideMenu.h"; sourceTree = "<group>"; };
-		5360A95478DC01E165BAE6797093587E /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightMenuSegue.h; path = AMSlideMenu/AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
+		21B2E0C36F614B930D7222175CA26667 /* FastttZoom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttZoom.h; path = FastttCamera/FastttZoom.h; sourceTree = "<group>"; };
+		2337C6552D131949313AC72729DAD8B1 /* device-button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "device-button.png"; path = "BUKImagePickerController/Assets/device-button.png"; sourceTree = "<group>"; };
+		2347C4FB9738DE2E15086FA3001D8FCA /* BUKNoAssetsPlaceholderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKNoAssetsPlaceholderView.h; path = BUKImagePickerController/Classes/BUKNoAssetsPlaceholderView.h; sourceTree = "<group>"; };
+		23A53F4DF5B9F2303203372917DDDB5C /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "BUKImagePickerController/Assets/zh-Hans.lproj"; sourceTree = "<group>"; };
+		258F4186D45A7A875119A9F3BD0E4C9F /* camera-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera-icon@2x.png"; path = "BUKImagePickerController/Assets/camera-icon@2x.png"; sourceTree = "<group>"; };
+		25BB5016B17E2C0668732800D0D3A195 /* BUKAlbumTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKAlbumTableViewCell.h; path = BUKImagePickerController/Classes/BUKAlbumTableViewCell.h; sourceTree = "<group>"; };
+		297617B09581365227DBD12193617BB3 /* libPods-bachelorPaper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-bachelorPaper.a"; path = "libPods-bachelorPaper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2765FBB334F02E8F2AE2793512159E /* UIImage+FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FastttCamera.m"; path = "FastttCamera/UIImage+FastttCamera.m"; sourceTree = "<group>"; };
+		2B819C2A68302EBB5A17BC08F7BD77C4 /* libBUKImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBUKImagePickerController.a; path = libBUKImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E41B0F15C163E90C88371D714890EBE /* BUKCameraConfirmViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKCameraConfirmViewController.h; path = BUKImagePickerController/Classes/BUKCameraConfirmViewController.h; sourceTree = "<group>"; };
+		307EF49E210E20CA9C1A226851440E0A /* BUKAssetsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKAssetsViewController.h; path = BUKImagePickerController/Classes/BUKAssetsViewController.h; sourceTree = "<group>"; };
+		35BBCEA06F6A121E45DDC4FBB5CF4FF3 /* BUKAssetsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKAssetsViewController.m; path = BUKImagePickerController/Classes/BUKAssetsViewController.m; sourceTree = "<group>"; };
+		388646EB77E4C15720C27BEF556EDEAA /* flash-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flash-button@2x.png"; path = "BUKImagePickerController/Assets/flash-button@2x.png"; sourceTree = "<group>"; };
+		39BE19CB383DD35F074F93471EC7D3B4 /* BUKVideoIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKVideoIconView.m; path = BUKImagePickerController/Classes/BUKVideoIconView.m; sourceTree = "<group>"; };
+		3A38F48ACD07B3AB51A6565E4AD30375 /* BUKNoAssetsPlaceholderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKNoAssetsPlaceholderView.m; path = BUKImagePickerController/Classes/BUKNoAssetsPlaceholderView.m; sourceTree = "<group>"; };
+		3BF7F86174F8FEAB4CA9B5CC546A8947 /* take-picture-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "take-picture-button@2x.png"; path = "BUKImagePickerController/Assets/take-picture-button@2x.png"; sourceTree = "<group>"; };
+		40FCB80D79556703D9EBF034DCA0DE15 /* delete-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete-button@2x.png"; path = "BUKImagePickerController/Assets/delete-button@2x.png"; sourceTree = "<group>"; };
+		4107E340ACDCCB6892812CC0A6A2FABF /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		4319C60237E49DA25CBAAC4889B1943B /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuMainViewController.h; path = AMSlideMenu/AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
+		46B429EE00F957F08605693DC2A2C44A /* FastttCapturedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttCapturedImage.m; path = FastttCamera/FastttCapturedImage.m; sourceTree = "<group>"; };
+		4A3887990EC5574B9BD0380FB9535BD5 /* UIColor+BUKImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BUKImagePickerController.h"; path = "BUKImagePickerController/Classes/UIColor+BUKImagePickerController.h"; sourceTree = "<group>"; };
+		4ABE9D9969086B063E741BCF4527B8D7 /* UIViewController+FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+FastttCamera.m"; path = "FastttCamera/UIViewController+FastttCamera.m"; sourceTree = "<group>"; };
+		4AE24D317D5AC62CFF2A1B47C04F7182 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = BUKImagePickerController/Assets/en.lproj; sourceTree = "<group>"; };
+		4D982A9913F02B6479DE3BE2A6B89528 /* libFastttCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFastttCamera.a; path = libFastttCamera.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA9E2770F77283E963915156A7769D1 /* BUKPlaceholderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKPlaceholderView.m; path = BUKImagePickerController/Classes/BUKPlaceholderView.m; sourceTree = "<group>"; };
+		52A2CCD2C7BA6310C147A5F5010DB104 /* BUKVideoIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKVideoIndicatorView.h; path = BUKImagePickerController/Classes/BUKVideoIndicatorView.h; sourceTree = "<group>"; };
+		52F96CD4075192EC7FE34D446AC080A8 /* FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttCamera.m; path = FastttCamera/FastttCamera.m; sourceTree = "<group>"; };
+		54794DD667D7E4381C38F097A12939A1 /* FastttCapturedImage+Process.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FastttCapturedImage+Process.m"; path = "FastttCamera/FastttCapturedImage+Process.m"; sourceTree = "<group>"; };
+		55C3276D7EEC3BBF9C892114FD7E959E /* delete-button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete-button.png"; path = "BUKImagePickerController/Assets/delete-button.png"; sourceTree = "<group>"; };
+		56F8925734E4DC93C2AB00AC460B8AF5 /* BUKCameraImageCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKCameraImageCollectionViewCell.m; path = BUKImagePickerController/Classes/BUKCameraImageCollectionViewCell.m; sourceTree = "<group>"; };
+		576D8A5F85D1BA952FAC623F0ECD7EC3 /* device-button@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "device-button@3x.png"; path = "BUKImagePickerController/Assets/device-button@3x.png"; sourceTree = "<group>"; };
 		5ABC6E672D63A5C5BDB47635A7DFA4D5 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
-		5BC821628AAF6A00C100C525A80C1367 /* AMSlideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMSlideMenu-prefix.pch"; sourceTree = "<group>"; };
-		5F138C8A00CC583BE668A5A7D144978B /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightTableViewController.m; path = AMSlideMenu/AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		71C1C92D211BD50BB6CCA56F9181C4BA /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuProtocols.h; path = AMSlideMenu/AMSlideMenuProtocols.h; sourceTree = "<group>"; };
+		5BC234D6E09707A13F06DE1765FD669D /* BUKAssetsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKAssetsManager.h; path = BUKImagePickerController/Classes/BUKAssetsManager.h; sourceTree = "<group>"; };
+		617F38AF8B9C555C4D6D3ADA19700CE4 /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuContentSegue.m; path = AMSlideMenu/AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
+		61E7D45A4612474434D8943B20CFCE03 /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AMSlideMenu.m"; path = "AMSlideMenu/UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
+		6342938908EDF84F6BAEA17359583BC0 /* BUKAssetCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKAssetCollectionViewCell.h; path = BUKImagePickerController/Classes/BUKAssetCollectionViewCell.h; sourceTree = "<group>"; };
+		6864D05B5A7D8753C0A274BC654154D5 /* NSBundle+BUKImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+BUKImagePickerController.m"; path = "BUKImagePickerController/Classes/NSBundle+BUKImagePickerController.m"; sourceTree = "<group>"; };
+		6E597C4D29DD48DAEEE1F782A988F158 /* UIImage+BUKImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+BUKImagePickerController.h"; path = "BUKImagePickerController/Classes/UIImage+BUKImagePickerController.h"; sourceTree = "<group>"; };
+		6F472542F3699160626D1141438AD876 /* BUKImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BUKImagePickerController-prefix.pch"; sourceTree = "<group>"; };
+		73380F8F0F0E780320EE8367835447B1 /* BUKVideoIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKVideoIconView.h; path = BUKImagePickerController/Classes/BUKVideoIconView.h; sourceTree = "<group>"; };
+		74AF8EDF262A85E39AACD11A1B44C8C5 /* FastttFocus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttFocus.m; path = FastttCamera/FastttFocus.m; sourceTree = "<group>"; };
+		75295DEAF156308DE8CD0BA24F62DD06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75B3685F6AA5AC9B75D99E8135517D85 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
-		783B7FF349F55558EBEFB38F64A07619 /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightTableViewController.h; path = AMSlideMenu/AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		77292048A7E3FB887A162FBA2EC2685D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		78B26F95F68AA2DF6869B76724147006 /* BUKCameraCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKCameraCollectionViewCell.h; path = BUKImagePickerController/Classes/BUKCameraCollectionViewCell.h; sourceTree = "<group>"; };
+		79B8FEB08505ADBAE5E78882EA67A73E /* BUKAccessDeniedPlaceholderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKAccessDeniedPlaceholderView.h; path = BUKImagePickerController/Classes/BUKAccessDeniedPlaceholderView.h; sourceTree = "<group>"; };
 		7D9F2FB7DA08547419B65742A91696B8 /* Pods-bachelorPaper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-bachelorPaper-dummy.m"; sourceTree = "<group>"; };
-		84243EF10AC63151A98181D3F037CA0B /* AMSlideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMSlideMenu.xcconfig; sourceTree = "<group>"; };
-		8842D480D25429519D6A176420DB650C /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftTableViewController.m; path = AMSlideMenu/AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
+		7DD385FCC6A559AA41738949FC298AC1 /* libAMSlideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAMSlideMenu.a; path = libAMSlideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FC8E71B4EB457D698BB82C1FD59B83 /* device-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "device-button@2x.png"; path = "BUKImagePickerController/Assets/device-button@2x.png"; sourceTree = "<group>"; };
+		820527DF9E00A03A238482C380447D54 /* BUKAlbumsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKAlbumsViewController.h; path = BUKImagePickerController/Classes/BUKAlbumsViewController.h; sourceTree = "<group>"; };
+		83E737B2A0146953F7537FD10DFD82CD /* IFTTTDeviceOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFTTTDeviceOrientation.h; path = FastttCamera/IFTTTDeviceOrientation.h; sourceTree = "<group>"; };
+		87A767139A190F50FB3DF4C4CA79BC95 /* AMSlideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMSlideMenu-prefix.pch"; sourceTree = "<group>"; };
+		89B54AC5F0187413772F5C77B386B9E7 /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightMenuSegue.m; path = AMSlideMenu/AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
+		8E68201AE19EDBF523A91E0CAE2D0632 /* FastttFocus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttFocus.h; path = FastttCamera/FastttFocus.h; sourceTree = "<group>"; };
+		8FC14643FF5C084D93667669F3425E3A /* UIViewController+FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+FastttCamera.h"; path = "FastttCamera/UIViewController+FastttCamera.h"; sourceTree = "<group>"; };
 		91ED4ED480CF56C7C6C50549C519D317 /* Pods-bachelorPaper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bachelorPaper-frameworks.sh"; sourceTree = "<group>"; };
+		933A87AA53715C08438A7B636640A2C6 /* BUKPlaceholderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKPlaceholderView.h; path = BUKImagePickerController/Classes/BUKPlaceholderView.h; sourceTree = "<group>"; };
+		934A397478D906FCA122A32E192CABA4 /* FastttCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastttCamera-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D88A9E70BE801D876D62F96D9C15B3F /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuMainViewController.h; path = AMSlideMenu/AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
-		AB9E5B0F49838BB4A5258ACEFA90AA90 /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightMenuSegue.m; path = AMSlideMenu/AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
-		C54A272F8E4ED79695BDB211583CD903 /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuContentSegue.h; path = AMSlideMenu/AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
-		CC5D892558960750231B2754F1FCAC18 /* libPods-bachelorPaper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-bachelorPaper.a"; path = "libPods-bachelorPaper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FFB59A20A0838F9DD980B84F883FEE /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightMenuSegue.h; path = AMSlideMenu/AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
+		980EBF49D836B97181F899A69D525613 /* FastttCameraInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCameraInterface.h; path = FastttCamera/FastttCameraInterface.h; sourceTree = "<group>"; };
+		99F7FE5871FCABC74A571100855D1740 /* FastttCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FastttCamera-dummy.m"; sourceTree = "<group>"; };
+		9AA0968D302185C91369B300A2BA8451 /* AVCaptureDevice+FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AVCaptureDevice+FastttCamera.h"; path = "FastttCamera/AVCaptureDevice+FastttCamera.h"; sourceTree = "<group>"; };
+		A111C5CE271B2CBD6A285C3D4BF4CF36 /* BUKCheckmarkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKCheckmarkView.h; path = BUKImagePickerController/Classes/BUKCheckmarkView.h; sourceTree = "<group>"; };
+		A4F8981F6E43D0066BD502160F112A5E /* BUKCameraImageCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKCameraImageCollectionViewCell.h; path = BUKImagePickerController/Classes/BUKCameraImageCollectionViewCell.h; sourceTree = "<group>"; };
+		AD0A40E44C9B9650F2B58C9DBC9DFEC0 /* FastttCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FastttCamera.xcconfig; sourceTree = "<group>"; };
+		B00B7243505B2A16887961D8A400B9E9 /* FastttCapturedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCapturedImage.h; path = FastttCamera/FastttCapturedImage.h; sourceTree = "<group>"; };
+		B185AA72A84400D1A53EFCB05D51826E /* camera-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera-icon@3x.png"; path = "BUKImagePickerController/Assets/camera-icon@3x.png"; sourceTree = "<group>"; };
+		B2E09323404E0F9D91119E26317283BC /* ResourceBundle-BUKImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BUKImagePickerController-Info.plist"; sourceTree = "<group>"; };
+		B6CC019BA2E0A2C2598FF36B755627CF /* delete-button@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete-button@3x.png"; path = "BUKImagePickerController/Assets/delete-button@3x.png"; sourceTree = "<group>"; };
+		B8D8511B51D85D5E503C53B108CB485E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BFB6E38106F3A8EEBBACB808CD69BCB2 /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftTableViewController.h; path = AMSlideMenu/AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
+		C1F362CCC42822799CED11F4E1AFD8D5 /* UIViewController+AMSlideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AMSlideMenu.h"; path = "AMSlideMenu/UIViewController+AMSlideMenu.h"; sourceTree = "<group>"; };
+		C32E62C0B14DF283D246A0FAC1D7A451 /* BUKImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKImagePickerController.m; path = BUKImagePickerController/Classes/BUKImagePickerController.m; sourceTree = "<group>"; };
+		C4A9AA387A8E227FDF851564A445BEF9 /* BUKAssetsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKAssetsManager.m; path = BUKImagePickerController/Classes/BUKAssetsManager.m; sourceTree = "<group>"; };
+		C69847867F4F0B6811825AFBADF64BD7 /* UIImage+FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+FastttCamera.h"; path = "FastttCamera/UIImage+FastttCamera.h"; sourceTree = "<group>"; };
+		C8E3AB2CAF56E9C8D92FC5E1B2746B92 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		CC86F5968B77C5016744C3670E27CF8A /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftMenuSegue.h; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		D21A0E69BC605AF4F91016D79BBF6F65 /* BUKImagePickerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BUKImagePickerController.bundle; path = "BUKImagePickerController-BUKImagePickerController.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D236DD14A7B7FD450960A574E2ACE2F2 /* flash-button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flash-button.png"; path = "BUKImagePickerController/Assets/flash-button.png"; sourceTree = "<group>"; };
+		D38006EC97F387E76C7BF144F59C570B /* take-picture-button@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "take-picture-button@3x.png"; path = "BUKImagePickerController/Assets/take-picture-button@3x.png"; sourceTree = "<group>"; };
+		D432E063433A872FBDE1AC980A0E1CD3 /* AMSlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMSlideMenu-dummy.m"; sourceTree = "<group>"; };
+		D532C447CD3E6FD0B1E8051EC83E280A /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftMenuSegue.m; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
+		D5C7142B24584228AC712FF6BC6D96FE /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuMainViewController.m; path = AMSlideMenu/AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
+		D68035B38F56E7F686F5872E4560C015 /* UIImage+BUKImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BUKImagePickerController.m"; path = "BUKImagePickerController/Classes/UIImage+BUKImagePickerController.m"; sourceTree = "<group>"; };
+		D7989C94D41CE3D2904ED0DEAA981329 /* BUKCheckmarkView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKCheckmarkView.m; path = BUKImagePickerController/Classes/BUKCheckmarkView.m; sourceTree = "<group>"; };
+		DB756150B9E6233D37F802119937A4E6 /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuContentSegue.h; path = AMSlideMenu/AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
+		E04D626302FD5ECF3079DAD3DB16D14A /* FastttCapturedImage+Process.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FastttCapturedImage+Process.h"; path = "FastttCamera/FastttCapturedImage+Process.h"; sourceTree = "<group>"; };
+		E110FFFC67868AEDF299823D0C9E20BB /* BUKImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUKImagePickerController.h; path = BUKImagePickerController/Classes/BUKImagePickerController.h; sourceTree = "<group>"; };
+		E14631442100D1EBFECF1E3943B6669A /* NSBundle+BUKImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+BUKImagePickerController.h"; path = "BUKImagePickerController/Classes/NSBundle+BUKImagePickerController.h"; sourceTree = "<group>"; };
+		E429E0A0948B23E07170585621FA0EA3 /* BUKCameraCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKCameraCollectionViewCell.m; path = BUKImagePickerController/Classes/BUKCameraCollectionViewCell.m; sourceTree = "<group>"; };
+		E47CF89A4B26F52042833966D3A0B627 /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuProtocols.h; path = AMSlideMenu/AMSlideMenuProtocols.h; sourceTree = "<group>"; };
+		E9BF4807386D449A7092284092220BB7 /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightTableViewController.h; path = AMSlideMenu/AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		EA9AFB4AE79EB2D49299B4F64F914870 /* BUKAlbumsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKAlbumsViewController.m; path = BUKImagePickerController/Classes/BUKAlbumsViewController.m; sourceTree = "<group>"; };
+		ED1B34E4A2FEF3AD553479EA50D45595 /* AVCaptureDevice+FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AVCaptureDevice+FastttCamera.m"; path = "FastttCamera/AVCaptureDevice+FastttCamera.m"; sourceTree = "<group>"; };
+		EE8F2663C2CA4115FA62832183447C76 /* FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCamera.h; path = FastttCamera/FastttCamera.h; sourceTree = "<group>"; };
+		F248D188254A6EF63AF1261F6C81918A /* BUKAssetCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUKAssetCollectionViewCell.m; path = BUKImagePickerController/Classes/BUKAssetCollectionViewCell.m; sourceTree = "<group>"; };
 		F5B30EF3195FEDEC295C73FCE3D6F00C /* Pods-bachelorPaper-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bachelorPaper-resources.sh"; sourceTree = "<group>"; };
-		F7740386513BA3AD0B5171E85F2255F3 /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AMSlideMenu.m"; path = "AMSlideMenu/UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
-		FFB1172EB05E4C793B4A289AC33CBF72 /* AMSlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMSlideMenu-dummy.m"; sourceTree = "<group>"; };
+		FF16D283B492C0BECB8F7A2BB7A9255B /* camera-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera-icon.png"; path = "BUKImagePickerController/Assets/camera-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		14167CF8FD41DC556FF82E8964EADBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A3F2315E61DF58CC773584836C1FCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192B037C3BEBFE835D21C8D2109BC7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29D34FF60D2509215C4C328BD84F5DA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF7B512EA6636097335681DDF4F770D /* AVFoundation.framework in Frameworks */,
+				9C07A52A743C868CA9F12C3DAF7F923A /* CoreMotion.framework in Frameworks */,
+				9F6A30D602B6F3EDE661CFED3E394F47 /* Foundation.framework in Frameworks */,
+				FB54D52490717F65CCA319CAA6A3B67F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D55DC72ACD2D124494FB34989925E02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,48 +305,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		721B352874FBF0D85412FDE982718E5E /* Frameworks */ = {
+		FA7B3E76735046568A4CC964A6A55A88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5214E7967B53818B1401E02BD9161A7 /* Foundation.framework in Frameworks */,
+				8E1BBDFA102407FA5873EE2A5937593C /* AssetsLibrary.framework in Frameworks */,
+				3E3A12D53405D81C9D4DBB1FFF2F5282 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		435D9D4AAB755B40BCE3FFC12D159D67 /* AMSlideMenu */ = {
+		2052101ABFDA308B0C3CDF05E0348063 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C54A272F8E4ED79695BDB211583CD903 /* AMSlideMenuContentSegue.h */,
-				0390C3373F2B64B3F84F5FBD0A175152 /* AMSlideMenuContentSegue.m */,
-				1E59111ACD7913834CC9E71C2D035990 /* AMSlideMenuLeftMenuSegue.h */,
-				009F0DEFF63EE1E09571B9ABA24E8128 /* AMSlideMenuLeftMenuSegue.m */,
-				344E8B20A735844EE4354AB1586D177F /* AMSlideMenuLeftTableViewController.h */,
-				8842D480D25429519D6A176420DB650C /* AMSlideMenuLeftTableViewController.m */,
-				9D88A9E70BE801D876D62F96D9C15B3F /* AMSlideMenuMainViewController.h */,
-				0898DA631F882AC5F1F59F4F1AB7D7EE /* AMSlideMenuMainViewController.m */,
-				71C1C92D211BD50BB6CCA56F9181C4BA /* AMSlideMenuProtocols.h */,
-				5360A95478DC01E165BAE6797093587E /* AMSlideMenuRightMenuSegue.h */,
-				AB9E5B0F49838BB4A5258ACEFA90AA90 /* AMSlideMenuRightMenuSegue.m */,
-				783B7FF349F55558EBEFB38F64A07619 /* AMSlideMenuRightTableViewController.h */,
-				5F138C8A00CC583BE668A5A7D144978B /* AMSlideMenuRightTableViewController.m */,
-				415AC3C36C7B5F0DD48F1DC8A3296B82 /* UIViewController+AMSlideMenu.h */,
-				F7740386513BA3AD0B5171E85F2255F3 /* UIViewController+AMSlideMenu.m */,
-				D3630123E11183C51675D0386B411DBD /* Support Files */,
+				149FF8D51777D11AEFD2F806A6AC1D05 /* BUKImagePickerController.xcconfig */,
+				0040878FFDE36C00DC7702273B0C3FC9 /* BUKImagePickerController-dummy.m */,
+				6F472542F3699160626D1141438AD876 /* BUKImagePickerController-prefix.pch */,
+				B2E09323404E0F9D91119E26317283BC /* ResourceBundle-BUKImagePickerController-Info.plist */,
 			);
-			name = AMSlideMenu;
-			path = AMSlideMenu;
+			name = "Support Files";
+			path = "../Target Support Files/BUKImagePickerController";
 			sourceTree = "<group>";
 		};
-		48CC09C7C19FE2DBD644910DA93781AD /* Products */ = {
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DF8DD15543814E46235B6962A9547BC /* libAMSlideMenu.a */,
-				CC5D892558960750231B2754F1FCAC18 /* libPods-bachelorPaper.a */,
+				7D11AB84ADB8ECEC56B7B64099B834D3 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A9BBD5D3BA15A0BD342568983223372 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06CCC93018AF9EE30F14057E9E21F8EF /* AMSlideMenu.xcconfig */,
+				D432E063433A872FBDE1AC980A0E1CD3 /* AMSlideMenu-dummy.m */,
+				87A767139A190F50FB3DF4C4CA79BC95 /* AMSlideMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AMSlideMenu";
+			sourceTree = "<group>";
+		};
+		3ABE4F804695413E1B9C7AA673456233 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE8CAC24C34F5BD52F19AF9154E1878B /* AMSlideMenu */,
+				8870AEB33A63BF4713BECF9064463E46 /* BUKImagePickerController */,
+				C7CFDE5140F8EB80088CAE247FA8F594 /* FastttCamera */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3EDCE14A6F6390199BE7DCBDF3D53786 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				9AA0968D302185C91369B300A2BA8451 /* AVCaptureDevice+FastttCamera.h */,
+				ED1B34E4A2FEF3AD553479EA50D45595 /* AVCaptureDevice+FastttCamera.m */,
+				EE8F2663C2CA4115FA62832183447C76 /* FastttCamera.h */,
+				52F96CD4075192EC7FE34D446AC080A8 /* FastttCamera.m */,
+				980EBF49D836B97181F899A69D525613 /* FastttCameraInterface.h */,
+				0750C6BD017D0C1FEFBD2939167B2AF3 /* FastttCameraTypes.h */,
+				B00B7243505B2A16887961D8A400B9E9 /* FastttCapturedImage.h */,
+				46B429EE00F957F08605693DC2A2C44A /* FastttCapturedImage.m */,
+				E04D626302FD5ECF3079DAD3DB16D14A /* FastttCapturedImage+Process.h */,
+				54794DD667D7E4381C38F097A12939A1 /* FastttCapturedImage+Process.m */,
+				8E68201AE19EDBF523A91E0CAE2D0632 /* FastttFocus.h */,
+				74AF8EDF262A85E39AACD11A1B44C8C5 /* FastttFocus.m */,
+				21B2E0C36F614B930D7222175CA26667 /* FastttZoom.h */,
+				0C0F76ADD04D3891FCAA80B3A7EE318A /* FastttZoom.m */,
+				83E737B2A0146953F7537FD10DFD82CD /* IFTTTDeviceOrientation.h */,
+				124BF572B0D85BD3042CB86F4E25FEB9 /* IFTTTDeviceOrientation.m */,
+				C69847867F4F0B6811825AFBADF64BD7 /* UIImage+FastttCamera.h */,
+				2B2765FBB334F02E8F2AE2793512159E /* UIImage+FastttCamera.m */,
+				8FC14643FF5C084D93667669F3425E3A /* UIViewController+FastttCamera.h */,
+				4ABE9D9969086B063E741BCF4527B8D7 /* UIViewController+FastttCamera.m */,
+			);
+			name = Default;
 			sourceTree = "<group>";
 		};
 		4DD540BA285FE6EC86F9237A32161646 /* Pods-bachelorPaper */ = {
@@ -146,50 +408,156 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		755FE094216423F504F8C579B5714B32 /* Pods */ = {
+		7836E7E1E62411C0C1CEF8E216ECEF18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				435D9D4AAB755B40BCE3FFC12D159D67 /* AMSlideMenu */,
+				D21A0E69BC605AF4F91016D79BBF6F65 /* BUKImagePickerController.bundle */,
+				7DD385FCC6A559AA41738949FC298AC1 /* libAMSlideMenu.a */,
+				2B819C2A68302EBB5A17BC08F7BD77C4 /* libBUKImagePickerController.a */,
+				4D982A9913F02B6479DE3BE2A6B89528 /* libFastttCamera.a */,
+				297617B09581365227DBD12193617BB3 /* libPods-bachelorPaper.a */,
 			);
-			name = Pods;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D11AB84ADB8ECEC56B7B64099B834D3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4107E340ACDCCB6892812CC0A6A2FABF /* AssetsLibrary.framework */,
+				77292048A7E3FB887A162FBA2EC2685D /* AVFoundation.framework */,
+				C8E3AB2CAF56E9C8D92FC5E1B2746B92 /* CoreMotion.framework */,
+				75295DEAF156308DE8CD0BA24F62DD06 /* Foundation.framework */,
+				B8D8511B51D85D5E503C53B108CB485E /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				755FE094216423F504F8C579B5714B32 /* Pods */,
-				48CC09C7C19FE2DBD644910DA93781AD /* Products */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				3ABE4F804695413E1B9C7AA673456233 /* Pods */,
+				7836E7E1E62411C0C1CEF8E216ECEF18 /* Products */,
 				596659B02659CB04A7A8A29454F8BB54 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8870AEB33A63BF4713BECF9064463E46 /* BUKImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				79B8FEB08505ADBAE5E78882EA67A73E /* BUKAccessDeniedPlaceholderView.h */,
+				146B58F6C77E4DCEEC535D4CC65B1DD7 /* BUKAccessDeniedPlaceholderView.m */,
+				820527DF9E00A03A238482C380447D54 /* BUKAlbumsViewController.h */,
+				EA9AFB4AE79EB2D49299B4F64F914870 /* BUKAlbumsViewController.m */,
+				25BB5016B17E2C0668732800D0D3A195 /* BUKAlbumTableViewCell.h */,
+				1E80531F9B5AD2F5CEC4E9BB43884D7E /* BUKAlbumTableViewCell.m */,
+				6342938908EDF84F6BAEA17359583BC0 /* BUKAssetCollectionViewCell.h */,
+				F248D188254A6EF63AF1261F6C81918A /* BUKAssetCollectionViewCell.m */,
+				5BC234D6E09707A13F06DE1765FD669D /* BUKAssetsManager.h */,
+				C4A9AA387A8E227FDF851564A445BEF9 /* BUKAssetsManager.m */,
+				307EF49E210E20CA9C1A226851440E0A /* BUKAssetsViewController.h */,
+				35BBCEA06F6A121E45DDC4FBB5CF4FF3 /* BUKAssetsViewController.m */,
+				78B26F95F68AA2DF6869B76724147006 /* BUKCameraCollectionViewCell.h */,
+				E429E0A0948B23E07170585621FA0EA3 /* BUKCameraCollectionViewCell.m */,
+				0C69748451D5A7B0FEFC5E11FFA93E7B /* BUKCameraComfirmViewController.m */,
+				2E41B0F15C163E90C88371D714890EBE /* BUKCameraConfirmViewController.h */,
+				A4F8981F6E43D0066BD502160F112A5E /* BUKCameraImageCollectionViewCell.h */,
+				56F8925734E4DC93C2AB00AC460B8AF5 /* BUKCameraImageCollectionViewCell.m */,
+				07E216A50EAB2D976FD3B4B9A37B7257 /* BUKCameraViewController.h */,
+				04E37CE073E99BFE88DA4FB49ECFF214 /* BUKCameraViewController.m */,
+				A111C5CE271B2CBD6A285C3D4BF4CF36 /* BUKCheckmarkView.h */,
+				D7989C94D41CE3D2904ED0DEAA981329 /* BUKCheckmarkView.m */,
+				E110FFFC67868AEDF299823D0C9E20BB /* BUKImagePickerController.h */,
+				C32E62C0B14DF283D246A0FAC1D7A451 /* BUKImagePickerController.m */,
+				2347C4FB9738DE2E15086FA3001D8FCA /* BUKNoAssetsPlaceholderView.h */,
+				3A38F48ACD07B3AB51A6565E4AD30375 /* BUKNoAssetsPlaceholderView.m */,
+				933A87AA53715C08438A7B636640A2C6 /* BUKPlaceholderView.h */,
+				4FA9E2770F77283E963915156A7769D1 /* BUKPlaceholderView.m */,
+				73380F8F0F0E780320EE8367835447B1 /* BUKVideoIconView.h */,
+				39BE19CB383DD35F074F93471EC7D3B4 /* BUKVideoIconView.m */,
+				52A2CCD2C7BA6310C147A5F5010DB104 /* BUKVideoIndicatorView.h */,
+				1B27DE04EB6F1786CDCAB4B604C4C830 /* BUKVideoIndicatorView.m */,
+				E14631442100D1EBFECF1E3943B6669A /* NSBundle+BUKImagePickerController.h */,
+				6864D05B5A7D8753C0A274BC654154D5 /* NSBundle+BUKImagePickerController.m */,
+				4A3887990EC5574B9BD0380FB9535BD5 /* UIColor+BUKImagePickerController.h */,
+				208F1153FA8BA068669C2883473D921D /* UIColor+BUKImagePickerController.m */,
+				6E597C4D29DD48DAEEE1F782A988F158 /* UIImage+BUKImagePickerController.h */,
+				D68035B38F56E7F686F5872E4560C015 /* UIImage+BUKImagePickerController.m */,
+				A6E3AC5CD5F1751FAF0A6A3F239E7CDC /* Resources */,
+				2052101ABFDA308B0C3CDF05E0348063 /* Support Files */,
 			);
-			name = Frameworks;
+			name = BUKImagePickerController;
+			path = BUKImagePickerController;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		A6E3AC5CD5F1751FAF0A6A3F239E7CDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				FF16D283B492C0BECB8F7A2BB7A9255B /* camera-icon.png */,
+				258F4186D45A7A875119A9F3BD0E4C9F /* camera-icon@2x.png */,
+				B185AA72A84400D1A53EFCB05D51826E /* camera-icon@3x.png */,
+				55C3276D7EEC3BBF9C892114FD7E959E /* delete-button.png */,
+				40FCB80D79556703D9EBF034DCA0DE15 /* delete-button@2x.png */,
+				B6CC019BA2E0A2C2598FF36B755627CF /* delete-button@3x.png */,
+				2337C6552D131949313AC72729DAD8B1 /* device-button.png */,
+				80FC8E71B4EB457D698BB82C1FD59B83 /* device-button@2x.png */,
+				576D8A5F85D1BA952FAC623F0ECD7EC3 /* device-button@3x.png */,
+				4AE24D317D5AC62CFF2A1B47C04F7182 /* en.lproj */,
+				D236DD14A7B7FD450960A574E2ACE2F2 /* flash-button.png */,
+				388646EB77E4C15720C27BEF556EDEAA /* flash-button@2x.png */,
+				011AB76EE44EBA8EF605E14888A14085 /* flash-button@3x.png */,
+				112467AC874176D387A84050F602E5EF /* take-picture-button.png */,
+				3BF7F86174F8FEAB4CA9B5CC546A8947 /* take-picture-button@2x.png */,
+				D38006EC97F387E76C7BF144F59C570B /* take-picture-button@3x.png */,
+				23A53F4DF5B9F2303203372917DDDB5C /* zh-Hans.lproj */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		D3630123E11183C51675D0386B411DBD /* Support Files */ = {
+		B0DF70D69D8E439B1B5A2032E361BE90 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				84243EF10AC63151A98181D3F037CA0B /* AMSlideMenu.xcconfig */,
-				FFB1172EB05E4C793B4A289AC33CBF72 /* AMSlideMenu-dummy.m */,
-				5BC821628AAF6A00C100C525A80C1367 /* AMSlideMenu-prefix.pch */,
+				AD0A40E44C9B9650F2B58C9DBC9DFEC0 /* FastttCamera.xcconfig */,
+				99F7FE5871FCABC74A571100855D1740 /* FastttCamera-dummy.m */,
+				934A397478D906FCA122A32E192CABA4 /* FastttCamera-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AMSlideMenu";
+			path = "../Target Support Files/FastttCamera";
+			sourceTree = "<group>";
+		};
+		C7CFDE5140F8EB80088CAE247FA8F594 /* FastttCamera */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCE14A6F6390199BE7DCBDF3D53786 /* Default */,
+				B0DF70D69D8E439B1B5A2032E361BE90 /* Support Files */,
+			);
+			name = FastttCamera;
+			path = FastttCamera;
+			sourceTree = "<group>";
+		};
+		CE8CAC24C34F5BD52F19AF9154E1878B /* AMSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DB756150B9E6233D37F802119937A4E6 /* AMSlideMenuContentSegue.h */,
+				617F38AF8B9C555C4D6D3ADA19700CE4 /* AMSlideMenuContentSegue.m */,
+				CC86F5968B77C5016744C3670E27CF8A /* AMSlideMenuLeftMenuSegue.h */,
+				D532C447CD3E6FD0B1E8051EC83E280A /* AMSlideMenuLeftMenuSegue.m */,
+				BFB6E38106F3A8EEBBACB808CD69BCB2 /* AMSlideMenuLeftTableViewController.h */,
+				09C546AD1FD5FDAA7D7DF2B8999863C4 /* AMSlideMenuLeftTableViewController.m */,
+				4319C60237E49DA25CBAAC4889B1943B /* AMSlideMenuMainViewController.h */,
+				D5C7142B24584228AC712FF6BC6D96FE /* AMSlideMenuMainViewController.m */,
+				E47CF89A4B26F52042833966D3A0B627 /* AMSlideMenuProtocols.h */,
+				97FFB59A20A0838F9DD980B84F883FEE /* AMSlideMenuRightMenuSegue.h */,
+				89B54AC5F0187413772F5C77B386B9E7 /* AMSlideMenuRightMenuSegue.m */,
+				E9BF4807386D449A7092284092220BB7 /* AMSlideMenuRightTableViewController.h */,
+				0970C28C3C8E303C6C37273CEDC59642 /* AMSlideMenuRightTableViewController.m */,
+				C1F362CCC42822799CED11F4E1AFD8D5 /* UIViewController+AMSlideMenu.h */,
+				61E7D45A4612474434D8943B20CFCE03 /* UIViewController+AMSlideMenu.m */,
+				3A9BBD5D3BA15A0BD342568983223372 /* Support Files */,
+			);
+			name = AMSlideMenu;
+			path = AMSlideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,24 +578,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59C3234F7933DEECC31BC91DA47D66C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F2C796D16A42942AEF0188C36E108F /* AVCaptureDevice+FastttCamera.h in Headers */,
+				9D02EEB266253A158DB5C9A86B75A449 /* FastttCamera.h in Headers */,
+				E680A636EE888BE04CB49A9C4B18024E /* FastttCameraInterface.h in Headers */,
+				74CA3205043914E7DC92D836CB17E891 /* FastttCameraTypes.h in Headers */,
+				C25B68040E2168255E3111B43858A801 /* FastttCapturedImage+Process.h in Headers */,
+				4B1FECA91BD448EE0CCAC32CFA05E010 /* FastttCapturedImage.h in Headers */,
+				2BE8851EB06EEF3DFD684479C150E30B /* FastttFocus.h in Headers */,
+				FA73F16F281DC3C3D67AC8AC16EAC461 /* FastttZoom.h in Headers */,
+				F6B4DA61321A3EA16EC43E5C5951B9B8 /* IFTTTDeviceOrientation.h in Headers */,
+				268515BA4FDBCCE0133A3F28ABFA1C2F /* UIImage+FastttCamera.h in Headers */,
+				A4D97683A44BFEFD2D28B3CD62B69150 /* UIViewController+FastttCamera.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD15892C6D8E320FE44E46C90A4A91F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8160E65DB0F47AC4AD510A376B5BBBF /* BUKAccessDeniedPlaceholderView.h in Headers */,
+				9F471FAFB89F088CA283EBC4FCC7E867 /* BUKAlbumsViewController.h in Headers */,
+				57D47CF8831F62AC5F5F1BC006383AE8 /* BUKAlbumTableViewCell.h in Headers */,
+				31DBFF0870C82AD80BF5C60E34D988CB /* BUKAssetCollectionViewCell.h in Headers */,
+				5AEBD541E260AA0BF1EBAB8434BB4E9A /* BUKAssetsManager.h in Headers */,
+				D7DE34AC98186F4DEA9C754732FD12DE /* BUKAssetsViewController.h in Headers */,
+				97E7B66B1C9ED426C95CB8B3B4E0A006 /* BUKCameraCollectionViewCell.h in Headers */,
+				C71571775D3AECF4B337B5F22607220E /* BUKCameraConfirmViewController.h in Headers */,
+				061139C097BF12405ADF4C35BC61C05F /* BUKCameraImageCollectionViewCell.h in Headers */,
+				C561B01245637F13F221530EF41A26FB /* BUKCameraViewController.h in Headers */,
+				BFA60EA96C81E776FBC8D3AA10175867 /* BUKCheckmarkView.h in Headers */,
+				46B6C3025BF0074ABD75A79C382CAF7D /* BUKImagePickerController.h in Headers */,
+				3F10A2E5BAB56673F967DADE54C0A4FD /* BUKNoAssetsPlaceholderView.h in Headers */,
+				7C47B8CB5BD4C28AD1FDBF867A0794A4 /* BUKPlaceholderView.h in Headers */,
+				82B61631118AA3C5838A6A236F996D1C /* BUKVideoIconView.h in Headers */,
+				4384FEC6087844ACA8656A020D30C1EE /* BUKVideoIndicatorView.h in Headers */,
+				94E13D17DC64FA5C6712EA0D6F64E8CE /* NSBundle+BUKImagePickerController.h in Headers */,
+				C4AF57424987913EF12E348F0D4980C5 /* UIColor+BUKImagePickerController.h in Headers */,
+				6955B4B99F6BA6701F91BCCCD84D14D7 /* UIImage+BUKImagePickerController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		20B2491BFBF9438C3D95C1EC8E84576C /* Pods-bachelorPaper */ = {
+		8A4F343DD6FD75466C4DDFDAAFE006A7 /* BUKImagePickerController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8AABF2CDDE10CF9775B65132E48C75A8 /* Build configuration list for PBXNativeTarget "Pods-bachelorPaper" */;
+			buildConfigurationList = D68E0F5E60A5C19DFF8C169B067D6A8F /* Build configuration list for PBXNativeTarget "BUKImagePickerController" */;
 			buildPhases = (
-				5A9A1328CB678A0227B205EF42925221 /* Sources */,
-				721B352874FBF0D85412FDE982718E5E /* Frameworks */,
+				602E604D08CF97B71BC9A180400A4672 /* Sources */,
+				FA7B3E76735046568A4CC964A6A55A88 /* Frameworks */,
+				FD15892C6D8E320FE44E46C90A4A91F3 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B2BB21E0B950FAF7BE0EB780F31C5AC1 /* PBXTargetDependency */,
+				963D9C2458A438BFEA54FF6ACD8FCAD0 /* PBXTargetDependency */,
+				6E2A078C7DEA603CA4A4F1F9777D9E62 /* PBXTargetDependency */,
 			);
-			name = "Pods-bachelorPaper";
-			productName = "Pods-bachelorPaper";
-			productReference = CC5D892558960750231B2754F1FCAC18 /* libPods-bachelorPaper.a */;
+			name = BUKImagePickerController;
+			productName = BUKImagePickerController;
+			productReference = 2B819C2A68302EBB5A17BC08F7BD77C4 /* libBUKImagePickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A3A1360D9E3CD5E6E55DD10A0C1E61CD /* FastttCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4961546C35487381D6A86CA6E85BA5FD /* Build configuration list for PBXNativeTarget "FastttCamera" */;
+			buildPhases = (
+				F6203068F668F5EF37DCB52648770F16 /* Sources */,
+				29D34FF60D2509215C4C328BD84F5DA0 /* Frameworks */,
+				59C3234F7933DEECC31BC91DA47D66C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastttCamera;
+			productName = FastttCamera;
+			productReference = 4D982A9913F02B6479DE3BE2A6B89528 /* libFastttCamera.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A3FB809AFEAA58563619050EC8C27F1C /* AMSlideMenu */ = {
@@ -244,7 +675,43 @@
 			);
 			name = AMSlideMenu;
 			productName = AMSlideMenu;
-			productReference = 1DF8DD15543814E46235B6962A9547BC /* libAMSlideMenu.a */;
+			productReference = 7DD385FCC6A559AA41738949FC298AC1 /* libAMSlideMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DE60C317BE618CDA92054E6FFD6E58E1 /* BUKImagePickerController-BUKImagePickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6350D64624A8251B806AE9D51190BF9B /* Build configuration list for PBXNativeTarget "BUKImagePickerController-BUKImagePickerController" */;
+			buildPhases = (
+				EA69090985E9A2F7E4AC30F68530691E /* Sources */,
+				192B037C3BEBFE835D21C8D2109BC7FE /* Frameworks */,
+				78DCF324253F63DC91D74AEE74E646CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BUKImagePickerController-BUKImagePickerController";
+			productName = "BUKImagePickerController-BUKImagePickerController";
+			productReference = D21A0E69BC605AF4F91016D79BBF6F65 /* BUKImagePickerController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EB834C252E87A4CC94C642CCBEB2A425 /* Pods-bachelorPaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AAC7E865A8E5E77BED29F9DD63FC8A /* Build configuration list for PBXNativeTarget "Pods-bachelorPaper" */;
+			buildPhases = (
+				BE6FFB8ED5765DAADAB3D7F6ACFA5D4C /* Sources */,
+				14167CF8FD41DC556FF82E8964EADBDF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2DAFFD4C3BD219AB25F48FF22251770 /* PBXTargetDependency */,
+				0BEDEE90D43EE9F2C48181839F2CADCA /* PBXTargetDependency */,
+				3787EA769CE86EDB686DEFA161DF5CF0 /* PBXTargetDependency */,
+			);
+			name = "Pods-bachelorPaper";
+			productName = "Pods-bachelorPaper";
+			productReference = 297617B09581365227DBD12193617BB3 /* libPods-bachelorPaper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -264,15 +731,45 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 48CC09C7C19FE2DBD644910DA93781AD /* Products */;
+			productRefGroup = 7836E7E1E62411C0C1CEF8E216ECEF18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A3FB809AFEAA58563619050EC8C27F1C /* AMSlideMenu */,
-				20B2491BFBF9438C3D95C1EC8E84576C /* Pods-bachelorPaper */,
+				8A4F343DD6FD75466C4DDFDAAFE006A7 /* BUKImagePickerController */,
+				DE60C317BE618CDA92054E6FFD6E58E1 /* BUKImagePickerController-BUKImagePickerController */,
+				A3A1360D9E3CD5E6E55DD10A0C1E61CD /* FastttCamera */,
+				EB834C252E87A4CC94C642CCBEB2A425 /* Pods-bachelorPaper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78DCF324253F63DC91D74AEE74E646CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2617457AA58AF23BA38ED7D2582A25 /* camera-icon.png in Resources */,
+				9190ADA599CA7CFE72A6C3F369F91331 /* camera-icon@2x.png in Resources */,
+				E672B0122E3730F6CF40A290985DE8A6 /* camera-icon@3x.png in Resources */,
+				178701200092426C9127A5BFB23E7056 /* delete-button.png in Resources */,
+				39DDDAE0FC898FFABCECB4F021A3C08A /* delete-button@2x.png in Resources */,
+				6829037F49DAC7AE7C00AE924943D5CE /* delete-button@3x.png in Resources */,
+				CED6950B46E07C9ECB56CDE954192D49 /* device-button.png in Resources */,
+				2E99255F5A47CB3BF303C3AFF14E47F8 /* device-button@2x.png in Resources */,
+				F288D9AE37BD2EEDBBF85FB33141919D /* device-button@3x.png in Resources */,
+				27D8C764941550EC795503A356EED97B /* en.lproj in Resources */,
+				DF91934E9A74D85B1E19FECE6C2AFFC6 /* flash-button.png in Resources */,
+				949DF312179BD5DB45B28F9C7C3F2FBD /* flash-button@2x.png in Resources */,
+				171B567144B65CCD2170629D32692AE6 /* flash-button@3x.png in Resources */,
+				15170B3371A19EF80FCFF55ECFF5A3E2 /* take-picture-button.png in Resources */,
+				A56FAB624B92B974583245B238376CBD /* take-picture-button@2x.png in Resources */,
+				F66AC9BC5C3623A8B1F00A7F3E4B4653 /* take-picture-button@3x.png in Resources */,
+				646C33D55F37AA31A9F7D735E917054A /* zh-Hans.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A10A1F5F3E0B85948D850910A2E72CF /* Sources */ = {
@@ -290,29 +787,104 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A9A1328CB678A0227B205EF42925221 /* Sources */ = {
+		602E604D08CF97B71BC9A180400A4672 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4DEEA8A61C5C518928C1B87CD7A99D /* Pods-bachelorPaper-dummy.m in Sources */,
+				512691EE1E55B5B78F92D5174DF830C1 /* BUKAccessDeniedPlaceholderView.m in Sources */,
+				DE779FF420FBE6FEF692284E4B12545F /* BUKAlbumsViewController.m in Sources */,
+				70C43E876CEC2EB918EF72F628ACD032 /* BUKAlbumTableViewCell.m in Sources */,
+				A656791EC8C5D64E684A19FA6B4BCDE3 /* BUKAssetCollectionViewCell.m in Sources */,
+				49ACEA268F1C10A516FC4849E11CC26F /* BUKAssetsManager.m in Sources */,
+				B1C2C283E4F0115FA51E4067D0641721 /* BUKAssetsViewController.m in Sources */,
+				13C1509515ABF981B7740671EF9D439C /* BUKCameraCollectionViewCell.m in Sources */,
+				A69DA53B34315780248D906DFA68E35B /* BUKCameraComfirmViewController.m in Sources */,
+				826512E979E66286248B80818DD6DF5D /* BUKCameraImageCollectionViewCell.m in Sources */,
+				AD8E2FA768F454CC493CB259B7D0723D /* BUKCameraViewController.m in Sources */,
+				2E869F85E162062541BA97CD92443A3B /* BUKCheckmarkView.m in Sources */,
+				5FD56D8B452BE066775C2C22653692F8 /* BUKImagePickerController-dummy.m in Sources */,
+				76602D14EE830E0C6BF92C24BFAB7573 /* BUKImagePickerController.m in Sources */,
+				688420D526253D4ED658B862B99CA96C /* BUKNoAssetsPlaceholderView.m in Sources */,
+				E4D7B151C370BA25150C4156AB1C2AB6 /* BUKPlaceholderView.m in Sources */,
+				5E472581FC7242083C6D7109403E35BB /* BUKVideoIconView.m in Sources */,
+				3A2946EB915126BE021CE09DB73DBE02 /* BUKVideoIndicatorView.m in Sources */,
+				98BDA06CFA844C616907D04213A5153D /* NSBundle+BUKImagePickerController.m in Sources */,
+				6960357904E8A7FC0A71539D8FB89726 /* UIColor+BUKImagePickerController.m in Sources */,
+				BE0966EB847A411844734AB26605B0AA /* UIImage+BUKImagePickerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6FFB8ED5765DAADAB3D7F6ACFA5D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8703CBFEDEA8BE2B7A966CB3050BDAE4 /* Pods-bachelorPaper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA69090985E9A2F7E4AC30F68530691E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6203068F668F5EF37DCB52648770F16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D415126F0634CA4E8AA70202A8B68D /* AVCaptureDevice+FastttCamera.m in Sources */,
+				442ABCAD9B7D3001E7495A121D3C7A99 /* FastttCamera-dummy.m in Sources */,
+				12783DB304BDE1C7992C20F11053EE44 /* FastttCamera.m in Sources */,
+				F819D073AE43CB33AB37D8DE81C543F0 /* FastttCapturedImage+Process.m in Sources */,
+				77857B8299F6F2F763FB17B5C5CCD927 /* FastttCapturedImage.m in Sources */,
+				1364B084D1A4E44E9D74DAF71222E403 /* FastttFocus.m in Sources */,
+				ABB308D9C2706C03D08BE8233374F9AC /* FastttZoom.m in Sources */,
+				6E730C49E5945CA8C26993DDE7AF5600 /* IFTTTDeviceOrientation.m in Sources */,
+				8C972413839DDA8925F12F31B499B813 /* UIImage+FastttCamera.m in Sources */,
+				C0C9024C6444DE8A5C5F407546B4487D /* UIViewController+FastttCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B2BB21E0B950FAF7BE0EB780F31C5AC1 /* PBXTargetDependency */ = {
+		0BEDEE90D43EE9F2C48181839F2CADCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BUKImagePickerController;
+			target = 8A4F343DD6FD75466C4DDFDAAFE006A7 /* BUKImagePickerController */;
+			targetProxy = EC6B79D74DE97CBA46457ECAEE796216 /* PBXContainerItemProxy */;
+		};
+		3787EA769CE86EDB686DEFA161DF5CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FastttCamera;
+			target = A3A1360D9E3CD5E6E55DD10A0C1E61CD /* FastttCamera */;
+			targetProxy = 0666A0E61CFAE338E38E91BD78AA5E7E /* PBXContainerItemProxy */;
+		};
+		6E2A078C7DEA603CA4A4F1F9777D9E62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FastttCamera;
+			target = A3A1360D9E3CD5E6E55DD10A0C1E61CD /* FastttCamera */;
+			targetProxy = BF0EEF1AEA5225B5C21CD6218076B97E /* PBXContainerItemProxy */;
+		};
+		963D9C2458A438BFEA54FF6ACD8FCAD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BUKImagePickerController-BUKImagePickerController";
+			target = DE60C317BE618CDA92054E6FFD6E58E1 /* BUKImagePickerController-BUKImagePickerController */;
+			targetProxy = B3CB6684CD904DAF5638981601E10902 /* PBXContainerItemProxy */;
+		};
+		E2DAFFD4C3BD219AB25F48FF22251770 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AMSlideMenu;
 			target = A3FB809AFEAA58563619050EC8C27F1C /* AMSlideMenu */;
-			targetProxy = 3BC5E4CBFA69B53A6C8CE2CF626BEDBB /* PBXContainerItemProxy */;
+			targetProxy = 6D5A8567F77E85B816D381D604491431 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3BC189CD42D3BBBEC33722DBE4AD1391 /* Debug */ = {
+		03C1063015086357B9E0D2C4E0C2650A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75B3685F6AA5AC9B75D99E8135517D85 /* Pods-bachelorPaper.debug.xcconfig */;
+			baseConfigurationReference = 5ABC6E672D63A5C5BDB47635A7DFA4D5 /* Pods-bachelorPaper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -327,6 +899,44 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AC4FC9177EC70C45ACD5F295CEEB26F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149FF8D51777D11AEFD2F806A6AC1D05 /* BUKImagePickerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BUKImagePickerController";
+				INFOPLIST_FILE = "Target Support Files/BUKImagePickerController/ResourceBundle-BUKImagePickerController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = BUKImagePickerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3B70AA998E5782EB31BAAABE62855E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0A40E44C9B9650F2B58C9DBC9DFEC0 /* FastttCamera.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FastttCamera/FastttCamera-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -389,9 +999,47 @@
 			};
 			name = Release;
 		};
-		AD0541E666A28627A85DCF37CC0F3BD1 /* Release */ = {
+		5019BEBFC8A0A33E51E5D6346D375404 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ABC6E672D63A5C5BDB47635A7DFA4D5 /* Pods-bachelorPaper.release.xcconfig */;
+			baseConfigurationReference = 149FF8D51777D11AEFD2F806A6AC1D05 /* BUKImagePickerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BUKImagePickerController";
+				INFOPLIST_FILE = "Target Support Files/BUKImagePickerController/ResourceBundle-BUKImagePickerController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = BUKImagePickerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		59ACF0B8124E76EDBB9F490846AA81BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0A40E44C9B9650F2B58C9DBC9DFEC0 /* FastttCamera.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FastttCamera/FastttCamera-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1311D8C987B861D19F785B5EE045910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B3685F6AA5AC9B75D99E8135517D85 /* Pods-bachelorPaper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -407,13 +1055,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		C0ADFA580334902FEA0E6EFBBC138632 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84243EF10AC63151A98181D3F037CA0B /* AMSlideMenu.xcconfig */;
+			baseConfigurationReference = 06CCC93018AF9EE30F14057E9E21F8EF /* AMSlideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -432,6 +1079,27 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		CCA0D73FF10EFCE6CC01EBE80B399080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149FF8D51777D11AEFD2F806A6AC1D05 /* BUKImagePickerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BUKImagePickerController/BUKImagePickerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		DD369323FD85CB26347C0D75C75D837F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -498,7 +1166,7 @@
 		};
 		E1E55DCA43AB478DD2028EA99780C60E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84243EF10AC63151A98181D3F037CA0B /* AMSlideMenu.xcconfig */;
+			baseConfigurationReference = 06CCC93018AF9EE30F14057E9E21F8EF /* AMSlideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -517,6 +1185,28 @@
 			};
 			name = Debug;
 		};
+		FF90550126B2E87040010D7FD04F1258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149FF8D51777D11AEFD2F806A6AC1D05 /* BUKImagePickerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BUKImagePickerController/BUKImagePickerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -525,6 +1215,24 @@
 			buildConfigurations = (
 				DD369323FD85CB26347C0D75C75D837F /* Debug */,
 				49B5A78DBE571998053070754D3695E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4961546C35487381D6A86CA6E85BA5FD /* Build configuration list for PBXNativeTarget "FastttCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B70AA998E5782EB31BAAABE62855E32 /* Debug */,
+				59ACF0B8124E76EDBB9F490846AA81BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6350D64624A8251B806AE9D51190BF9B /* Build configuration list for PBXNativeTarget "BUKImagePickerController-BUKImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5019BEBFC8A0A33E51E5D6346D375404 /* Debug */,
+				2AC4FC9177EC70C45ACD5F295CEEB26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -538,11 +1246,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8AABF2CDDE10CF9775B65132E48C75A8 /* Build configuration list for PBXNativeTarget "Pods-bachelorPaper" */ = {
+		B6AAC7E865A8E5E77BED29F9DD63FC8A /* Build configuration list for PBXNativeTarget "Pods-bachelorPaper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BC189CD42D3BBBEC33722DBE4AD1391 /* Debug */,
-				AD0541E666A28627A85DCF37CC0F3BD1 /* Release */,
+				A1311D8C987B861D19F785B5EE045910 /* Debug */,
+				03C1063015086357B9E0D2C4E0C2650A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68E0F5E60A5C19DFF8C169B067D6A8F /* Build configuration list for PBXNativeTarget "BUKImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA0D73FF10EFCE6CC01EBE80B399080 /* Debug */,
+				FF90550126B2E87040010D7FD04F1258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

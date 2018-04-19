@@ -7,4 +7,5 @@ target 'bachelorPaper' do
 
   # Pods for bachelorPaper
 pod "AMSlideMenu", "~> 1.5.2"
+pod "BUKImagePickerController"
 end

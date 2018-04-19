@@ -1,12 +1,20 @@
 PODS:
   - AMSlideMenu (1.5.4)
+  - BUKImagePickerController (0.1.11):
+    - FastttCamera (~> 0.3)
+  - FastttCamera (0.3.4):
+    - FastttCamera/Default (= 0.3.4)
+  - FastttCamera/Default (0.3.4)
 
 DEPENDENCIES:
   - AMSlideMenu (~> 1.5.2)
+  - BUKImagePickerController
 
 SPEC CHECKSUMS:
   AMSlideMenu: 8571937703d2b8e187b22c1416be4cafc3532a11
+  BUKImagePickerController: cef01a8794d016b51ed36a2ee34f8b6a170f09d1
+  FastttCamera: 51f16712cbd5bdb08bc6231b957325c6be5e478d
 
-PODFILE CHECKSUM: 0ab025b0fcde7e6ef1c9b3d86a3a0d716e09c71d
+PODFILE CHECKSUM: 8c885c5a65bbe0224f94eadad4c8fd0b247cb103
 
 COCOAPODS: 1.4.0

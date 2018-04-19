@@ -1,8 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AMSlideMenu"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AMSlideMenu"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AMSlideMenu"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AMSlideMenu"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AMSlideMenu" "${PODS_ROOT}/Headers/Public/BUKImagePickerController" "${PODS_ROOT}/Headers/Public/FastttCamera"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AMSlideMenu" "${PODS_CONFIGURATION_BUILD_DIR}/BUKImagePickerController" "${PODS_CONFIGURATION_BUILD_DIR}/FastttCamera"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AMSlideMenu" -isystem "${PODS_ROOT}/Headers/Public/BUKImagePickerController" -isystem "${PODS_ROOT}/Headers/Public/FastttCamera"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AMSlideMenu" -l"BUKImagePickerController" -l"FastttCamera" -framework "AVFoundation" -framework "AssetsLibrary" -framework "CoreMotion" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -24,10 +24,19 @@
 }
 
 - (IBAction)publicationButtonPressed:(id)sender {
-    UIAlertController *alert = [[UIAlertController alloc]init];
-    alert.title = @" ";
-    alert.message = AMLocalizedString(@"publication_success", nil);
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:AMLocalizedString(@"publication_success", nil)
+                                 message:@" "
+                                 preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction* okButton = [UIAlertAction
+                                actionWithTitle:@"OK"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action) {
+                                     [self.navigationController popToRootViewControllerAnimated:YES];
+                                }];
+    [alert addAction:okButton];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)configurePublicationButton {
