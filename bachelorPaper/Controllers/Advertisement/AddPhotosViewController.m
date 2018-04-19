@@ -45,15 +45,6 @@
 - (IBAction)addPhotosButtonPressed:(id)sender {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:
                                 @"Add picture from" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction* camera = [UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault
-                                                   handler:^(UIAlertAction * _Nonnull action) {
-                                                       self.imagePickerController = [[BUKImagePickerController alloc] init];
-                                                       self.imagePickerController.delegate = self;
-                                                       self.imagePickerController.mediaType = BUKImagePickerControllerMediaTypeImage;
-                                                       self.imagePickerController.sourceType = BUKImagePickerControllerSourceTypeCamera;
-                                                       [self presentViewController:self.imagePickerController animated:YES completion:nil];
-                                                       self.imagePickerController.savesToPhotoLibrary = YES;
-                                                   }];
     UIAlertAction* photoLibrary = [UIAlertAction actionWithTitle:@"Photo library" style:UIAlertActionStyleDefault
                                                          handler:^(UIAlertAction * _Nonnull action) {
                                                              self.imagePickerController = [[BUKImagePickerController alloc] init];
@@ -66,7 +57,6 @@
     UIAlertAction* Cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel
                                                    handler:^(UIAlertAction * _Nonnull action) {
                                                    }];
-    [alert addAction:camera];
     [alert addAction:photoLibrary];
     [alert addAction:Cancel];
     [self presentViewController:alert animated:YES completion:nil];
@@ -113,10 +103,11 @@
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewPhotoItemIdentifier" forIndexPath:indexPath];
 
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 95, 95)];
+    imageView.contentScaleFactor = UIViewContentModeScaleAspectFit;
     imageView.image = [self.photos objectAtIndex:indexPath.row];
 
-    UIImageView *removeIconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(72, 0, 25, 25)];
+    UIImageView *removeIconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(72, 0, 20, 20)];
     removeIconImageView.image = [UIImage imageNamed:@"remove-photo"];
 
     [imageView addSubview:removeIconImageView];
@@ -136,7 +127,7 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(100, 100);
+    return CGSizeMake(95, 95);
 }
 
 #pragma mark BUKIMagePickerController methods

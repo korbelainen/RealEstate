@@ -10,6 +10,7 @@
 #import "LocalizationSystem.h"
 #import "LoginInputTableViewCell.h"
 #import "ForgetPasswordTableViewCell.h"
+#import "WebserviceManager.h"
 
 typedef enum {
     LoginViewMode        = 1,
@@ -78,6 +79,7 @@ typedef enum {
 }
 
 - (IBAction)login:(id)sender {
+    [[WebserviceManager sharedWebserviceManager]loginWithEmail:@"juhan.korbelainen@gmail.com" andPassword: @"Password123"];
 }
 
 /*

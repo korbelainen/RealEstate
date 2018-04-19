@@ -15,6 +15,8 @@ typedef enum {
     
 } RequestTypes;
 
+static NSString *kGlobalURl = @"https://api.skvortsov.lv/";
+
 @implementation WebserviceManager
 
 static WebserviceManager *sharedWebserviceManager = nil;
@@ -26,8 +28,17 @@ static WebserviceManager *sharedWebserviceManager = nil;
     return sharedWebserviceManager;
 }
 
+- (void)loginWithEmail:(NSString *)email andPassword:(NSString *)password {
+
+    NSDictionary *loginBody = @{
+                                @"email" : email,
+                                @"password" : password
+                                };
+
+    [self postWithRequestBody:loginBody andRequestType:@"login"];
+}
+
 - (void)performRegistrationWithUserData:(NSArray *)userData {
-    NSDictionary *requestBody = [self createRequestBodyWithValues:userData forRequestType:RegistrationRequest];
 //    {
 //        "app": "11d623fdee8a4baa8d509f680fa5f9b6",
 //        "cli": "a312320606f2438891c7b660aa2f62ac",
@@ -40,47 +51,65 @@ static WebserviceManager *sharedWebserviceManager = nil;
 //    }
 }
 
--(void)postWithRequestBody:(NSDictionary *)body {
-    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/search?term=apple&media=software"];
-    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
-    
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-    request.HTTPMethod = @"POST";
-    
-//    NSDictionary *dictionary = [self createRequestBodyWithValues:@"" forRequestType: 0];
-    NSError *error = nil;
-    NSData *data = [NSJSONSerialization dataWithJSONObject:body
-                                                   options:kNilOptions error:&error];
-    
-    if (!error) {
-        NSURLSessionUploadTask *uploadTask = [session uploadTaskWithRequest:request
-                                                                   fromData:data completionHandler:^(NSData *data,NSURLResponse *response,NSError *error) {
-                                                                       NSLog(@"%@",response);
-                                                                       // Handle response here
-                                                                   }];
-        
-        [uploadTask resume];
-    }
+-(void)login:(NSString *)email password:(NSString *)password success:
+(void(^)())postSuccess
+failedWithError:(void(^)(Error *error))failedWithError{
+    NSDictionary *parameters = @{@"email" : email,
+                                 @"password" : password};
+
+    NSString *url = [kGlobalURl stringByAppendingString:@"login"];
+
+    [self postWithRequestBody:parameters andRequestType:@"login" success:^(NSDictionary *responseObject) {
+        if(postSuccess){
+            postSuccess(responseObject);
+        }
+    }failure:^(Error *error){
+        NSLog(@"%@", error);
+    }];
 }
 
-- (NSDictionary *)createRequestBodyWithValues:(NSArray *)values forRequestType:(NSUInteger)type {
-    NSMutableDictionary *body = [[NSMutableDictionary alloc]init];
-    
-    switch (type) {
-        case RegistrationRequest: {
-//            [body setObject:<#(nonnull id)#> forKey:<#(nonnull id<NSCopying>)#>]
+
+- (void)login:(NSString *)email password:(NSString *)password success:
+(void(^)())postSuccess
+failedWithError:(void(^)(Error *error))failedWithError {
+    NSDictionary *parameters = @{@"email" : email,
+                                 @"password" : password};
+
+    [self postWithRequestBody:parameters andRequestType:@"login" success:^(NSDictionary *responseObject){
+        if (success) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                success(responseObject[@"response"]);
+            });
         }
-        case LoginRequest: {
-            
-        }
-        case LogoutRequest: {
-            
-        }
-        default:
-            break;
-    }
-    
-    return body;
+
+    } failure:^(Error *error){
+        NSLog(@"%@", error);
+    }];
 }
+
+
+
+-(void)postWithRequestBody:(NSDictionary *)body andRequestType:(NSString *)requestType
+                   success:(void (^)(NSDictionary *responseObject))success {
+
+    NSURL *url = [NSURL URLWithString:[apiAddress stringByAppendingString:requestType]];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    request.HTTPMethod = @"POST";
+
+    NSData *data = [NSJSONSerialization dataWithJSONObject:body
+                                                   options:kNilOptions error:nil];
+
+    request.HTTPBody = data;
+
+    [request setValue:@"text/json" forHTTPHeaderField:@"Content-Type"];
+    NSURLResponse * response = nil;
+    NSError * NSURLRequestError = nil;
+    NSData * responseData = [NSURLConnection sendSynchronousRequest:request
+                                                  returningResponse:&response
+                                                              error:&NSURLRequestError];
+    NSMutableDictionary *json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:nil];
+
+    success(json);
+}
+
 @end

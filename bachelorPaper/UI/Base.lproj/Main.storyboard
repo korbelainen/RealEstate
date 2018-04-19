@@ -167,7 +167,11 @@
                                 <action selector="close:" destination="H9C-oE-mjm" id="m1m-jq-EYb"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="6Lb-CB-dT6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="6Lb-CB-dT6">
+                            <connections>
+                                <action selector="login:" destination="H9C-oE-mjm" id="O3w-cF-7UC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="closeButton" destination="DWS-eW-CAp" id="m3V-6r-Dcy"/>
@@ -1144,7 +1148,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yuf-PY-kiG">
                                 <rect key="frame" x="5" y="392.5" width="365" height="269.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="16" id="N0L-FZ-qkX">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="N0L-FZ-qkX">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
