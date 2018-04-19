@@ -80,4 +80,10 @@
 "add_photos_button" = "Добавить";
 "add_photos" = "Добавить фотографии";
 "add_photos_comment" = "Обьявления с фотографиями просматриваются в 3 раза чаще";
+"publish_advertisement" = "Опубликовать обьявление";
+"publication" = "Публикация";
+"publication_success" = "Объявление успешно опубликовано!";
+"contacts" = "Контакты";
+"description" = "Описание";
+
 

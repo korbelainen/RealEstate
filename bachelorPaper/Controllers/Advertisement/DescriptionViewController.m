@@ -22,7 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.title = AMLocalizedString(@"description", nil);
 
+    [self configureContinueButton];
 }
 
 - (void)configureContinueButton {

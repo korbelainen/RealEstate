@@ -22,6 +22,8 @@
     [super viewDidLoad];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 
+    self.title = AMLocalizedString(@"add_photos", nil);
+    
     [self configureAddPhotosButton];
 
     self.addPhotosLabel.text = AMLocalizedString(@"add_photos", nil);
