@@ -18,6 +18,7 @@ static NSArray *menuTitles;
 @interface MenuViewController ()
 
 @property (assign, nonatomic) NSInteger activeMenuItem;
+@property (assign, nonatomic) BOOL isLoggedIn;
 
 @end
 
@@ -25,7 +26,7 @@ static NSArray *menuTitles;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *language = [defaults objectForKey:@"language"];
     if([language isEqualToString:@"lv"]){
@@ -33,9 +34,9 @@ static NSArray *menuTitles;
     }else if ([language isEqualToString:@"ru"]){
         LocalizationSetLanguage(@"ru");
     }
-
+    
     self.activeMenuItem = 0;
-//    self.isLoggedIn = YES;
+    self.isLoggedIn = [[NSUserDefaults standardUserDefaults]boolForKey:@"isLoggedIn"];
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.backgroundColor = [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -52,7 +53,7 @@ static NSArray *menuTitles;
                   @"white-message",
                   @"russian",
                   @"latvian"];
-
+    
     activeMenuIcons = @[@"red-user_male_circle",
                         @"red-search",
                         @"red-bookmark",
@@ -62,9 +63,9 @@ static NSArray *menuTitles;
                         @"red-message",
                         @"russian",
                         @"latvian"];
-
+    
     menuTitles = @[AMLocalizedString(@"login", nil),
-                  AMLocalizedString(@"advertisement_search", nil),
+                   AMLocalizedString(@"advertisement_search", nil),
                    AMLocalizedString(@"saved_searches", nil),
                    AMLocalizedString(@"favorites", nil),
                    AMLocalizedString(@"my_advertisements", nil),
@@ -105,7 +106,7 @@ static NSArray *menuTitles;
 {
     MenuItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuItemCellIdentifier" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0];
-
+    
     if (self.activeMenuItem == indexPath.row) {
         cell.menuItemLabel.text = AMLocalizedString([menuTitles objectAtIndex:indexPath.row], nil);
         cell.menuItemLabel.textColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
@@ -115,7 +116,7 @@ static NSArray *menuTitles;
         cell.menuItemLabel.textColor = [UIColor whiteColor];
         cell.menuItemIcon.image = [UIImage imageNamed:[menuIcons objectAtIndex:indexPath.row]];
     }
-
+    
     return cell;
 }
 
@@ -123,29 +124,29 @@ static NSArray *menuTitles;
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.activeMenuItem = indexPath.row;
-
+    
     if (indexPath.row == 0) {
-//        if (self.isLoggedIn == YES) {
+        if (self.isLoggedIn == YES) {
             [self performSegueWithIdentifier:@"showUserProfile" sender:nil];
-//        }
+        }
     } else if (indexPath.row == 6) {
         MailManager *mailManager = [[MailManager alloc]init];
         [mailManager sendFeedback];
     } else if (indexPath.row == 7) {
-         LocalizationSetLanguage(@"ru");
+        LocalizationSetLanguage(@"ru");
     } else if (indexPath.row == 8) {
-         LocalizationSetLanguage(@"lv");
+        LocalizationSetLanguage(@"lv");
     }
-     [self.tableView reloadData];
+    [self.tableView reloadData];
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

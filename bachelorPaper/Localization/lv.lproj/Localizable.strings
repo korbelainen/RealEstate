@@ -32,6 +32,8 @@
 "done" = "Done";
 "registration" = "Reģistrācija";
 "next" = "Talāk";
+"login_failed" = "Nesnāca ielogoties";
+"check_credentials" = "Parbaudiet ievādītos datus";
 
 //search
 "studio" = "Studija";

@@ -32,6 +32,8 @@
 "done" = "Готово";
 "registration" = "Регистрация";
 "next" = "Далее";
+"login_failed" = "Логин не удался";
+"check_credentials" = "Проверьте входные данные";
 
 // search
 

@@ -11,7 +11,7 @@
 #import "LoginInputTableViewCell.h"
 #import "ForgetPasswordTableViewCell.h"
 #import "WebserviceManager.h"
-#import "UtilitiesManager.h"
+
 
 typedef enum {
     LoginViewMode        = 1,
@@ -88,12 +88,14 @@ typedef enum {
 - (IBAction)login:(id)sender {
     [[WebserviceManager sharedInstance] loginWithEmail:self.credentials[@"username"] andPassword:self.credentials[@"password"] success:^(NSDictionary *responseObject) {
         if ([[responseObject[@"error"] stringValue] isEqualToString:@"0"]) {
-            NSString *username = [[UtilitiesManager sharedInstance] username];
-            username = @"test";
+            
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isLogedIn"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            
             [self performSegueWithIdentifier:@"userProfileSegue" sender:nil];
         } else {
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:
-                                        @"Login failed" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                                        AMLocalizedString(@"login_failed", nil) message:AMLocalizedString(@"check_credentials", nil) preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* Cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel
                                                            handler:nil];
             [alert addAction:Cancel];

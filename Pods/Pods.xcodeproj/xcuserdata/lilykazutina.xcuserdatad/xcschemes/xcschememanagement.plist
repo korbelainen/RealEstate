@@ -11,6 +11,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BUKImagePickerController-BUKImagePickerController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>BUKImagePickerController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>FastttCamera.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pods-bachelorPaper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
