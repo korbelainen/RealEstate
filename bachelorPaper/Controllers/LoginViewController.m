@@ -11,6 +11,7 @@
 #import "LoginInputTableViewCell.h"
 #import "ForgetPasswordTableViewCell.h"
 #import "WebserviceManager.h"
+#import "UtilitiesManager.h"
 
 typedef enum {
     LoginViewMode        = 1,
@@ -18,10 +19,13 @@ typedef enum {
     
 } ControllerViewMode;
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *loginButton;
 @property (assign, nonatomic) NSInteger currentViewMode;
+
+@property (strong, nonatomic) NSMutableDictionary *credentials;
 
 @end
 
@@ -38,6 +42,7 @@ typedef enum {
     if (self.currentViewMode == LoginViewMode) {
         [self.loginButton setTitle:AMLocalizedString(@"login", nil)];
         self.title = AMLocalizedString(@"login", nil);
+        self.credentials = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"", @"username", @"", @"password", nil];
     } else {
         [self.loginButton setTitle:AMLocalizedString(@"done", nil)];
         self.title = AMLocalizedString(@"registration", nil);
@@ -62,13 +67,15 @@ typedef enum {
             UITableViewCell *cell = [[UITableViewCell alloc]init];
             return cell;
         }
-       
+
     } else {
         LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
         if (indexPath.row == 0) {
             inputCell.textField.placeholder = AMLocalizedString(@"email_or_phone", nil);
+            inputCell.textField.delegate = self;
         } else {
             inputCell.textField.placeholder = AMLocalizedString(@"password", nil);
+            inputCell.textField.delegate = self;
         }
         return inputCell;
     }
@@ -79,17 +86,43 @@ typedef enum {
 }
 
 - (IBAction)login:(id)sender {
-    [[WebserviceManager sharedWebserviceManager]loginWithEmail:@"juhan.korbelainen@gmail.com" andPassword: @"Password123"];
+    [[WebserviceManager sharedInstance] loginWithEmail:self.credentials[@"username"] andPassword:self.credentials[@"password"] success:^(NSDictionary *responseObject) {
+        if ([[responseObject[@"error"] stringValue] isEqualToString:@"0"]) {
+            NSString *username = [[UtilitiesManager sharedInstance] username];
+            username = @"test";
+            [self performSegueWithIdentifier:@"userProfileSegue" sender:nil];
+        } else {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:
+                                        @"Login failed" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction* Cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel
+                                                           handler:nil];
+            [alert addAction:Cancel];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if ([textField.placeholder isEqualToString:AMLocalizedString(@"password", nil)]) {
+        [self.credentials setValue:textField.text forKey:@"password"];
+    } else {
+        [self.credentials setValue:textField.text forKey:@"username"];
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

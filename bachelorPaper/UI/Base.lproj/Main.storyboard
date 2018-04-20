@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tvx-ai-f73">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tvx-ai-f73">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoginInputCellIdentifier" rowHeight="73" id="5XN-S1-Yor" customClass="LoginInputTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LoginInputCellIdentifier" rowHeight="73" id="5XN-S1-Yor" customClass="LoginInputTableViewCell">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5XN-S1-Yor" id="6Wi-cj-zJG">
@@ -132,7 +132,7 @@
                                     <outlet property="textField" destination="IuS-u4-q4e" id="jPG-rS-Nbm"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForgetPasswodCellIdentifier" rowHeight="73" id="IR7-or-GD3" customClass="ForgetPasswordTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ForgetPasswodCellIdentifier" rowHeight="73" id="IR7-or-GD3" customClass="ForgetPasswordTableViewCell">
                                 <rect key="frame" x="0.0" y="128.5" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IR7-or-GD3" id="3fR-Ky-FVO">
@@ -176,6 +176,7 @@
                     <connections>
                         <outlet property="closeButton" destination="DWS-eW-CAp" id="m3V-6r-Dcy"/>
                         <outlet property="loginButton" destination="6Lb-CB-dT6" id="W6J-aK-hNr"/>
+                        <segue destination="VWc-z1-WTh" kind="show" identifier="userProfileSegue" id="WKq-2g-QdO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi7-HO-3gV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -768,7 +769,6 @@
                         <segue destination="t8n-tN-nSt" kind="custom" identifier="feedback" customClass="AMSlideMenuContentSegue" id="Ak9-ox-qQt"/>
                         <segue destination="3Am-GP-Wki" kind="custom" identifier="addAdvertisement" customClass="AMSlideMenuContentSegue" id="0IB-6k-Xuk"/>
                         <segue destination="xhn-fG-SS5" kind="custom" identifier="myAdvertisements" customClass="AMSlideMenuContentSegue" id="Fcf-mB-gyP"/>
-                        <segue destination="5Ga-cf-ZGh" kind="presentation" identifier="showUserProfile" id="6L0-A6-Nmx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XL1-Mo-g5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1536,5 +1536,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uX5-JQ-w50"/>
+        <segue reference="WKq-2g-QdO"/>
     </inferredMetricsTieBreakers>
 </document>

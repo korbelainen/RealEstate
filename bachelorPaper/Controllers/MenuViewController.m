@@ -18,7 +18,6 @@ static NSArray *menuTitles;
 @interface MenuViewController ()
 
 @property (assign, nonatomic) NSInteger activeMenuItem;
-@property (assign, nonatomic) BOOL isLoggedIn;
 
 @end
 
@@ -36,7 +35,7 @@ static NSArray *menuTitles;
     }
 
     self.activeMenuItem = 0;
-    self.isLoggedIn = YES;
+//    self.isLoggedIn = YES;
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.backgroundColor = [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -126,9 +125,9 @@ static NSArray *menuTitles;
     self.activeMenuItem = indexPath.row;
 
     if (indexPath.row == 0) {
-        if (self.isLoggedIn == YES) {
+//        if (self.isLoggedIn == YES) {
             [self performSegueWithIdentifier:@"showUserProfile" sender:nil];
-        }
+//        }
     } else if (indexPath.row == 6) {
         MailManager *mailManager = [[MailManager alloc]init];
         [mailManager sendFeedback];

@@ -10,8 +10,8 @@
 
 @interface WebserviceManager : NSObject
 
-+ (id)sharedWebserviceManager;
++ (id)sharedInstance;
 
-- (void)loginWithEmail:(NSString *)email andPassword:(NSString *)password;
+- (void)loginWithEmail:(NSString *)email andPassword:(NSString *)password  success:(void (^)(NSDictionary *responseObject))success;
 
 @end

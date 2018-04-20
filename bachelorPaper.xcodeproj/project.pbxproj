@@ -45,6 +45,7 @@
 		CB60A0B92075045200070F94 /* FavoritesListItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */; };
 		CB751F4A20889665001FF9F2 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB751F4920889665001FF9F2 /* ContactsTableViewController.m */; };
 		CB751F4D208898F0001FF9F2 /* PublicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB751F4C208898F0001FF9F2 /* PublicationViewController.m */; };
+		CBB3753E208A03D1001417A2 /* UtilitiesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3753D208A03D1001417A2 /* UtilitiesManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,8 @@
 		CB751F4920889665001FF9F2 /* ContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
 		CB751F4B208898F0001FF9F2 /* PublicationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicationViewController.h; sourceTree = "<group>"; };
 		CB751F4C208898F0001FF9F2 /* PublicationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicationViewController.m; sourceTree = "<group>"; };
+		CBB3753C208A03D1001417A2 /* UtilitiesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilitiesManager.h; sourceTree = "<group>"; };
+		CBB3753D208A03D1001417A2 /* UtilitiesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilitiesManager.m; sourceTree = "<group>"; };
 		D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
 		D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -299,12 +302,22 @@
 		CB4B2D022073ADB600AD575B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				CBB3753B2089EA29001417A2 /* Networking */,
 				CB4B2D032073ADEB00AD575B /* MailManager.h */,
 				CB4B2D042073ADEB00AD575B /* MailManager.m */,
+				CBB3753C208A03D1001417A2 /* UtilitiesManager.h */,
+				CBB3753D208A03D1001417A2 /* UtilitiesManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CBB3753B2089EA29001417A2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
 				4A9C20632076828500905C96 /* WebserviceManager.h */,
 				4A9C20642076828500905C96 /* WebserviceManager.m */,
 			);
-			path = Managers;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +458,7 @@
 				CB2F67262080C7180097C152 /* AddPhotosViewController.m in Sources */,
 				CB325BD82063E8C90099E61B /* SearchViewController.m in Sources */,
 				CB20F0B12068C3FE00DB216C /* LoginInputTableViewCell.m in Sources */,
+				CBB3753E208A03D1001417A2 /* UtilitiesManager.m in Sources */,
 				CB2F671F207E1F620097C152 /* TextFieldParameterTableViewCell.m in Sources */,
 				CB4B2D052073ADEB00AD575B /* MailManager.m in Sources */,
 				4A9C206820781D1D00905C96 /* ApartmentDetailsTableViewController.m in Sources */,

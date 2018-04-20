@@ -21,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithTitle:AMLocalizedString(@"close", nil) style:UIBarButtonItemStylePlain target:self action:@selector(closeButtonPressed:)];
-    closeButton.tintColor = [UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem = closeButton;
+//    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithTitle:AMLocalizedString(@"close", nil) style:UIBarButtonItemStylePlain target:self action:@selector(closeButtonPressed:)];
+//    closeButton.tintColor = [UIColor whiteColor];
+//    self.navigationItem.leftBarButtonItem = closeButton;
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:AMLocalizedString(@"done", nil) style:UIBarButtonItemStylePlain target:self action:@selector(doneButtonPressed:)];
     doneButton.tintColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = doneButton;
@@ -125,9 +125,9 @@
 
 }
 
-- (void)closeButtonPressed:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+//- (void)closeButtonPressed:(UIButton *)sender {
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 - (void)doneButtonPressed:(UIButton *)sender {
 
