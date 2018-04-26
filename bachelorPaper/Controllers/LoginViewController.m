@@ -39,14 +39,9 @@ typedef enum {
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    if (self.currentViewMode == LoginViewMode) {
-        [self.loginButton setTitle:AMLocalizedString(@"login", nil)];
-        self.title = AMLocalizedString(@"login", nil);
-        self.credentials = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"", @"username", @"", @"password", nil];
-    } else {
-        [self.loginButton setTitle:AMLocalizedString(@"done", nil)];
-        self.title = AMLocalizedString(@"registration", nil);
-    }
+    [self.loginButton setTitle:AMLocalizedString(@"login", nil)];
+    self.title = AMLocalizedString(@"login", nil);
+    self.credentials = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"", @"username", @"", @"email", @"", @"password", nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -54,30 +49,87 @@ typedef enum {
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    if (self.currentViewMode == LoginViewMode) {
+        return 4;
+    } else {
+        return 5;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    if (indexPath.row > 1) {
-        if (self.currentViewMode == 1) {
-            ForgetPasswordTableViewCell *forgetPasswordCell = [tableView dequeueReusableCellWithIdentifier:@"ForgetPasswodCellIdentifier" forIndexPath:indexPath];
-            return forgetPasswordCell;
-        } else {
-            UITableViewCell *cell = [[UITableViewCell alloc]init];
-            return cell;
+    if (self.currentViewMode == LoginViewMode) {
+        switch (indexPath.row) {
+            case 0: {
+                LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
+                inputCell.textField.placeholder = AMLocalizedString(@"email_or_phone", nil);
+                inputCell.textField.delegate = self;
+                [inputCell.textField addTarget:self action:@selector(textfieldChanged:) forControlEvents:UIControlEventAllEvents];
+                return inputCell;
+            }
+            case 1: {
+                LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
+                inputCell.textField.placeholder = AMLocalizedString(@"password", nil);
+//                inputCell.textField.secureTextEntry = YES;
+                inputCell.textField.delegate = self;
+                [inputCell.textField addTarget:self action:@selector(textfieldChanged:) forControlEvents:UIControlEventAllEvents];
+                return inputCell;
+            }
+            case 2: {
+                ForgetPasswordTableViewCell *forgetPasswordCell = [tableView dequeueReusableCellWithIdentifier:@"ForgetPasswodCellIdentifier" forIndexPath:indexPath];
+                return forgetPasswordCell;
+            }
+            case 3: {
+                ForgetPasswordTableViewCell *forgetPasswordCell = [tableView dequeueReusableCellWithIdentifier:@"ForgetPasswodCellIdentifier" forIndexPath:indexPath];
+                [forgetPasswordCell.forgetPasswordButton setTitle:AMLocalizedString(@"registration", nil) forState:UIControlStateNormal];
+                [forgetPasswordCell.forgetPasswordButton addTarget:self action:@selector(changeToRegistrationMode) forControlEvents:UIControlEventAllEvents];
+                return forgetPasswordCell;
+            }
+            default: {
+                UITableViewCell *cell = [[UITableViewCell alloc]init];
+                return cell;
+            }
         }
-
     } else {
-        LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
-        if (indexPath.row == 0) {
-            inputCell.textField.placeholder = AMLocalizedString(@"email_or_phone", nil);
-            inputCell.textField.delegate = self;
-        } else {
-            inputCell.textField.placeholder = AMLocalizedString(@"password", nil);
-            inputCell.textField.delegate = self;
+        switch (indexPath.row) {
+            case 0: {
+                LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
+                inputCell.textField.placeholder = AMLocalizedString(@"username", nil);
+                [inputCell.textField addTarget:self action:@selector(textfieldChanged:) forControlEvents:UIControlEventAllEvents];
+                inputCell.textField.delegate = self;
+                return inputCell;
+            }
+            case 1: {
+                LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
+                inputCell.textField.placeholder = AMLocalizedString(@"email", nil);
+                inputCell.textField.delegate = self;
+                [inputCell.textField addTarget:self action:@selector(textfieldChanged:) forControlEvents:UIControlEventAllEvents];
+                return inputCell;
+            }
+            case 2: {
+                LoginInputTableViewCell *inputCell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputCellIdentifier" forIndexPath:indexPath];
+                inputCell.textField.placeholder = AMLocalizedString(@"password", nil);
+//                inputCell.textField.secureTextEntry = YES;
+                inputCell.textField.delegate = self;
+                [inputCell.textField addTarget:self action:@selector(textfieldChanged:) forControlEvents:UIControlEventAllEvents];
+                return inputCell;
+            }
+            case 3: {
+                ForgetPasswordTableViewCell *forgetPasswordCell = [tableView dequeueReusableCellWithIdentifier:@"ForgetPasswodCellIdentifier" forIndexPath:indexPath];
+                return forgetPasswordCell;
+            }
+            case 4: {
+                ForgetPasswordTableViewCell *forgetPasswordCell = [tableView dequeueReusableCellWithIdentifier:@"ForgetPasswodCellIdentifier" forIndexPath:indexPath];
+                [forgetPasswordCell.forgetPasswordButton setTitle:AMLocalizedString(@"registration", nil) forState:UIControlStateNormal];
+                [forgetPasswordCell.forgetPasswordButton addTarget:self action:@selector(changeToRegistrationMode) forControlEvents:UIControlEventAllEvents];
+                return forgetPasswordCell;
+            }
+                break;
+                
+            default: {
+                UITableViewCell *cell = [[UITableViewCell alloc]init];
+                return cell;
+            }
         }
-        return inputCell;
     }
 }
 
@@ -86,6 +138,44 @@ typedef enum {
 }
 
 - (IBAction)login:(id)sender {
+    if (self.currentViewMode == LoginViewMode) {
+        [self login];
+    } else {
+        [self registration];
+    }
+}
+
+- (void)textfieldChanged:(UITextField *)textField {
+    if ([textField.placeholder isEqualToString:AMLocalizedString(@"password", nil)]) {
+        [self.credentials setValue:textField.text forKey:@"password"];
+    } else if ([textField.placeholder isEqualToString:AMLocalizedString(@"username", nil)]) {
+        [self.credentials setValue:textField.text forKey:@"username"];
+    } else {
+        [self.credentials setValue:textField.text forKey:@"email"];
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)changeToRegistrationMode {
+    self.currentViewMode = RegistrationViewMode;
+    [self.loginButton setTitle:AMLocalizedString(@"done", nil)];
+    self.title = AMLocalizedString(@"registration", nil);
+    [self.tableView reloadData];
+}
+
+- (void)changeToLoginMode {
+    self.currentViewMode = LoginViewMode;
+    [self.loginButton setTitle:AMLocalizedString(@"login", nil)];
+    self.title = AMLocalizedString(@"login", nil);
+    [self.credentials removeAllObjects];
+    [self.tableView reloadData];
+}
+
+- (void)login {
     [[WebserviceManager sharedInstance] loginWithEmail:self.credentials[@"username"] andPassword:self.credentials[@"password"] success:^(NSDictionary *responseObject) {
         if ([[responseObject[@"error"] stringValue] isEqualToString:@"0"]) {
             
@@ -104,27 +194,28 @@ typedef enum {
     }];
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    if ([textField.placeholder isEqualToString:AMLocalizedString(@"password", nil)]) {
-        [self.credentials setValue:textField.text forKey:@"password"];
-    } else {
-        [self.credentials setValue:textField.text forKey:@"username"];
-    }
+- (void)registration {
+    [[WebserviceManager sharedInstance] performRegistrationWithUsername:self.credentials[@"username"] email:self.credentials[@"email"] andPassword:self.credentials[@"password"] success:^(NSDictionary *responseObject) {
+        if ([[responseObject[@"error"] stringValue] isEqualToString:@"0"]) {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:
+                                        AMLocalizedString(@"Registration is successful", nil) message:AMLocalizedString(@"", nil) preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction* Cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel
+                                                           handler:^(UIAlertAction * action) {
+                                                               [self changeToLoginMode];
+                                                           }];
+            [alert addAction:Cancel];
+            [self presentViewController:alert animated:YES completion:nil];
+        } else {
+            if ([[responseObject[@"errCode"] stringValue] isEqualToString:@"400"]) {
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:
+                                            AMLocalizedString(@"Invalid input data!", nil) message:AMLocalizedString(@"Check input values and try again.", nil) preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction* Cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel
+                                                               handler:^(UIAlertAction * action) {
+                                                               }];
+                [alert addAction:Cancel];
+                [self presentViewController:alert animated:YES completion:nil];
+            }
+        }
+    }];
 }
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return YES;
-}
-
-/*
- #pragma mark - Navigation
-
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
 @end

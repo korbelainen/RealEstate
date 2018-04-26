@@ -8,13 +8,6 @@
 
 #import "WebserviceManager.h"
 
-typedef enum {
-    RegistrationRequest = 0,
-    LoginRequest        = 1,
-    LogoutRequest       = 2
-    
-} RequestTypes;
-
 static NSString *kGlobalURl = @"https://api.skvortsov.lv/";
 
 @implementation WebserviceManager
@@ -28,30 +21,29 @@ static WebserviceManager *sharedInstance = nil;
     return sharedInstance;
 }
 
-- (void)loginWithEmail:(NSString *)email andPassword:(NSString *)password  success:(void (^)(NSDictionary *responseObject))success
-{
+- (void)loginWithEmail:(NSString *)email andPassword:(NSString *)password  success:(void (^)(NSDictionary *responseObject))success  {
     NSDictionary *parameters = @{
                                 @"email" : email,
                                 @"password" : password
                                 };
 
 
-    [self postWithRequestBody:parameters andRequestType:@"login" success:^(NSDictionary *responseObject) {
+    [self postWithRequestBody:parameters andRequestType:@"login" success:^(NSDictionary *responseObject)  {
         success(responseObject);
     }];
 }
 
-- (void)performRegistrationWithUserData:(NSArray *)userData {
-//    {
-//        "app": "11d623fdee8a4baa8d509f680fa5f9b6",
-//        "cli": "a312320606f2438891c7b660aa2f62ac",
-//        "username": "lk",
-//        "email": "lia@gmail.com",
-//        "password": "Password123",
-//        "doc": {
-//            "phone": "+37125501010"
-//        }
-//    }
+- (void)performRegistrationWithUsername:(NSString *)username email: (NSString *)email andPassword:(NSString *)password success:(void (^)(NSDictionary *responseObject))success {
+    
+    NSDictionary *parameters = @{
+                                 @"username" : username,
+                                 @"email" : email,
+                                 @"password" : password
+                                 };
+    
+    [self postWithRequestBody:parameters andRequestType:@"register" success:^(NSDictionary *responseObject) {
+        success(responseObject);
+    }];
 }
 
 -(void)postWithRequestBody:(NSDictionary *)body andRequestType:(NSString *)requestType success:(void (^)(NSDictionary *responseObject))success {
