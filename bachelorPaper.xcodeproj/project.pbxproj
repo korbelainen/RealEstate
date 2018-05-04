@@ -50,6 +50,7 @@
 /* Begin PBXFileReference section */
 		4A09946E207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleParameterOptionsTableViewController.h; sourceTree = "<group>"; };
 		4A09946F207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleParameterOptionsTableViewController.m; sourceTree = "<group>"; };
+		4A42FD5C209C5D6100F33DD9 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4A9C20632076828500905C96 /* WebserviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebserviceManager.h; sourceTree = "<group>"; };
 		4A9C20642076828500905C96 /* WebserviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebserviceManager.m; sourceTree = "<group>"; };
 		4A9C206620781D1D00905C96 /* ApartmentDetailsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApartmentDetailsTableViewController.h; sourceTree = "<group>"; };
@@ -361,6 +362,7 @@
 				en,
 				Base,
 				lv,
+				"en-US",
 			);
 			mainGroup = CB325BC72063E8C80099E61B;
 			productRefGroup = CB325BD12063E8C90099E61B /* Products */;
@@ -507,6 +509,7 @@
 			children = (
 				CB325C01206415D10099E61B /* ru */,
 				CB325C03206415D50099E61B /* lv */,
+				4A42FD5C209C5D6100F33DD9 /* en-US */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

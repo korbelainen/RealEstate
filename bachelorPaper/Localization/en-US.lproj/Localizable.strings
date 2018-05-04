@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+  bachelorPaper
+
+  Created by Lilija Kazutina on 22/03/2018.
+  Copyright © 2018 TSI. All rights reserved.
+*/
+
+//controllers titles
+"search" = "Search";
+"clear" = "Clear";
+"rent" = "Rent";
+"sale" = "Sale";
+"rooms_count" = "Count of rooms";
+"email_or_phone" = "Email or phone";
+"password" = "Password";
+"forget_password" = "Forgot pasword?";
+
+//menu items
+
+"login" = "Login";
+"advertisement_search" = "Advertisement search";
+"saved_searches" = "Saved searches";
+"favorites" = "Favorites";
+"my_advertisements" = "My advertisements";
+"add_advertisement" = "Add advertisement";
+"feedback" = "Feedback";
+
+// other
+"close" = "Closa";
+"send" = "Send";
+"done" = "Done";
+"registration" = "Sign In";
+"next" = "Next";
+"login_failed" = "Login failed";
+"check_credentials" = "Check input data";
+
+// search
+
+"studio" = "Studio";
+"price" = "Price";
+"floor" = "Floor";
+"total_area" = "Total area";
+"city" = "City";
+"district" = "District";
+"street" = "Street";
+"heating_type" = "Heating type";
+"any" = "Any";
+"central" = "Central";
+"gas" = "Gas";
+"wood" = "Wood";
+"balcony" = "Balcony";
+"furniture" = "Furniture";
+"fridge" = "Fridge";
+"internet" = "Internet";
+"communal_payments" = "Communal payments";
+"add_screenshot" = "Add screenshot";
+
+// feedback
+"description_placeholder" = "Please describe the problem that you faced, using the application";
+"email_placeholder" = "Email (Optional)";
+"email_comment" = "Enter your email address, in case you want us to answer";
+
+// user profile
+"company" = "Title of company";
+"address" = "Address";
+"web_site" = "Web site";
+"user_type" = "Type of user";
+"region" = "Region";
+"name" = "Name";
+"email" = "Email";
+"phone" = "Phone";
+"logout" = "Logout";
+
+// add advertisement
+"deal_type" = "Type of deal";
+"house_number" = "House number";
+"house_type" = "Type of house";
+"house_material" = "Material of house";
+"floors_count" = "Count of floors";
+"new_advertisemement" = "New advertisemement";
+"add_photos_button" = "Add";
+"add_photos" = "Add photos";
+"add_photos_comment" = "Advertisemements with photos are viewed 3 times more";
+"publish_advertisement" = "Publish advertisement";
+"publication" = "Publication";
+"publication_success" = "Advertisement successfully published!";
+"contacts" = "Contacts";
+"description" = "Description";
+
+

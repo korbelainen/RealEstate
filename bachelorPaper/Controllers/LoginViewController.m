@@ -34,8 +34,7 @@ typedef enum {
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.loginButton.tintColor = [UIColor whiteColor];
-    
-    self.currentViewMode = 1;
+    self.currentViewMode = LoginViewMode;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

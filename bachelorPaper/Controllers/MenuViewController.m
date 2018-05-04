@@ -31,8 +31,10 @@ static NSArray *menuTitles;
     NSString *language = [defaults objectForKey:@"language"];
     if([language isEqualToString:@"lv"]){
         LocalizationSetLanguage(@"lv");
-    }else if ([language isEqualToString:@"ru"]){
+    } else if ([language isEqualToString:@"ru"]){
         LocalizationSetLanguage(@"ru");
+    } else if ([language isEqualToString:@"en-US"]) {
+          LocalizationSetLanguage(@"en-US");
     }
     
     self.activeMenuItem = 0;
@@ -52,7 +54,8 @@ static NSArray *menuTitles;
                   @"white-plus",
                   @"white-message",
                   @"russian",
-                  @"latvian"];
+                  @"latvian",
+                  @"english"];
     
     activeMenuIcons = @[@"red-user_male_circle",
                         @"red-search",
@@ -62,7 +65,8 @@ static NSArray *menuTitles;
                         @"red-plus",
                         @"red-message",
                         @"russian",
-                        @"latvian"];
+                        @"latvian",
+                        @"english"];
     
     menuTitles = @[AMLocalizedString(@"login", nil),
                    AMLocalizedString(@"advertisement_search", nil),
@@ -72,7 +76,8 @@ static NSArray *menuTitles;
                    AMLocalizedString(@"add_advertisement", nil),
                    AMLocalizedString(@"feedback", nil),
                    @"По-русски",
-                   @"Latviski"
+                   @"Latviski",
+                   @"English"
                    ];
 }
 
@@ -136,17 +141,10 @@ static NSArray *menuTitles;
         LocalizationSetLanguage(@"ru");
     } else if (indexPath.row == 8) {
         LocalizationSetLanguage(@"lv");
+    } else if (indexPath.row == 9) {
+         LocalizationSetLanguage(@"en-US");
     }
     [self.tableView reloadData];
 }
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
