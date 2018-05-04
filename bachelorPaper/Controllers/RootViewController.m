@@ -41,7 +41,11 @@ NSInteger kMenuButtonWidth = 35;
     NSString *identifier;
     switch (indexPath.row) {
         case Login: {
-            identifier = @"login";
+            if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"isLoggedIn"] isEqualToString:@"yes"]) {
+               identifier = @"showUserProfile";
+            } else {
+                identifier = @"login";
+            }
             break;
         }
         case Search: {

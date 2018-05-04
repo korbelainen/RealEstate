@@ -175,10 +175,10 @@ typedef enum {
 }
 
 - (void)login {
-    [[WebserviceManager sharedInstance] loginWithEmail:self.credentials[@"username"] andPassword:self.credentials[@"password"] success:^(NSDictionary *responseObject) {
+    [[WebserviceManager sharedInstance] loginWithEmail:self.credentials[@"email"] andPassword:self.credentials[@"password"] success:^(NSDictionary *responseObject) {
         if ([[responseObject[@"error"] stringValue] isEqualToString:@"0"]) {
             
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isLogedIn"];
+            [[NSUserDefaults standardUserDefaults] setValue:@"yes" forKey:@"isLogedIn"];
             [[NSUserDefaults standardUserDefaults]synchronize];
             
             [self performSegueWithIdentifier:@"userProfileSegue" sender:nil];

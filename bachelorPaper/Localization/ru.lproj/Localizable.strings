@@ -34,6 +34,7 @@
 "next" = "Далее";
 "login_failed" = "Логин не удался";
 "check_credentials" = "Проверьте входные данные";
+"logout_success" = "Вы успешно вышли";
 
 // search
 

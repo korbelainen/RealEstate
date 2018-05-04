@@ -14,5 +14,6 @@
 
 - (void)loginWithEmail:(NSString *)email andPassword:(NSString *)password  success:(void (^)(NSDictionary *responseObject))success;
 - (void)performRegistrationWithUsername:(NSString *)username email: (NSString *)email andPassword:(NSString *)password success:(void (^)(NSDictionary *responseObject))success;
+- (void)performLogoutWithSuccess:(void (^)(NSDictionary *responseObject))success;
 
 @end

@@ -9,6 +9,7 @@
 #import "UserProfileTableViewController.h"
 #import "LocalizationSystem.h"
 #import "TextFieldParameterTableViewCell.h"
+#import "WebserviceManager.h"
 
 @interface UserProfileTableViewController ()
 
@@ -20,19 +21,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithTitle:AMLocalizedString(@"close", nil) style:UIBarButtonItemStylePlain target:self action:@selector(closeButtonPressed:)];
-//    closeButton.tintColor = [UIColor whiteColor];
-//    self.navigationItem.leftBarButtonItem = closeButton;
+    
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:AMLocalizedString(@"done", nil) style:UIBarButtonItemStylePlain target:self action:@selector(doneButtonPressed:)];
     doneButton.tintColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = doneButton;
-
+    
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     [self configureLogoutButton];
-
+    
 }
 
 #pragma mark - Table view data source
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 56;
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 3;
@@ -84,12 +87,12 @@
             if (indexPath.row == 0) {
                 UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterIdentifier" forIndexPath:indexPath];
                 cell.textLabel.text = AMLocalizedString(@"user_type", nil);
-                 cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
                 return cell;
             } else {
                 UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterIdentifier" forIndexPath:indexPath];
                 cell.textLabel.text = AMLocalizedString(@"region", nil);
-                 cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
                 return cell;
             }
         }
@@ -122,15 +125,13 @@
 }
 
 - (void)fieldsValidation {
-
+    
 }
 
-//- (void)closeButtonPressed:(UIButton *)sender {
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
-
 - (void)doneButtonPressed:(UIButton *)sender {
-
+    // probably data should be saved on backend
+ 
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)configureLogoutButton {
@@ -142,18 +143,28 @@
 }
 
 - (IBAction)logoutButtonPressed:(id)sender {
-    
+    [self logout];
 }
 
-
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)logout {
+    [[WebserviceManager sharedInstance]performLogoutWithSuccess:^(NSDictionary *responseObject) {
+        // should be added check for success
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:AMLocalizedString(@"logout_success", nil)
+                                     message:@" "
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okButton = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isLogedIn"];
+                                       [[NSUserDefaults standardUserDefaults]synchronize];
+                                       [self.navigationController popToRootViewControllerAnimated:YES];
+                                   }];
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }];
 }
-
 
 @end

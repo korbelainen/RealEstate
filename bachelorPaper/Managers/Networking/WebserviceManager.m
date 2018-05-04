@@ -46,6 +46,19 @@ static WebserviceManager *sharedInstance = nil;
     }];
 }
 
+- (void)performLogoutWithSuccess:(void (^)(NSDictionary *responseObject))success {
+    // hardcoded parameters
+    NSDictionary *parameters = @{
+                                 @"app": @"11d623fdee8a4baa8d509f680fa5f9b6",
+                                 @"cli": @"a312320606f2438891c7b660aa2f62ac",
+                                 @"sess": @"6rnbKKGvLLdU9Sl9"
+                                 };
+    
+    [self postWithRequestBody:parameters andRequestType:@"logout" success:^(NSDictionary *responseObject) {
+        success(responseObject);
+    }];
+}
+
 -(void)postWithRequestBody:(NSDictionary *)body andRequestType:(NSString *)requestType success:(void (^)(NSDictionary *responseObject))success {
 
     NSURL *url = [NSURL URLWithString:[kGlobalURl stringByAppendingString:requestType]];
