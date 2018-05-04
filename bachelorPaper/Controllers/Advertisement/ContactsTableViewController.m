@@ -8,6 +8,8 @@
 
 #import "ContactsTableViewController.h"
 #import "LocalizationSystem.h"
+#import "TextFieldParameterTableViewCell.h"
+#import "ParameterWithActionTableViewCell.h"
 
 @interface ContactsTableViewController ()
 
@@ -26,30 +28,37 @@
 }
 
 #pragma mark - Table view data source
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 56;
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    if (section == 0) {
+        return 5;
+    } else {
+        return 3;
+    }
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-
- SimpleParameterCellIdentifier
- TextFieldParameterCellIdentifier
- AddPhoneCellIdentifier
- 
-    // Configure the cell...
-    
-    return cell;
+    if (indexPath.section == 0) {
+       TextFieldParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TextFieldParameterCellIdentifier" forIndexPath:indexPath];
+        return cell;
+    } else {
+        if (indexPath.row == 0) {
+            TextFieldParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TextFieldParameterCellIdentifier" forIndexPath:indexPath];
+            return cell;
+        } else {
+        ParameterWithActionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddPhoneCellIdentifier" forIndexPath:indexPath];
+        [cell.actionButton setTitle:AMLocalizedString(@"add_phone", nil) forState:UIControlStateNormal];
+        return cell;
+        }
+    }
 }
-*/
 
  - (void)nextButtonPressed:(UIButton *)sender {
  [self performSegueWithIdentifier:@"FinishCreationSegueIdentifier" sender:nil];
