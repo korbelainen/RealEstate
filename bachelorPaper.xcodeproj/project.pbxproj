@@ -10,6 +10,7 @@
 		4A099470207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A09946F207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.m */; };
 		4A0B9374209DAD3000D54150 /* SavedSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B9373209DAD3000D54150 /* SavedSearchTableViewCell.m */; };
 		4A0B9377209DB56E00D54150 /* SavedSearchesInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B9376209DB56E00D54150 /* SavedSearchesInfoTableViewController.m */; };
+		4A0B937D209DBDE600D54150 /* SavedSearchesEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B937C209DBDE600D54150 /* SavedSearchesEditTableViewController.m */; };
 		4A9C20652076828500905C96 /* WebserviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C20642076828500905C96 /* WebserviceManager.m */; };
 		4A9C206820781D1D00905C96 /* ApartmentDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C206720781D1D00905C96 /* ApartmentDetailsTableViewController.m */; };
 		AD93323F435FC9B7E2927252 /* libPods-bachelorPaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */; };
@@ -56,6 +57,8 @@
 		4A0B9373209DAD3000D54150 /* SavedSearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedSearchTableViewCell.m; sourceTree = "<group>"; };
 		4A0B9375209DB56E00D54150 /* SavedSearchesInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavedSearchesInfoTableViewController.h; sourceTree = "<group>"; };
 		4A0B9376209DB56E00D54150 /* SavedSearchesInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedSearchesInfoTableViewController.m; sourceTree = "<group>"; };
+		4A0B937B209DBDE600D54150 /* SavedSearchesEditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavedSearchesEditTableViewController.h; sourceTree = "<group>"; };
+		4A0B937C209DBDE600D54150 /* SavedSearchesEditTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedSearchesEditTableViewController.m; sourceTree = "<group>"; };
 		4A42FD5C209C5D6100F33DD9 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4A9C20632076828500905C96 /* WebserviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebserviceManager.h; sourceTree = "<group>"; };
 		4A9C20642076828500905C96 /* WebserviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebserviceManager.m; sourceTree = "<group>"; };
@@ -153,8 +156,32 @@
 				CB325BEE2064145D0099E61B /* SavedSearchesViewController.m */,
 				4A0B9375209DB56E00D54150 /* SavedSearchesInfoTableViewController.h */,
 				4A0B9376209DB56E00D54150 /* SavedSearchesInfoTableViewController.m */,
+				4A0B937B209DBDE600D54150 /* SavedSearchesEditTableViewController.h */,
+				4A0B937C209DBDE600D54150 /* SavedSearchesEditTableViewController.m */,
 			);
 			path = "Saved Searches";
+			sourceTree = "<group>";
+		};
+		4A0B9379209DB98C00D54150 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CB325BD62063E8C90099E61B /* SearchViewController.h */,
+				CB325BD72063E8C90099E61B /* SearchViewController.m */,
+				CB4B2D0E2073AF0300AD575B /* SearchResultsTableViewController.h */,
+				CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4A0B937A209DB9C100D54150 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B2D092073AF0200AD575B /* RootViewController.h */,
+				CB4B2D0B2073AF0300AD575B /* RootViewController.m */,
+				CB325C0A2064F7AC0099E61B /* MenuViewController.h */,
+				CB325C0B2064F7AC0099E61B /* MenuViewController.m */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		6DD138A899E9AF2F1887D49D /* Pods */ = {
@@ -229,24 +256,18 @@
 		CB325BE92063E8F30099E61B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A0B937A209DB9C100D54150 /* Menu */,
+				4A0B9379209DB98C00D54150 /* Search */,
 				4A0B9378209DB87700D54150 /* Saved Searches */,
 				CB2F67232080C6E30097C152 /* Advertisement */,
-				CB4B2D092073AF0200AD575B /* RootViewController.h */,
-				CB4B2D0B2073AF0300AD575B /* RootViewController.m */,
-				CB4B2D0E2073AF0300AD575B /* SearchResultsTableViewController.h */,
-				CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */,
 				CB4B2D0A2073AF0300AD575B /* UserProfileTableViewController.h */,
 				CB4B2D0C2073AF0300AD575B /* UserProfileTableViewController.m */,
-				CB325BD62063E8C90099E61B /* SearchViewController.h */,
-				CB325BD72063E8C90099E61B /* SearchViewController.m */,
 				CB325BEA206414400099E61B /* LoginViewController.h */,
 				CB325BEB206414400099E61B /* LoginViewController.m */,
 				CB325BF02064146E0099E61B /* FavoritesViewController.h */,
 				CB325BF12064146E0099E61B /* FavoritesViewController.m */,
 				CB325BF3206414810099E61B /* FeedbackViewController.h */,
 				CB325BF4206414810099E61B /* FeedbackViewController.m */,
-				CB325C0A2064F7AC0099E61B /* MenuViewController.h */,
-				CB325C0B2064F7AC0099E61B /* MenuViewController.m */,
 				4A9C206620781D1D00905C96 /* ApartmentDetailsTableViewController.h */,
 				4A9C206720781D1D00905C96 /* ApartmentDetailsTableViewController.m */,
 				4A09946E207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.h */,
@@ -468,6 +489,7 @@
 				CB4B2D082073AE3500AD575B /* FromToParameterTableViewCell.m in Sources */,
 				CB325BEC206414400099E61B /* LoginViewController.m in Sources */,
 				4A0B9377209DB56E00D54150 /* SavedSearchesInfoTableViewController.m in Sources */,
+				4A0B937D209DBDE600D54150 /* SavedSearchesEditTableViewController.m in Sources */,
 				CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */,
 				CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */,
 				CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */,
