@@ -7,8 +7,12 @@
 //
 
 #import "SavedSearchesViewController.h"
+#import "SavedSearchTableViewCell.h"
+#import "LocalizationSystem.h"
 
-@interface SavedSearchesViewController ()
+@interface SavedSearchesViewController () <UITableViewDelegate>
+
+@property (strong, nonatomic) NSArray *savedSearches;
 
 @end
 
@@ -16,22 +20,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.savedSearches = @[@""];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.savedSearches.count;
 }
-*/
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SavedSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"savedSearchCellIdentifier" forIndexPath:indexPath];
+    [cell.editButton setTitle:AMLocalizedString(@"edit", nil) forState:UIControlStateNormal];
+    [cell.editButton setTitle:AMLocalizedString(@"edit", nil) forState:UIControlStateHighlighted];
+    return cell;
+}
+
+- (IBAction)deleteButtonPressed:(id)sender {
+}
+
+- (IBAction)infoButtonPressed:(id)sender {
+}
+
+- (IBAction)editButtonPressed:(id)sender {
+}
 
 @end

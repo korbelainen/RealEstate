@@ -30,6 +30,7 @@
 "close" = "Close";
 "send" = "Send";
 "done" = "Done";
+"edit" = "Edit";
 "registration" = "Sign In";
 "next" = "Next";
 "login_failed" = "Login failed";
