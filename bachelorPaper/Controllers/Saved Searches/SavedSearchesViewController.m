@@ -44,9 +44,12 @@
 }
 
 - (IBAction)infoButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"searchInfoSegueIdentifier" sender:nil];
 }
 
 - (IBAction)editButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"editSearchSegueIdentifier" sender:nil];
+
 }
 
 @end
