@@ -10,7 +10,6 @@
 		4A099470207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A09946F207BC6D3008A0F5C /* SimpleParameterOptionsTableViewController.m */; };
 		4A0B9374209DAD3000D54150 /* SavedSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B9373209DAD3000D54150 /* SavedSearchTableViewCell.m */; };
 		4A0B9377209DB56E00D54150 /* SavedSearchesInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B9376209DB56E00D54150 /* SavedSearchesInfoTableViewController.m */; };
-		4A0B937D209DBDE600D54150 /* SavedSearchesEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B937C209DBDE600D54150 /* SavedSearchesEditTableViewController.m */; };
 		4A9C20652076828500905C96 /* WebserviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C20642076828500905C96 /* WebserviceManager.m */; };
 		4A9C206820781D1D00905C96 /* ApartmentDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C206720781D1D00905C96 /* ApartmentDetailsTableViewController.m */; };
 		AD93323F435FC9B7E2927252 /* libPods-bachelorPaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */; };
@@ -57,8 +56,6 @@
 		4A0B9373209DAD3000D54150 /* SavedSearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedSearchTableViewCell.m; sourceTree = "<group>"; };
 		4A0B9375209DB56E00D54150 /* SavedSearchesInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavedSearchesInfoTableViewController.h; sourceTree = "<group>"; };
 		4A0B9376209DB56E00D54150 /* SavedSearchesInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedSearchesInfoTableViewController.m; sourceTree = "<group>"; };
-		4A0B937B209DBDE600D54150 /* SavedSearchesEditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavedSearchesEditTableViewController.h; sourceTree = "<group>"; };
-		4A0B937C209DBDE600D54150 /* SavedSearchesEditTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedSearchesEditTableViewController.m; sourceTree = "<group>"; };
 		4A42FD5C209C5D6100F33DD9 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4A9C20632076828500905C96 /* WebserviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebserviceManager.h; sourceTree = "<group>"; };
 		4A9C20642076828500905C96 /* WebserviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebserviceManager.m; sourceTree = "<group>"; };
@@ -156,8 +153,6 @@
 				CB325BEE2064145D0099E61B /* SavedSearchesViewController.m */,
 				4A0B9375209DB56E00D54150 /* SavedSearchesInfoTableViewController.h */,
 				4A0B9376209DB56E00D54150 /* SavedSearchesInfoTableViewController.m */,
-				4A0B937B209DBDE600D54150 /* SavedSearchesEditTableViewController.h */,
-				4A0B937C209DBDE600D54150 /* SavedSearchesEditTableViewController.m */,
 			);
 			path = "Saved Searches";
 			sourceTree = "<group>";
@@ -306,34 +301,50 @@
 		CB325C0F206508210099E61B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CB4B2D072073AE3500AD575B /* FromToParameterTableViewCell.h */,
-				CB4B2D062073AE3500AD575B /* FromToParameterTableViewCell.m */,
+				CB3659C220A032A300AEC305 /* Search */,
+				CB3659C120A0327200AEC305 /* Login */,
 				CB325C10206508540099E61B /* MenuItemTableViewCell.h */,
 				CB325C11206508540099E61B /* MenuItemTableViewCell.m */,
-				CB325C1B206571E50099E61B /* SegmentedControlTableViewCell.h */,
-				CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */,
-				CB325C1E20657B170099E61B /* RoomCountParameterTableViewCell.h */,
-				CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */,
-				CB325C2120657E3A0099E61B /* SwitchParameterTableViewCell.h */,
-				CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */,
-				CB20F0AF2068C3FE00DB216C /* LoginInputTableViewCell.h */,
-				CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */,
-				CB20F0B22068C46300DB216C /* ForgetPasswordTableViewCell.h */,
-				CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */,
 				CB60A0AE2074EA2000070F94 /* EmailTableViewCell.h */,
 				CB60A0AF2074EA2000070F94 /* EmailTableViewCell.m */,
 				CB60A0B12074EA7000070F94 /* FeedbackDescriptionTableViewCell.h */,
 				CB60A0B22074EA7000070F94 /* FeedbackDescriptionTableViewCell.m */,
 				CB60A0B72075045200070F94 /* FavoritesListItemTableViewCell.h */,
 				CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */,
-				CB2F671D207E1F620097C152 /* TextFieldParameterTableViewCell.h */,
-				CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */,
 				CB2F6720207E2D0B0097C152 /* ParameterWithActionTableViewCell.h */,
 				CB2F6721207E2D0B0097C152 /* ParameterWithActionTableViewCell.m */,
 				4A0B9372209DAD3000D54150 /* SavedSearchTableViewCell.h */,
 				4A0B9373209DAD3000D54150 /* SavedSearchTableViewCell.m */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB3659C120A0327200AEC305 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CB20F0AF2068C3FE00DB216C /* LoginInputTableViewCell.h */,
+				CB20F0B02068C3FE00DB216C /* LoginInputTableViewCell.m */,
+				CB20F0B22068C46300DB216C /* ForgetPasswordTableViewCell.h */,
+				CB20F0B32068C46300DB216C /* ForgetPasswordTableViewCell.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CB3659C220A032A300AEC305 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B2D072073AE3500AD575B /* FromToParameterTableViewCell.h */,
+				CB4B2D062073AE3500AD575B /* FromToParameterTableViewCell.m */,
+				CB325C1B206571E50099E61B /* SegmentedControlTableViewCell.h */,
+				CB325C1C206571E50099E61B /* SegmentedControlTableViewCell.m */,
+				CB325C1E20657B170099E61B /* RoomCountParameterTableViewCell.h */,
+				CB325C1F20657B170099E61B /* RoomCountParameterTableViewCell.m */,
+				CB325C2120657E3A0099E61B /* SwitchParameterTableViewCell.h */,
+				CB325C2220657E3A0099E61B /* SwitchParameterTableViewCell.m */,
+				CB2F671D207E1F620097C152 /* TextFieldParameterTableViewCell.h */,
+				CB2F671E207E1F620097C152 /* TextFieldParameterTableViewCell.m */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		CB4B2D022073ADB600AD575B /* Managers */ = {
@@ -489,7 +500,6 @@
 				CB4B2D082073AE3500AD575B /* FromToParameterTableViewCell.m in Sources */,
 				CB325BEC206414400099E61B /* LoginViewController.m in Sources */,
 				4A0B9377209DB56E00D54150 /* SavedSearchesInfoTableViewController.m in Sources */,
-				4A0B937D209DBDE600D54150 /* SavedSearchesEditTableViewController.m in Sources */,
 				CB20F0B42068C46300DB216C /* ForgetPasswordTableViewCell.m in Sources */,
 				CB325C1D206571E60099E61B /* SegmentedControlTableViewCell.m in Sources */,
 				CB325C0C2064F7AC0099E61B /* MenuViewController.m in Sources */,

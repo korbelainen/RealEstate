@@ -10,4 +10,6 @@
 
 @interface SavedSearchesInfoTableViewController : UITableViewController
 
+@property (assign, nonatomic) BOOL isEditMode;
+
 @end

@@ -9,10 +9,12 @@
 #import "SavedSearchesViewController.h"
 #import "SavedSearchTableViewCell.h"
 #import "LocalizationSystem.h"
+#import "SavedSearchesInfoTableViewController.h"
 
 @interface SavedSearchesViewController () <UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *savedSearches;
+@property (assign, nonatomic) BOOL isEditMode;
 
 @end
 
@@ -44,12 +46,18 @@
 }
 
 - (IBAction)infoButtonPressed:(id)sender {
-    [self performSegueWithIdentifier:@"searchInfoSegueIdentifier" sender:nil];
+    self.isEditMode = NO;
+    [self performSegueWithIdentifier:@"savedSearchDetailsSegueIdentifier" sender:nil];
 }
 
 - (IBAction)editButtonPressed:(id)sender {
-    [self performSegueWithIdentifier:@"editSearchSegueIdentifier" sender:nil];
-
+    self.isEditMode = YES;
+    [self performSegueWithIdentifier:@"savedSearchDetailsSegueIdentifier" sender:nil];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"savedSearchDetailsSegueIdentifier"]) {
+        ((SavedSearchesInfoTableViewController *)segue.destinationViewController).isEditMode = self.isEditMode;
+    }
+}
 @end

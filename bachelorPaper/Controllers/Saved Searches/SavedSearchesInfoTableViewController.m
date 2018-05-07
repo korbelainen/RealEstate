@@ -7,6 +7,7 @@
 //
 
 #import "SavedSearchesInfoTableViewController.h"
+#import "TextFieldParameterTableViewCell.h"
 
 @interface SavedSearchesInfoTableViewController () <UITableViewDelegate>
 
@@ -30,12 +31,42 @@
 }
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"savedSearchesInfoCell" forIndexPath:indexPath];
-//     if (indexPath.row == 0) {
-         cell.textLabel.text = @"title";
-         cell.detailTextLabel.text = @"subtitle";
-//     }
- return cell;
+     if (self.isEditMode == true) {
+         if (indexPath.row == 0) {
+             TextFieldParameterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"searchTitleCellIdentifier" forIndexPath: indexPath];
+             cell.parameterTextfield.text = @"title";
+
+             UIImageView *clearView = [[UIImageView alloc] init];
+             clearView.image = [UIImage imageNamed:@"remove-photo"];
+             [cell addSubview: clearView];
+             return cell;
+         } else {
+             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"searchNotificationFrequenceCellIdentifier" forIndexPath:indexPath];
+             return cell;
+         }
+     } else {
+         if (indexPath.row == 0) {
+             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"savedSearchesInfoCell" forIndexPath:indexPath];
+             cell.textLabel.text = @"title";
+             cell.detailTextLabel.text = @"";
+             return cell;
+         } else {
+             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"savedSearchesInfoCell" forIndexPath:indexPath];
+             cell.textLabel.text = @"title";
+             cell.detailTextLabel.text = @"subtitle";
+             return cell;
+         }
+     }
  }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row != 0) {
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        if (cell.accessoryType == UITableViewCellAccessoryNone) {
+                    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        } else {
+             cell.accessoryType = UITableViewCellAccessoryNone;
+        }
+    }
+}
 @end
