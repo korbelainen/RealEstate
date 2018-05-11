@@ -59,6 +59,13 @@ static WebserviceManager *sharedInstance = nil;
     }];
 }
 
+- (void)performSearchWithParameters:(NSDictionary *)searchParameters success:(void (^)(NSDictionary *responseObject))success {
+
+    [self postWithRequestBody:searchParameters andRequestType:@"find" success:^(NSDictionary *responseObject) {
+        success(responseObject);
+    }];
+}
+
 -(void)postWithRequestBody:(NSDictionary *)body andRequestType:(NSString *)requestType success:(void (^)(NSDictionary *responseObject))success {
 
     NSURL *url = [NSURL URLWithString:[kGlobalURl stringByAppendingString:requestType]];
