@@ -8,6 +8,7 @@
 
 #import "SearchResultsTableViewController.h"
 #import "SavedSearchTableViewCell.h"
+#import "ApartmentDetailsTableViewController.h"
 
 @interface SearchResultsTableViewController ()
 
@@ -48,6 +49,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"ApartmentDetailsSegueIdentifier" sender:nil];
+}
+
 - (NSString *)createHeaderTitleForSearchItemAtIndexPath: (NSIndexPath *)indexPath {
     NSString *index = [NSString stringWithFormat:@"%li", (long)indexPath.row];
 
@@ -59,14 +64,14 @@
 
     return [[[[[[[[square stringByAppendingString:@" m2, "] stringByAppendingString:city] stringByAppendingString:@", "] stringByAppendingString:district] stringByAppendingString:@", "] stringByAppendingString:street]stringByAppendingString:@" "]stringByAppendingString:houseNumber];
 }
-/*
+
  #pragma mark - Navigation
 
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     if ([segue.identifier isEqualToString:@"ApartmentDetailsSegueIdentifier"]) {
+         
+     }
  }
- */
 
 @end

@@ -620,6 +620,9 @@
                             <outlet property="delegate" destination="0gK-NI-0YA" id="T3T-Qa-eCd"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="A1b-EV-cpm" kind="show" identifier="ApartmentDetailsSegueIdentifier" id="fkc-j7-SOM"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="2165.5999999999999" y="-599.55022488755628"/>
@@ -1868,6 +1871,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uX5-JQ-w50"/>
+        <segue reference="fkc-j7-SOM"/>
         <segue reference="aIC-kb-efV"/>
     </inferredMetricsTieBreakers>
 </document>
