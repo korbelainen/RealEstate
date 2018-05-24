@@ -572,17 +572,29 @@
                                                 <action selector="infoButtonPressed:" destination="wAU-ok-4Nr" eventType="touchUpInside" id="ben-Ce-tug"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pD-Gd-PuB">
+                                            <rect key="frame" x="15" y="241" width="300" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="31" id="gx1-qs-D7p"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="WTp-yj-Tfy" firstAttribute="leading" secondItem="MCx-8P-9jE" secondAttribute="trailing" constant="14" id="7Th-17-OaB"/>
+                                        <constraint firstItem="9pD-Gd-PuB" firstAttribute="leading" secondItem="sPY-mh-AoP" secondAttribute="leading" constant="15" id="CUZ-5o-4OX"/>
                                         <constraint firstItem="zVR-0b-IdE" firstAttribute="leading" secondItem="sPY-mh-AoP" secondAttribute="leadingMargin" id="GNk-md-pYt"/>
                                         <constraint firstItem="C9v-kR-486" firstAttribute="leading" secondItem="zVR-0b-IdE" secondAttribute="leading" id="Ikp-CF-uE0"/>
                                         <constraint firstItem="VSs-2M-xCA" firstAttribute="top" secondItem="thL-Af-Jnb" secondAttribute="bottom" constant="8" id="JVw-SC-xaT"/>
                                         <constraint firstItem="C9v-kR-486" firstAttribute="trailing" secondItem="zVR-0b-IdE" secondAttribute="trailing" id="QDf-qJ-gkU"/>
                                         <constraint firstItem="VSs-2M-xCA" firstAttribute="leading" secondItem="sPY-mh-AoP" secondAttribute="leadingMargin" id="RFa-66-keJ"/>
                                         <constraint firstItem="C9v-kR-486" firstAttribute="top" secondItem="zVR-0b-IdE" secondAttribute="bottom" constant="3" id="bNd-Ea-sXH"/>
+                                        <constraint firstItem="WTp-yj-Tfy" firstAttribute="leading" secondItem="9pD-Gd-PuB" secondAttribute="trailing" constant="14" id="cAw-Ha-0yG"/>
                                         <constraint firstItem="zVR-0b-IdE" firstAttribute="trailing" secondItem="sPY-mh-AoP" secondAttribute="trailingMargin" id="cYJ-bN-Gau"/>
                                         <constraint firstItem="MCx-8P-9jE" firstAttribute="leading" secondItem="VSs-2M-xCA" secondAttribute="trailing" constant="94" id="dvR-Lf-08j"/>
+                                        <constraint firstItem="9pD-Gd-PuB" firstAttribute="top" secondItem="thL-Af-Jnb" secondAttribute="bottom" constant="16.5" id="est-uc-p5Z"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="VSs-2M-xCA" secondAttribute="bottom" id="mre-zF-PQj"/>
                                         <constraint firstItem="thL-Af-Jnb" firstAttribute="top" secondItem="C9v-kR-486" secondAttribute="bottom" constant="5" id="nu5-2E-cbb"/>
                                         <constraint firstItem="thL-Af-Jnb" firstAttribute="leading" secondItem="sPY-mh-AoP" secondAttribute="leading" constant="3" id="o5K-M0-iYS"/>
@@ -594,6 +606,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="deleteButton" destination="WTp-yj-Tfy" id="OTn-TC-LSp"/>
+                                    <outlet property="descriptionLabel" destination="9pD-Gd-PuB" id="jlc-bo-bT5"/>
                                     <outlet property="editButton" destination="VSs-2M-xCA" id="YQB-zB-JS6"/>
                                     <outlet property="infoButton" destination="MCx-8P-9jE" id="Y6s-BV-TPb"/>
                                     <outlet property="mainImageView" destination="thL-Af-Jnb" id="wmv-ke-KdM"/>

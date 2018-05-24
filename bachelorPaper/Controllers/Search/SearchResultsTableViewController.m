@@ -35,6 +35,7 @@
     NSString *index = [NSString stringWithFormat:@"%li", (long)indexPath.row];
     cell.savedSearchHeader.text = [self createHeaderTitleForSearchItemAtIndexPath:indexPath];
     cell.notificationFrequence.text = [[NSString stringWithFormat:@"%@", [self.searchResults[index] valueForKey:@"price"]] stringByAppendingString:@" €"];
+    cell.descriptionLabel.text = [self.searchResults[index] valueForKey:@"description"];
     [cell.editButton setHidden:YES];
     [cell.infoButton setHidden:YES];
     [cell.deleteButton setImage:[UIImage imageNamed:@"add_to_favorites"] forState:UIControlStateNormal];
@@ -43,8 +44,6 @@
     NSArray *photosForSearchItem = [self.searchResults[index] valueForKey:@"photos"];
     if (photosForSearchItem.count > 0) {
         cell.mainImageView.image = [UIImage imageWithData:[[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [photosForSearchItem objectAtIndex:0]]]];
-        cell.secondImageView.image = [UIImage imageWithData:[[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [photosForSearchItem objectAtIndex:1]]]];
-        cell.thirdImageView.image = [UIImage imageWithData:[[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [photosForSearchItem objectAtIndex:2]]]];
     }
     return cell;
 }
