@@ -7,6 +7,7 @@
 //
 
 #import "SearchResultsTableViewController.h"
+#import "SavedSearchTableViewCell.h"
 
 @interface SearchResultsTableViewController ()
 
@@ -16,78 +17,57 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.searchResults.allKeys.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    SavedSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"savedSearchCellIdentifier" forIndexPath:indexPath];
+    NSString *index = [NSString stringWithFormat:@"%li", (long)indexPath.row];
+    cell.savedSearchHeader.text = [self createHeaderTitleForSearchItemAtIndexPath:indexPath];
+    cell.notificationFrequence.text = [[NSString stringWithFormat:@"%@", [self.searchResults[index] valueForKey:@"price"]] stringByAppendingString:@" €"];
+    [cell.editButton setHidden:YES];
+    [cell.infoButton setHidden:YES];
+    [cell.deleteButton setImage:[UIImage imageNamed:@"add_to_favorites"] forState:UIControlStateNormal];
+    [cell.deleteButton setImage:[UIImage imageNamed:@"add_to_favorites"] forState:UIControlStateHighlighted];
+
+    NSArray *photosForSearchItem = [self.searchResults[index] valueForKey:@"photos"];
+    if (photosForSearchItem.count > 0) {
+        cell.mainImageView.image = [UIImage imageWithData:[[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [photosForSearchItem objectAtIndex:0]]]];
+        cell.secondImageView.image = [UIImage imageWithData:[[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [photosForSearchItem objectAtIndex:1]]]];
+        cell.thirdImageView.image = [UIImage imageWithData:[[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [photosForSearchItem objectAtIndex:2]]]];
+    }
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (NSString *)createHeaderTitleForSearchItemAtIndexPath: (NSIndexPath *)indexPath {
+    NSString *index = [NSString stringWithFormat:@"%li", (long)indexPath.row];
+
+    NSString *square = [NSString stringWithFormat:@"%@", [self.searchResults[index] valueForKey:@"square"]];
+    NSString *city = [self.searchResults[index] valueForKey:@"city"];
+    NSString *district = [self.searchResults[index] valueForKey:@"district"];
+    NSString *street = [self.searchResults[index] valueForKey:@"street"];
+    NSString *houseNumber = [NSString stringWithFormat:@"%@", [self.searchResults[index] valueForKey:@"houseNr"]];
+
+    return [[[[[[[[square stringByAppendingString:@" m2, "] stringByAppendingString:city] stringByAppendingString:@", "] stringByAppendingString:district] stringByAppendingString:@", "] stringByAppendingString:street]stringByAppendingString:@" "]stringByAppendingString:houseNumber];
 }
-*/
-
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ #pragma mark - Navigation
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

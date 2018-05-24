@@ -83,7 +83,7 @@ static WebserviceManager *sharedInstance = nil;
                                  @"cli": @"ad6a8fe72ef7dfb9c46958aacb15196a",
                                  @"sess": @"rYgRe6xL2y8VccMJ",
                                  @"coll": @"apartments",
-                                 @"limit":@1
+                                 @"limit":@100
                                  };
     [self postWithRequestBody:parameters andRequestType:@"data/find" success:^(NSDictionary *responseObject) {
 

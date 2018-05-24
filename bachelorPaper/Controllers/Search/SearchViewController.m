@@ -13,6 +13,7 @@
 #import "FromToParameterTableViewCell.h"
 #import "RoomCountParameterTableViewCell.h"
 #import "SimpleParameterOptionsTableViewController.h"
+#import "SearchResultsTableViewController.h"
 #import "WebserviceManager.h"
 
 @interface SearchViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *clearBarButton;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 
+@property (strong, nonatomic) NSDictionary *searchResults;
 @property (strong, nonatomic) NSString *selectedParameter;
 @property (assign, nonatomic) BOOL isInRentMode;
 @end
@@ -184,6 +186,10 @@
     //    if () {
     //        ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
     //    }
+
+    if ([segue.identifier isEqualToString:@"searchResultsTableViewControllerSegue"]) {
+         ((SearchResultsTableViewController *)segue.destinationViewController).searchResults = self.searchResults;
+    }
 }
 
 - (void)configureSearchButton {
@@ -196,10 +202,9 @@
 
 - (IBAction)searchButtonPressed:(id)sender {
     [[WebserviceManager sharedInstance] performSearchWithParameters:@{} success:^(NSDictionary *responseObject) {
-        NSLog(@"%@", responseObject);
+        self.searchResults = responseObject;
+       [self performSegueWithIdentifier:@"searchResultsTableViewControllerSegue" sender:nil];
     }];
-
 }
-
 @end
 
