@@ -13,7 +13,6 @@
 #import "FromToParameterTableViewCell.h"
 #import "RoomCountParameterTableViewCell.h"
 #import "SimpleParameterOptionsTableViewController.h"
-#import "WebserviceManager.h"
 
 @interface SearchViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -195,9 +194,6 @@
 }
 
 - (IBAction)searchButtonPressed:(id)sender {
-    [[WebserviceManager sharedInstance] performSearchWithParameters:@{} success:^(NSDictionary *responseObject) {
-        NSLog(@"%@", responseObject);
-    }];
 }
 
 @end

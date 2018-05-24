@@ -60,31 +60,8 @@ static WebserviceManager *sharedInstance = nil;
 }
 
 - (void)performSearchWithParameters:(NSDictionary *)searchParameters success:(void (^)(NSDictionary *responseObject))success {
-//    NSDictionary *cityID = @{ @"$eq": @"mEcFh48791"};
-//    NSDictionary *price = @{
-//                            @"$gte": @0,
-//                            @"$lte": @200000
-//    };
-//    NSDictionary *floor = @{@"$gte": @2};
-//    NSDictionary *rooms = @{
-//                            @"$gte": @1,
-//                            @"$lte": @3
-//                            };
-//    NSDictionary *query = @{
-//                            @"cityId": cityID,
-//                            @"price": price,
-//                            @"floor": floor,
-//                            @"rooms": rooms
-//                            };
-//    NSDictionary *sort = @{@"price": @1};
-    NSDictionary *parameters = @{
-                                 @"app": @"db8a1b41b8543397a798a181d9891b4c",
-                                 @"cli": @"ad6a8fe72ef7dfb9c46958aacb15196a",
-                                 @"sess": @"rYgRe6xL2y8VccMJ",
-                                 @"coll": @"apartments",
-                                 @"limit":@1
-                                 };
-    [self postWithRequestBody:parameters andRequestType:@"data/find" success:^(NSDictionary *responseObject) {
+
+    [self postWithRequestBody:searchParameters andRequestType:@"find" success:^(NSDictionary *responseObject) {
         success(responseObject);
     }];
 }
