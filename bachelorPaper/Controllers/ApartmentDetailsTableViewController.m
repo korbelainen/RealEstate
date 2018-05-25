@@ -170,13 +170,18 @@
                 cell.descriptionTextField.text = self.apartmentDetails[@"description"];
                 return cell;
             } else if (indexPath.row == 1) {
-                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
-                cell.textLabel.text = AMLocalizedString(@"", nil);
+                ParameterWithActionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"parameterWithAcionCellIdentifier" forIndexPath:indexPath];
+                cell.parameterLabel.text = self.apartmentDetails[@"email"];// objectAtIndex:0];
+                [cell.actionButton setImage:[UIImage imageNamed:@"red-message"] forState:UIControlStateNormal];
+                [cell.actionButton setImage:[UIImage imageNamed:@"red-message"] forState:UIControlStateHighlighted];
+                [cell.actionButton addTarget:self action:@selector(writeEmail) forControlEvents:UIControlEventTouchUpInside];
                 return cell;
             } else {
                 ParameterWithActionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"parameterWithAcionCellIdentifier" forIndexPath:indexPath];
+                cell.parameterLabel.text = [self.apartmentDetails[@"phoneNr"] objectAtIndex:0];
                 [cell.actionButton setImage:[UIImage imageNamed:@"call"] forState:UIControlStateNormal];
                 [cell.actionButton setImage:[UIImage imageNamed:@"call"] forState:UIControlStateHighlighted];
+                [cell.actionButton addTarget:self action:@selector(call) forControlEvents:UIControlEventTouchUpInside];
                 return cell;
             }
         }
@@ -193,6 +198,14 @@
 - (void)showOnMap {
     //    [self performSegueWithIdentifier:@"showMapSegueIdentifier" sender:nil];
     
+}
+
+- (void)call {
+
+}
+
+- (void)writeEmail {
+
 }
 /*
  #pragma mark - Navigation
