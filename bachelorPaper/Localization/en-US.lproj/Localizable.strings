@@ -92,3 +92,8 @@
 "description" = "Description";
 
 
+// apartment details
+"apartment_parameters" = "Apartment parameters";
+"building_parameters" = "Building parameters";
+"desctription" = "Description";
+

@@ -91,4 +91,7 @@
 "contacts" = "Контакты";
 "description" = "Описание";
 
-
+// apartment details
+"apartment_parameters" = "Параметры квартиры";
+"building_parameters" = "Параметры дома";
+"desctription" = "Описание";

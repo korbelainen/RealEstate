@@ -461,7 +461,6 @@
         <!--Simple Parameter Options Table View Controller-->
         <scene sceneID="gCG-i9-gKB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="997-oi-lLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="7zG-Pl-E4l" customClass="SimpleParameterOptionsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3zG-xe-0TN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -499,13 +498,13 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="997-oi-lLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1418" y="-604"/>
         </scene>
         <!--Search Results Table View Controller-->
         <scene sceneID="mBl-ut-b8Y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5De-eE-r8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="0gK-NI-0YA" customClass="SearchResultsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="39g-j7-O07">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -624,6 +623,7 @@
                         <segue destination="A1b-EV-cpm" kind="show" identifier="ApartmentDetailsSegueIdentifier" id="fkc-j7-SOM"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5De-eE-r8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2165.5999999999999" y="-599.55022488755628"/>
         </scene>
@@ -713,7 +713,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="234" id="iWf-ay-6me">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="apartmentPhotosCellIdentifier" rowHeight="234" id="iWf-ay-6me" customClass="ApartmentPhotoTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="234"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iWf-ay-6me" id="xgC-aL-lGW">
@@ -731,6 +731,9 @@
                                         <constraint firstItem="f8b-4C-ozF" firstAttribute="leading" secondItem="xgC-aL-lGW" secondAttribute="leading" id="ntb-Jz-hIB"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="apartmentImageView" destination="f8b-4C-ozF" id="ZGW-Oy-F1w"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="simpleParameterCellIdentifier" textLabel="PwL-bZ-qfc" style="IBUITableViewCellStyleDefault" id="jcb-nl-MEz">
                                 <rect key="frame" x="0.0" y="262" width="375" height="44"/>

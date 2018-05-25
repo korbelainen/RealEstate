@@ -12,6 +12,8 @@
 
 @interface SearchResultsTableViewController ()
 
+@property (strong, nonatomic) NSString *selectedApartmentIndex;
+
 @end
 
 @implementation SearchResultsTableViewController
@@ -34,7 +36,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SavedSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"savedSearchCellIdentifier" forIndexPath:indexPath];
     NSString *index = [NSString stringWithFormat:@"%li", (long)indexPath.row];
-    cell.savedSearchHeader.text = [self createHeaderTitleForSearchItemAtIndexPath:indexPath];
+    cell.savedSearchHeader.text = [self createHeaderTitleForSearchItemAtIndexPath:indexPath forController:NO];
     cell.notificationFrequence.text = [[NSString stringWithFormat:@"%@", [self.searchResults[index] valueForKey:@"price"]] stringByAppendingString:@" €"];
     cell.descriptionLabel.text = [self.searchResults[index] valueForKey:@"description"];
     [cell.editButton setHidden:YES];
@@ -50,10 +52,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedApartmentIndex = [NSString stringWithFormat:@"%li", (long)indexPath.row];
     [self performSegueWithIdentifier:@"ApartmentDetailsSegueIdentifier" sender:nil];
 }
 
-- (NSString *)createHeaderTitleForSearchItemAtIndexPath: (NSIndexPath *)indexPath {
+- (NSString *)createHeaderTitleForSearchItemAtIndexPath: (NSIndexPath *)indexPath forController:(BOOL) willBeUsedAsControllerTitle {
     NSString *index = [NSString stringWithFormat:@"%li", (long)indexPath.row];
 
     NSString *square = [NSString stringWithFormat:@"%@", [self.searchResults[index] valueForKey:@"square"]];
@@ -62,7 +65,11 @@
     NSString *street = [self.searchResults[index] valueForKey:@"street"];
     NSString *houseNumber = [NSString stringWithFormat:@"%@", [self.searchResults[index] valueForKey:@"houseNr"]];
 
-    return [[[[[[[[square stringByAppendingString:@" m2, "] stringByAppendingString:city] stringByAppendingString:@", "] stringByAppendingString:district] stringByAppendingString:@", "] stringByAppendingString:street]stringByAppendingString:@" "]stringByAppendingString:houseNumber];
+    if (willBeUsedAsControllerTitle == YES) {
+         return [[[[[[city stringByAppendingString:@", "] stringByAppendingString:district] stringByAppendingString:@", "] stringByAppendingString:street]stringByAppendingString:@" "]stringByAppendingString:houseNumber];
+    } else {
+         return [[[[[[[[square stringByAppendingString:@" m2, "] stringByAppendingString:city] stringByAppendingString:@", "] stringByAppendingString:district] stringByAppendingString:@", "] stringByAppendingString:street]stringByAppendingString:@" "]stringByAppendingString:houseNumber];
+    }
 }
 
  #pragma mark - Navigation
@@ -70,7 +77,8 @@
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
      if ([segue.identifier isEqualToString:@"ApartmentDetailsSegueIdentifier"]) {
-         
+         ((ApartmentDetailsTableViewController *)segue.destinationViewController).apartmentDetails = self.searchResults[self.selectedApartmentIndex];
+         ((ApartmentDetailsTableViewController *)segue.destinationViewController).address = [self createHeaderTitleForSearchItemAtIndexPath:[NSIndexPath indexPathForRow:self.selectedApartmentIndex.integerValue inSection:0] forController:YES];
      }
  }
 

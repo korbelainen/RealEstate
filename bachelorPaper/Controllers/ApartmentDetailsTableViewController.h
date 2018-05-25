@@ -10,4 +10,7 @@
 
 @interface ApartmentDetailsTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSDictionary *apartmentDetails;
+@property (strong, nonatomic) NSString *address;
+
 @end

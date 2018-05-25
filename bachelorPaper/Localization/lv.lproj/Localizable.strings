@@ -89,3 +89,8 @@
 "publication_success" = "Slūdinājums veiksmīgi publicēts!";
 "contacts" = "Kontakti";
 "description" = "Aprāksts";
+
+// apartment details
+"apartment_parameters" = "Dzivokļa parametri";
+"building_parameters" = "Mājas parametri";
+"desctription" = "Apraksts";
