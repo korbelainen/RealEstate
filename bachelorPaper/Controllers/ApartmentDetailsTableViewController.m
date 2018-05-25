@@ -24,7 +24,6 @@
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     UIBarButtonItem *favoritesButton = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(manageFavorites:)];
     favoritesButton.image = [UIImage imageNamed:@"add_to_favorites"];
-    //    favoritesButton.image
     self.navigationItem.rightBarButtonItem = favoritesButton;
 }
 
