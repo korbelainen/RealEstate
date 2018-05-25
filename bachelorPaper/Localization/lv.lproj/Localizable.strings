@@ -46,6 +46,10 @@
 "central" = "Cenrālais";
 "gas" = "Gazes";
 "wood" = "Malkas";
+"monolith" = "Monolits";
+"brick" = "Ķieģeļis";
+"individual" = "Individualais projekts";
+"new" = "Jaunbūve";
 "floor" = "Stāvs";
 "total_area" = "Platība";
 "city" = "Pilsēta";

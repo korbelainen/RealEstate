@@ -52,6 +52,10 @@
 "central" = "Central";
 "gas" = "Gas";
 "wood" = "Wood";
+"monolith" = "Monolith";
+"brick" = "Brick";
+"individual" = "Individual project";
+"new" = "New building";
 "balcony" = "Balcony";
 "furniture" = "Furniture";
 "fridge" = "Fridge";

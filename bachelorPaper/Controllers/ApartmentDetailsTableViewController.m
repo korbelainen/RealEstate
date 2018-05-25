@@ -10,6 +10,7 @@
 #import "ParameterWithActionTableViewCell.h"
 #import "LocalizationSystem.h"
 #import "ApartmentPhotoTableViewCell.h"
+#import "ApartmentDescriptionTableViewCell.h"
 
 @interface ApartmentDetailsTableViewController ()
 
@@ -42,7 +43,7 @@
         case 2:
             return 3;
         case 3:
-            return 4;
+            return 3;
         default:
             return 0;
     }
@@ -88,13 +89,13 @@
                 case 0: {
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
                     NSString *square = [NSString stringWithFormat:@"%@", self.apartmentDetails[@"square"]];
-                    cell.textLabel.text = [AMLocalizedString(@"square", nil) stringByAppendingString:square];
+                    cell.textLabel.text = [[AMLocalizedString(@"total_area", nil) stringByAppendingString:@" - "] stringByAppendingString:square];
                     return cell;
                 }
                 case 1: {
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
-                    NSString *heatingType = self.apartmentDetails[@"heatingType"];
-                    cell.textLabel.text = [AMLocalizedString(@"heating_type", nil) stringByAppendingString: heatingType];
+                    NSString *heatingType = AMLocalizedString(self.apartmentDetails[@"heatingType"], nil);
+                    cell.textLabel.text = [[AMLocalizedString(@"heating_type", nil) stringByAppendingString:@" - "] stringByAppendingString: heatingType];
                     return cell;
                 }
                 case 2: {
@@ -107,14 +108,14 @@
                 case 3: {
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
                     NSString *roomsCount = [NSString stringWithFormat:@"%@", self.apartmentDetails[@"rooms"]];
-                    cell.textLabel.text = [AMLocalizedString(@"rooms_count", nil) stringByAppendingString: roomsCount];
+                    cell.textLabel.text = [[AMLocalizedString(@"rooms_count", nil) stringByAppendingString: @" - "] stringByAppendingString: roomsCount];
                     return cell;
                 }
                     
                 case 4: {
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
                     BOOL isStudio = self.apartmentDetails[@"isStudio"];
-                    cell.textLabel.text = AMLocalizedString(@"is_studio", nil);
+                    cell.textLabel.text = AMLocalizedString(@"studio", nil);
                     cell.accessoryType = (isStudio) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
                     return cell;
                 }
@@ -122,8 +123,16 @@
                 case 5: {
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
                     BOOL isForFent = self.apartmentDetails[@"isForRent"];
-                    cell.textLabel.text = AMLocalizedString(@"is_for_rent", nil);
+                    cell.textLabel.text = AMLocalizedString(@"rent", nil);
                     cell.accessoryType = (isForFent) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+                    return cell;
+                }
+                    
+                case 6: {
+                    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
+                    BOOL isStudio = self.apartmentDetails[@"balcony"];
+                    cell.textLabel.text = AMLocalizedString(@"balcony", nil);
+                    cell.accessoryType = (isStudio) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
                     return cell;
                 }
                 default:
@@ -136,19 +145,19 @@
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
                     NSString *floor = [NSString stringWithFormat:@"%@", self.apartmentDetails[@"floor"]];
                     NSString *floorsCount = [NSString stringWithFormat:@"%@", self.apartmentDetails[@"floors"]];
-                    cell.textLabel.text = [[[[AMLocalizedString(@"floor", nil) stringByAppendingString:@" "] stringByAppendingString: floor] stringByAppendingString:AMLocalizedString(@"from", nil)] stringByAppendingString: floorsCount];
+                    cell.textLabel.text = [[[[AMLocalizedString(@"floor", nil) stringByAppendingString:@" "] stringByAppendingString: floor] stringByAppendingString:AMLocalizedString(@" / ", nil)] stringByAppendingString: floorsCount];
                     return cell;
                 }
                 case 1: {
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
                     NSString *buildingMaterial = self.apartmentDetails[@"buildingMaterial"];
-                    cell.textLabel.text = [AMLocalizedString(@"building_material", nil) stringByAppendingString:buildingMaterial];
+                    cell.textLabel.text = [[AMLocalizedString(@"house_material", nil) stringByAppendingString:@" - "] stringByAppendingString:AMLocalizedString(buildingMaterial, nil)];
                     return cell;
                 }
                 case 2: {
                     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
-                    NSString *buildingMaterial = self.apartmentDetails[@"buildingType"];
-                    cell.textLabel.text = [AMLocalizedString(@"building_type", nil) stringByAppendingString:buildingMaterial];
+                    NSString *buildingType = self.apartmentDetails[@"buildingType"];
+                    cell.textLabel.text = [[AMLocalizedString(@"house_type", nil) stringByAppendingString:@" - "] stringByAppendingString:AMLocalizedString(buildingType, nil)];
                     return cell;
                 }
                 default:
@@ -157,6 +166,10 @@
         }
         case 3: {
             if (indexPath.row == 0) {
+                ApartmentDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ApartmentDescriptionTableViewCellIdentifier" forIndexPath:indexPath];
+                cell.descriptionTextField.text = self.apartmentDetails[@"description"];
+                return cell;
+            } else if (indexPath.row == 1) {
                 UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
                 cell.textLabel.text = AMLocalizedString(@"", nil);
                 return cell;

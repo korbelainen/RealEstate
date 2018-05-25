@@ -11,6 +11,7 @@
 		4A0B9374209DAD3000D54150 /* SavedSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B9373209DAD3000D54150 /* SavedSearchTableViewCell.m */; };
 		4A0B9377209DB56E00D54150 /* SavedSearchesInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B9376209DB56E00D54150 /* SavedSearchesInfoTableViewController.m */; };
 		4A8609E020B77C2F00CCE948 /* ApartmentPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8609DF20B77C2F00CCE948 /* ApartmentPhotoTableViewCell.m */; };
+		4A8609E420B7B17A00CCE948 /* ApartmentDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8609E320B7B17A00CCE948 /* ApartmentDescriptionTableViewCell.m */; };
 		4A9C20652076828500905C96 /* WebserviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C20642076828500905C96 /* WebserviceManager.m */; };
 		4A9C206820781D1D00905C96 /* ApartmentDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C206720781D1D00905C96 /* ApartmentDetailsTableViewController.m */; };
 		AD93323F435FC9B7E2927252 /* libPods-bachelorPaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8545D8EF5FD0A5886D61AB75 /* libPods-bachelorPaper.a */; };
@@ -60,6 +61,8 @@
 		4A42FD5C209C5D6100F33DD9 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4A8609DE20B77C2F00CCE948 /* ApartmentPhotoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApartmentPhotoTableViewCell.h; sourceTree = "<group>"; };
 		4A8609DF20B77C2F00CCE948 /* ApartmentPhotoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApartmentPhotoTableViewCell.m; sourceTree = "<group>"; };
+		4A8609E220B7B17A00CCE948 /* ApartmentDescriptionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApartmentDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		4A8609E320B7B17A00CCE948 /* ApartmentDescriptionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApartmentDescriptionTableViewCell.m; sourceTree = "<group>"; };
 		4A9C20632076828500905C96 /* WebserviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebserviceManager.h; sourceTree = "<group>"; };
 		4A9C20642076828500905C96 /* WebserviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebserviceManager.m; sourceTree = "<group>"; };
 		4A9C206620781D1D00905C96 /* ApartmentDetailsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApartmentDetailsTableViewController.h; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 				4A0B9373209DAD3000D54150 /* SavedSearchTableViewCell.m */,
 				4A8609DE20B77C2F00CCE948 /* ApartmentPhotoTableViewCell.h */,
 				4A8609DF20B77C2F00CCE948 /* ApartmentPhotoTableViewCell.m */,
+				4A8609E220B7B17A00CCE948 /* ApartmentDescriptionTableViewCell.h */,
+				4A8609E320B7B17A00CCE948 /* ApartmentDescriptionTableViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				4A0B9374209DAD3000D54150 /* SavedSearchTableViewCell.m in Sources */,
 				CB4B2D112073AF0300AD575B /* SearchResultsTableViewController.m in Sources */,
 				CB60A0B02074EA2000070F94 /* EmailTableViewCell.m in Sources */,
+				4A8609E420B7B17A00CCE948 /* ApartmentDescriptionTableViewCell.m in Sources */,
 				CB325C2020657B170099E61B /* RoomCountParameterTableViewCell.m in Sources */,
 				CB325BD52063E8C90099E61B /* AppDelegate.m in Sources */,
 				CB409F732087848900452CC4 /* DescriptionViewController.m in Sources */,
