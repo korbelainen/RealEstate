@@ -49,6 +49,7 @@
 		CB60A0B92075045200070F94 /* FavoritesListItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60A0B82075045200070F94 /* FavoritesListItemTableViewCell.m */; };
 		CB751F4A20889665001FF9F2 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB751F4920889665001FF9F2 /* ContactsTableViewController.m */; };
 		CB751F4D208898F0001FF9F2 /* PublicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB751F4C208898F0001FF9F2 /* PublicationViewController.m */; };
+		CBDC381520BFF72000D73CAD /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDC381420BFF72000D73CAD /* Error.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,8 @@
 		CB751F4920889665001FF9F2 /* ContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
 		CB751F4B208898F0001FF9F2 /* PublicationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicationViewController.h; sourceTree = "<group>"; };
 		CB751F4C208898F0001FF9F2 /* PublicationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicationViewController.m; sourceTree = "<group>"; };
+		CBDC381320BFF72000D73CAD /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		CBDC381420BFF72000D73CAD /* Error.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
 		D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
 		D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -372,6 +375,8 @@
 			children = (
 				4A9C20632076828500905C96 /* WebserviceManager.h */,
 				4A9C20642076828500905C96 /* WebserviceManager.m */,
+				CBDC381320BFF72000D73CAD /* Error.h */,
+				CBDC381420BFF72000D73CAD /* Error.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -507,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDC381520BFF72000D73CAD /* Error.m in Sources */,
 				CB4B2D082073AE3500AD575B /* FromToParameterTableViewCell.m in Sources */,
 				CB325BEC206414400099E61B /* LoginViewController.m in Sources */,
 				4A0B9377209DB56E00D54150 /* SavedSearchesInfoTableViewController.m in Sources */,

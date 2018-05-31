@@ -8,7 +8,7 @@
 
 #import "WebserviceManager.h"
 
-static NSString *kGlobalURl = @"https://api.skvortsov.lv/";
+static NSString *kGlobalURl = @"https://app.skvortsov.lv/api/";
 
 @implementation WebserviceManager
 
@@ -60,35 +60,55 @@ static WebserviceManager *sharedInstance = nil;
 }
 
 - (void)performSearchWithParameters:(NSDictionary *)searchParameters success:(void (^)(NSDictionary *responseObject))success {
-
-    //    NSDictionary *cityID = @{ @"$eq": @"mEcFh48791"};
-    //    NSDictionary *price = @{
-    //                            @"$gte": @0,
-    //                            @"$lte": @200000
-    //    };
-    //    NSDictionary *floor = @{@"$gte": @2};
-    //    NSDictionary *rooms = @{
-    //                            @"$gte": @1,
-    //                            @"$lte": @3
-    //                            };
-    //    NSDictionary *query = @{
-    //                            @"cityId": cityID,
-    //                            @"price": price,
-    //                            @"floor": floor,
-    //                            @"rooms": rooms
-    //                            };
-    //    NSDictionary *sort = @{@"price": @1};
-    NSDictionary *parameters = @{
-                                 @"app": @"db8a1b41b8543397a798a181d9891b4c",
-                                 @"cli": @"ad6a8fe72ef7dfb9c46958aacb15196a",
-                                 @"sess": @"rYgRe6xL2y8VccMJ",
-                                 @"coll": @"apartments",
-                                 @"limit":@100
-                                 };
-    [self postWithRequestBody:parameters andRequestType:@"data/find" success:^(NSDictionary *responseObject) {
-
+    NSString *url = [kGlobalURl stringByAppendingString:@"find/apartments?"];
+    [url stringByAppendingString:[self prepareSearchParametersFromDictionary:searchParameters]];
+    [self getWithUrl:url success:^(NSDictionary *responseObject) {
         success(responseObject);
+    } failure:^(Error *error) {
+        NSLog(@"%@", error.message);
     }];
+}
+
+- (NSString *)prepareSearchParametersFromDictionary:(NSDictionary *)dictionary {
+    NSString *parameters = @"";
+
+    return parameters;
+}
+
+- (void)getStreetsForSelectedCity:(NSString *)city success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure {
+    NSString *url = [[kGlobalURl stringByAppendingString:@"find/streets?city_id="] stringByAppendingString:city];
+    [self getWithUrl:url success:^(NSDictionary *responseObject) {
+        success(responseObject);
+    } failure:^(Error *error) {
+        NSLog(@"%@", error.message);
+    }];
+}
+
+- (void)getCitiesWithsuccess:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure {
+
+    [self getWithUrl:[kGlobalURl stringByAppendingString: @"find/cities"] success:^(NSDictionary *responseObject) {
+        success(responseObject);
+    } failure:^(Error *error) {
+        NSLog(@"%@", error.message);
+    }];
+}
+
+- (void)getWithUrl:(NSString *)url success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure {
+
+    NSURL *URL = [NSURL URLWithString:url];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+
+    [request setHTTPMethod:@"GET"];
+
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSDictionary *dataJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+           success(dataJSON);
+
+    }];
+    [dataTask resume];
 }
 
 -(void)postWithRequestBody:(NSDictionary *)body andRequestType:(NSString *)requestType success:(void (^)(NSDictionary *responseObject))success {

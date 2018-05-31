@@ -164,6 +164,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
+    UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
+    if ([selectedCell.textLabel.text isEqualToString:AMLocalizedString(@"city", nil)]) {
+        self.selectedParameter = @"city";
+    } else if ([selectedCell.textLabel.text isEqualToString: AMLocalizedString(@"street", nil)]) {
+        self.selectedParameter = @"street";
+    }
 }
 
 -(void)segmentedControlValueDidChange:(UISegmentedControl *)segment
@@ -183,12 +189,16 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    //    if () {
-    //        ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
-    //    }
+    if ([self.selectedParameter isEqualToString:@"city"]) {
+         ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
+    } else if ([self.selectedParameter isEqualToString:@"street"]) {
+        ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
+    }
 
     if ([segue.identifier isEqualToString:@"searchResultsTableViewControllerSegue"]) {
          ((SearchResultsTableViewController *)segue.destinationViewController).searchResults = self.searchResults;
+    } else {
+
     }
 }
 
@@ -206,5 +216,9 @@
        [self performSegueWithIdentifier:@"searchResultsTableViewControllerSegue" sender:nil];
     }];
 }
+
+//- (NSDictionary *)prepareParametersForSearch {
+//    NSDictionary *parameters = 
+//}
 @end
 
