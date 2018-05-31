@@ -283,6 +283,9 @@
                                                         <constraint firstAttribute="width" constant="70" id="f8k-PM-Sl6"/>
                                                     </constraints>
                                                     <state key="normal" title="1"/>
+                                                    <connections>
+                                                        <action selector="oneRoomButtonPressed:" destination="P03-wK-KgA" eventType="touchUpInside" id="WS1-Oc-70C"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa8-dd-QTm">
                                                     <rect key="frame" x="113" y="48" width="70" height="40"/>
@@ -291,6 +294,9 @@
                                                         <constraint firstAttribute="width" constant="70" id="jvA-8l-DWN"/>
                                                     </constraints>
                                                     <state key="normal" title="2"/>
+                                                    <connections>
+                                                        <action selector="twoRoomsButtonPressed:" destination="P03-wK-KgA" eventType="touchUpInside" id="7Bz-fD-2FV"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npr-Vv-6NE">
                                                     <rect key="frame" x="184" y="48" width="70" height="40"/>
@@ -299,6 +305,9 @@
                                                         <constraint firstAttribute="height" constant="40" id="3TA-MQ-5fo"/>
                                                     </constraints>
                                                     <state key="normal" title="3"/>
+                                                    <connections>
+                                                        <action selector="threeRoomsButtonPressed:" destination="P03-wK-KgA" eventType="touchUpInside" id="MIE-YH-otF"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ua4-EJ-kod">
                                                     <rect key="frame" x="255" y="48" width="70" height="40"/>
@@ -307,6 +316,9 @@
                                                         <constraint firstAttribute="height" constant="40" id="ekq-KD-pEG"/>
                                                     </constraints>
                                                     <state key="normal" title="4+"/>
+                                                    <connections>
+                                                        <action selector="fourRoomsButtonPressed:" destination="P03-wK-KgA" eventType="touchUpInside" id="mLW-uT-sBq"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsr-ud-2VO">
                                                     <rect key="frame" x="8" y="11" width="352" height="20.5"/>
@@ -419,7 +431,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="fromTextField" destination="0KZ-dX-kdC" id="xax-z4-ibc"/>
                                             <outlet property="parameterLabel" destination="LPH-3O-ruU" id="ka7-dS-gCz"/>
+                                            <outlet property="toTextField" destination="cvy-07-QOR" id="fIw-vs-f9Y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

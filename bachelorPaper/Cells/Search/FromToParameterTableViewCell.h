@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface FromToParameterTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *parameterLabel;
+@property (weak, nonatomic) IBOutlet UITextField *fromTextField;
+@property (weak, nonatomic) IBOutlet UITextField *toTextField;
 
 @end

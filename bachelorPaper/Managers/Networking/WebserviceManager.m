@@ -72,6 +72,10 @@ static WebserviceManager *sharedInstance = nil;
 - (NSString *)prepareSearchParametersFromDictionary:(NSDictionary *)dictionary {
     NSString *parameters = @"";
 
+    for (NSDictionary *item in dictionary) {
+        [parameters stringByAppendingString:[NSString stringWithFormat:@"%@",item]];
+    }
+
     return parameters;
 }
 

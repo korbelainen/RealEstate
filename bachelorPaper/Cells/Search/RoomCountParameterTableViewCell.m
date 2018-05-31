@@ -14,6 +14,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
 
+    self.selectedRooms = [[NSMutableArray alloc] init];
+
     self.roomCountLabel.text = AMLocalizedString(@"rooms_count", nil);
 
     self.oneRoom.layer.cornerRadius = 3;
@@ -42,10 +44,43 @@
 
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (IBAction)oneRoomButtonPressed:(UIButton *)sender {
+    if (![sender.backgroundColor isEqual:[UIColor whiteColor]]) {
+        sender.backgroundColor = [UIColor whiteColor];
+        sender.tintColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    } else {
+        sender.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+        sender.tintColor = [UIColor whiteColor];
+    }
 }
 
+- (IBAction)twoRoomsButtonPressed:(UIButton *)sender {
+    if (![sender.backgroundColor isEqual:[UIColor whiteColor]]) {
+        sender.backgroundColor = [UIColor whiteColor];
+        sender.tintColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    } else {
+        sender.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+        sender.tintColor = [UIColor whiteColor];
+    }
+}
+
+- (IBAction)threeRoomsButtonPressed:(UIButton *)sender {
+    if (![sender.backgroundColor isEqual:[UIColor whiteColor]]) {
+        sender.backgroundColor = [UIColor whiteColor];
+        sender.tintColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    } else {
+        sender.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+        sender.tintColor = [UIColor whiteColor];
+    }
+}
+
+- (IBAction)fourRoomsButtonPressed:(UIButton *)sender {
+    if (![sender.backgroundColor isEqual:[UIColor whiteColor]]) {
+        sender.backgroundColor = [UIColor whiteColor];
+        sender.tintColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+    } else {
+        sender.backgroundColor = [UIColor colorWithRed:0.95 green:0.22 blue:0.27 alpha:1.0];
+        sender.tintColor = [UIColor whiteColor];
+    }
+}
 @end

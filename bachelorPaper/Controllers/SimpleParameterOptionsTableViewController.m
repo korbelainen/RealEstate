@@ -7,8 +7,10 @@
 //
 
 #import "SimpleParameterOptionsTableViewController.h"
+#import "SimpleParameterSelectionDelegate.h"
 #import "LocalizationSystem.h"
 #import "WebserviceManager.h"
+#import "SearchViewController.h"
 
 @interface SimpleParameterOptionsTableViewController ()
 
@@ -49,9 +51,25 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"optionCellIdentifier" forIndexPath:indexPath];
     UIImageView *checkImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"check"]];
     [cell.detailTextLabel addSubview: checkImageView];
+
+    NSInteger parameterType = -1;
+
+    if ([self.selectedParameter isEqualToString:@"street"]) {
+        parameterType = 0;
+
+    } else if ([self.selectedParameter isEqualToString:@"district"]){
+        parameterType = 1;
+    } else if ([self.selectedParameter isEqualToString:@"city"]){
+        parameterType = 2;
+    }
+
+    if (self.delegate && [self.delegate respondsToSelector:@selector(simpleParameterSelectedWithValue:andTitle:forParameterType:)]) {
+        [self.delegate simpleParameterSelectedWithValue:[[self.options objectAtIndex:indexPath.row] valueForKey:@"id"] andTitle:[[self.options objectAtIndex:indexPath.row] valueForKey:@"name"] forParameterType:parameterType];
+    }
 }
 
 - (void)defineOptions {
+    NSLog(@"%@", self.selectedParameter);
     if ([self.selectedParameter isEqualToString:@"street"]) {
         [[WebserviceManager sharedInstance] getStreetsForSelectedCity:@"1" success:^(NSDictionary *responseObject) {
             self.options = responseObject;
@@ -72,9 +90,7 @@
         }];
     } else if ([self.selectedParameter isEqualToString:@"heatingType"]) {
         self.options = @[@"any", @"central", @"gas", @"wood"];
-    } else {
-        self.options = @[@"1", @"2"];
+        [self.tableView reloadData];
     }
-
 }
 @end

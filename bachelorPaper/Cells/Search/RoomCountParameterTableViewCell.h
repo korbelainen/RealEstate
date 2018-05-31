@@ -15,4 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *threeRomms;
 @property (weak, nonatomic) IBOutlet UIButton *fourRooms;
 
+@property (strong, nonatomic) NSMutableArray *selectedRooms;
+
 @end

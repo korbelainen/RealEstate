@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimpleParameterSelectionDelegate.h"
 
 @interface SimpleParameterOptionsTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSString *selectedParameter;
+@property (nonatomic, weak) id <SimpleParameterSelectionDelegate> delegate;
 
 @end

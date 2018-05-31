@@ -139,6 +139,7 @@
 		CB751F4C208898F0001FF9F2 /* PublicationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicationViewController.m; sourceTree = "<group>"; };
 		CBDC381320BFF72000D73CAD /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
 		CBDC381420BFF72000D73CAD /* Error.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
+		CBDC381F20C04AAD00D73CAD /* SimpleParameterSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleParameterSelectionDelegate.h; sourceTree = "<group>"; };
 		D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.release.xcconfig"; sourceTree = "<group>"; };
 		D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bachelorPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bachelorPaper/Pods-bachelorPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +174,7 @@
 				CB325BD72063E8C90099E61B /* SearchViewController.m */,
 				CB4B2D0E2073AF0300AD575B /* SearchResultsTableViewController.h */,
 				CB4B2D0D2073AF0300AD575B /* SearchResultsTableViewController.m */,
+				CBDC381F20C04AAD00D73CAD /* SimpleParameterSelectionDelegate.h */,
 			);
 			path = Search;
 			sourceTree = "<group>";
