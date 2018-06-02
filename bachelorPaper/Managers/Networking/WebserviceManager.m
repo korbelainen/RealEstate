@@ -59,10 +59,10 @@ static WebserviceManager *sharedInstance = nil;
     }];
 }
 
-- (void)performSearchWithParameters:(NSDictionary *)searchParameters success:(void (^)(NSDictionary *responseObject))success {
+- (void)performSearchWithParameters:(NSDictionary *)searchParameters success:(void (^)(NSArray *responseObject))success {
     NSString *url = [kGlobalURl stringByAppendingString:@"find/apartments?"];
-    [url stringByAppendingString:[self prepareSearchParametersFromDictionary:searchParameters]];
-    [self getWithUrl:url success:^(NSDictionary *responseObject) {
+    url = [url stringByAppendingString:[self prepareSearchParametersFromDictionary:searchParameters]];
+    [self getWithUrl:url success:^(NSArray *responseObject) {
         success(responseObject);
     } failure:^(Error *error) {
         NSLog(@"%@", error.message);
@@ -70,18 +70,23 @@ static WebserviceManager *sharedInstance = nil;
 }
 
 - (NSString *)prepareSearchParametersFromDictionary:(NSDictionary *)dictionary {
-    NSString *parameters = @"";
-
-    for (NSDictionary *item in dictionary) {
-        [parameters stringByAppendingString:[NSString stringWithFormat:@"%@",item]];
+    NSMutableString *parameters = [[NSMutableString alloc] init];
+    NSArray *allKeys = dictionary.allKeys;
+    NSArray *allValues = dictionary.allValues;
+    
+    for (int i = 0; i < allKeys.count; i ++) {
+        NSString *key = [allKeys objectAtIndex:i];
+        NSString *value = [NSString stringWithFormat: @"%@", [allValues objectAtIndex:i]];
+        NSString *parameter = [[key stringByAppendingString:@"="] stringByAppendingString: value];
+        [parameters appendString:parameter];
+        [parameters appendString:@"&"];
     }
-
     return parameters;
 }
 
 - (void)getStreetsForSelectedCity:(NSString *)city success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure {
     NSString *url = [[kGlobalURl stringByAppendingString:@"find/streets?city_id="] stringByAppendingString:city];
-    [self getWithUrl:url success:^(NSDictionary *responseObject) {
+    [self getWithUrl:url success:^(NSArray *responseObject) {
         success(responseObject);
     } failure:^(Error *error) {
         NSLog(@"%@", error.message);
@@ -90,14 +95,14 @@ static WebserviceManager *sharedInstance = nil;
 
 - (void)getCitiesWithsuccess:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure {
 
-    [self getWithUrl:[kGlobalURl stringByAppendingString: @"find/cities"] success:^(NSDictionary *responseObject) {
+    [self getWithUrl:[kGlobalURl stringByAppendingString: @"find/cities"] success:^(NSArray *responseObject) {
         success(responseObject);
     } failure:^(Error *error) {
         NSLog(@"%@", error.message);
     }];
 }
 
-- (void)getWithUrl:(NSString *)url success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure {
+- (void)getWithUrl:(NSString *)url success:(void (^)(NSArray *responseObject))success failure:(void (^)(Error *error))failure {
 
     NSURL *URL = [NSURL URLWithString:url];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];

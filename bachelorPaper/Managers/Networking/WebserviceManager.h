@@ -16,7 +16,7 @@
 - (void)loginWithEmail:(NSString *)email andPassword:(NSString *)password  success:(void (^)(NSDictionary *responseObject))success;
 - (void)performRegistrationWithUsername:(NSString *)username email: (NSString *)email andPassword:(NSString *)password success:(void (^)(NSDictionary *responseObject))success;
 - (void)performLogoutWithSuccess:(void (^)(NSDictionary *responseObject))success;
-- (void)performSearchWithParameters:(NSDictionary *)searchParameters success:(void (^)(NSDictionary *responseObject))success;
-- (void)getCitiesWithsuccess:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure;
-- (void)getStreetsForSelectedCity:(NSString *)city success:(void (^)(NSDictionary *responseObject))success failure:(void (^)(Error *error))failure;
+- (void)performSearchWithParameters:(NSDictionary *)searchParameters success:(void (^)(NSArray *responseObject))success;
+- (void)getCitiesWithsuccess:(void (^)(NSArray *responseObject))success failure:(void (^)(Error *error))failure;
+- (void)getStreetsForSelectedCity:(NSString *)city success:(void (^)(NSArray *responseObject))success failure:(void (^)(Error *error))failure;
 @end

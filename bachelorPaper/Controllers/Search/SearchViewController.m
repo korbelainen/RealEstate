@@ -27,7 +27,7 @@
 @property (strong, nonatomic) NSString *selectedCity;
 @property (strong, nonatomic) NSString *selectedStreet;
 @property (strong, nonatomic) NSString *selectedDistrict;
-@property (strong, nonatomic) NSDictionary *searchResults;
+@property (strong, nonatomic) NSArray *searchResults;
 @property (strong, nonatomic) NSString *selectedParameter;
 @property (assign, nonatomic) BOOL isInRentMode;
 
@@ -268,8 +268,7 @@
 }
 
 - (IBAction)searchButtonPressed:(id)sender {
-    NSLog(@"%@",self.inputParameters);
-        [[WebserviceManager sharedInstance] performSearchWithParameters:self.inputParameters success:^(NSDictionary *responseObject) {
+        [[WebserviceManager sharedInstance] performSearchWithParameters:self.inputParameters success:^(NSArray *responseObject) {
             self.searchResults = responseObject;
             [self performSegueWithIdentifier:@"searchResultsTableViewControllerSegue" sender:nil];
         }];

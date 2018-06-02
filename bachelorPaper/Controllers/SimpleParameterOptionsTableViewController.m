@@ -71,7 +71,7 @@
 - (void)defineOptions {
     NSLog(@"%@", self.selectedParameter);
     if ([self.selectedParameter isEqualToString:@"street"]) {
-        [[WebserviceManager sharedInstance] getStreetsForSelectedCity:@"1" success:^(NSDictionary *responseObject) {
+        [[WebserviceManager sharedInstance] getStreetsForSelectedCity:@"1" success:^(NSArray *responseObject) {
             self.options = responseObject;
             dispatch_async(dispatch_get_main_queue(), ^ {
                 [self.tableView reloadData];
@@ -80,7 +80,7 @@
             NSLog(@"%@", error.message);
         }];
     } else if ([self.selectedParameter isEqualToString:@"city"]) {
-        [[WebserviceManager sharedInstance] getCitiesWithsuccess:^(NSDictionary *responseObject) {
+        [[WebserviceManager sharedInstance] getCitiesWithsuccess:^(NSArray *responseObject) {
             self.options = responseObject;
             dispatch_async(dispatch_get_main_queue(), ^ {
                 [self.tableView reloadData];
