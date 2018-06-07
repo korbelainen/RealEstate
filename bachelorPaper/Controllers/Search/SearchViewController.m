@@ -267,10 +267,34 @@
     [self.searchButton setTitle:AMLocalizedString(@"search", nil) forState:UIControlStateHighlighted];
 }
 
+- (IBAction)clearButtonPressed:(id)sender {
+    [self.inputParameters removeAllObjects];
+    [self.tableView reloadData];
+}
+
+
 - (IBAction)searchButtonPressed:(id)sender {
         [[WebserviceManager sharedInstance] performSearchWithParameters:self.inputParameters success:^(NSArray *responseObject) {
             self.searchResults = responseObject;
-            [self performSegueWithIdentifier:@"searchResultsTableViewControllerSegue" sender:nil];
+            if (self.searchResults.count > 0) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                     [self performSegueWithIdentifier:@"searchResultsTableViewControllerSegue" sender:nil];
+                });
+
+            } else {
+                UIAlertController * alert = [UIAlertController
+                                             alertControllerWithTitle:AMLocalizedString(@"no_results", nil)
+                                             message:nil
+                                             preferredStyle:UIAlertControllerStyleAlert];
+
+                UIAlertAction* okButton = [UIAlertAction
+                                           actionWithTitle:@"OK"
+                                           style:UIAlertActionStyleDefault
+                                           handler:nil];
+                [alert addAction:okButton];
+                [self presentViewController:alert animated:YES completion:nil];
+            }
+
         }];
 }
 

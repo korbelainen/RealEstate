@@ -10,6 +10,6 @@
 
 @interface SearchResultsTableViewController : UITableViewController
 
-@property (strong, nonatomic) NSDictionary *searchResults;
+@property (strong, nonatomic) NSArray *searchResults;
 
 @end

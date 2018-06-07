@@ -700,6 +700,7 @@
 			baseConfigurationReference = D5ADA3683AACFC971004CF72 /* Pods-bachelorPaper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMZBV5976W;
 				INFOPLIST_FILE = bachelorPaper/Info.plist;
@@ -715,6 +716,7 @@
 			baseConfigurationReference = D491CD0C5CB30202E934DC34 /* Pods-bachelorPaper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMZBV5976W;
 				INFOPLIST_FILE = bachelorPaper/Info.plist;

@@ -60,6 +60,7 @@
 "internet" = "Internēts";
 "communal_payments" = "Komunālie māksājumi";
 "balcony" = "Balkons";
+"no_results" = "Nekas nav atrasts!";
 
 //feedback
 "add_screenshot" = "Pielikt bildi";

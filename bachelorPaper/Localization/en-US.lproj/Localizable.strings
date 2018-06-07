@@ -62,6 +62,7 @@
 "internet" = "Internet";
 "communal_payments" = "Communal payments";
 "add_screenshot" = "Add screenshot";
+"no_results" = "No data found!";
 
 // feedback
 "description_placeholder" = "Please describe the problem that you faced, using the application";

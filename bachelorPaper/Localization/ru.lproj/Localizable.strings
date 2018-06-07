@@ -62,6 +62,7 @@
 "internet" = "Интернет";
 "communal_payments" = "Коммунальные платежи";
 "add_screenshot" = "Добавить скриншот";
+"no_results" = "Ничего не найдено!";
 
 // feedback
 "description_placeholder" = "Опишите проблемы, возникшие при работе с приложением";

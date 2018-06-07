@@ -115,7 +115,6 @@ static WebserviceManager *sharedInstance = nil;
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         NSDictionary *dataJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
            success(dataJSON);
-
     }];
     [dataTask resume];
 }
