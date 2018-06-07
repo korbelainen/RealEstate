@@ -68,7 +68,7 @@
         case 2:
             return 4;
         case 3:
-            return 4;
+            return 3;
         default:
             return 1;
     }
@@ -164,11 +164,12 @@
                 cell.switchControl.tag = 1;
                 [cell.switchControl addTarget:self action:@selector(switchControlStateChanged:) forControlEvents:UIControlEventAllEvents];
                 return cell;
-            } else {
-                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
-                cell.textLabel.text = AMLocalizedString(@"heating_type", nil);
-                return cell;
             }
+//            else {
+//                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleParameterCellIdentifier" forIndexPath:indexPath];
+//                cell.textLabel.text = AMLocalizedString(@"heating_type", nil);
+//                return cell;
+//            }
         }
         case 3: {
             switch (indexPath.row) {
@@ -224,21 +225,23 @@
         self.selectedParameter = @"city";
     } else if (indexPath.row == 2) {
         self.selectedParameter = @"street";
-    } else if (indexPath.row == 3) {
-        self.selectedParameter = @"heatingType";
     }
+//    else if (indexPath.row == 3) {
+//        self.selectedParameter = @"heatingType";
+//    }
 }
 
 -(void)segmentedControlValueDidChange:(UISegmentedControl *)segment
 {
     switch (segment.selectedSegmentIndex) {
         case 0: {
-            [self.inputParameters removeObjectForKey:@"for_rent"];
+            [self.inputParameters removeAllObjects];
             self.isInRentMode = NO;
             [self.tableView reloadData];
             break;
         }
         case 1: {
+            [self.inputParameters removeAllObjects];
             [self.inputParameters setValue:@1 forKey:@"for_rent"];
             self.isInRentMode = YES;
             [self.tableView reloadData];
@@ -252,7 +255,7 @@
     if ([segue.identifier isEqualToString:@"searchResultsTableViewControllerSegue"]) {
         ((SearchResultsTableViewController *)segue.destinationViewController).searchResults = self.searchResults;
     } else {
-        if (([self.selectedParameter isEqualToString:@"city"]) || ([self.selectedParameter isEqualToString:@"street"]) || ([self.selectedParameter isEqualToString:@"heatingType"])){
+        if (([self.selectedParameter isEqualToString:@"city"]) || ([self.selectedParameter isEqualToString:@"street"])) { //|| ([self.selectedParameter isEqualToString:@"heatingType"])){
             ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).selectedParameter = self.selectedParameter;
         }
         ((SimpleParameterOptionsTableViewController *)segue.destinationViewController).delegate = self;

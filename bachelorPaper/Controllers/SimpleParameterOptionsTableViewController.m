@@ -88,9 +88,10 @@
         } failure:^(Error *error) {
             NSLog(@"%@", error.message);
         }];
-    } else if ([self.selectedParameter isEqualToString:@"heatingType"]) {
-        self.options = @[@"any", @"central", @"gas", @"wood"];
-        [self.tableView reloadData];
     }
+//    else if ([self.selectedParameter isEqualToString:@"heatingType"]) {
+//        self.options = @[@{@"name" : @"any", @"id" : @"1"}, @{@"name" : @"central", @"id" : @"2"}, @{@"name" : @"gas", @"id" : @"3"}, @{@"name" : @"wood", @"id" : @"4"}];
+//        [self.tableView reloadData];
+//    }
 }
 @end
