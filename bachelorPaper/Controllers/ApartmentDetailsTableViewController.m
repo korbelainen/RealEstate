@@ -75,7 +75,7 @@
                 NSString *price = [[NSString stringWithFormat:@"%@", self.apartmentDetails[@"price"]] stringByAppendingString:@" €"];
                 cell.textLabel.text = [[AMLocalizedString(@"price", nil) stringByAppendingString: @" "] stringByAppendingString: price];
                 return cell;
-            } else if (indexPath.row == 2){
+            } else if (indexPath.row == 2) {
                 ParameterWithActionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"parameterWithAcionCellIdentifier" forIndexPath:indexPath];
                 cell.parameterLabel.text = self.address;
                 [cell.actionButton addTarget:self action:@selector(showOnMap) forControlEvents:UIControlEventAllEvents];
@@ -171,9 +171,12 @@
                 return cell;
             } else if (indexPath.row == 1) {
                 ParameterWithActionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"parameterWithAcionCellIdentifier" forIndexPath:indexPath];
-                cell.parameterLabel.text = self.apartmentDetails[@"email"];// objectAtIndex:0];
+                cell.parameterLabel.text = self.apartmentDetails[@"email"];
                 [cell.actionButton setImage:[UIImage imageNamed:@"red-message"] forState:UIControlStateNormal];
                 [cell.actionButton setImage:[UIImage imageNamed:@"red-message"] forState:UIControlStateHighlighted];
+                if ([self.apartmentDetails[@"email"] isEqualToString:@""]) {
+                    cell.actionButton.enabled = NO;
+                }
                 [cell.actionButton addTarget:self action:@selector(writeEmail) forControlEvents:UIControlEventTouchUpInside];
                 return cell;
             } else {
@@ -181,6 +184,9 @@
                 cell.parameterLabel.text = [self.apartmentDetails[@"phoneNr"] objectAtIndex:0];
                 [cell.actionButton setImage:[UIImage imageNamed:@"call"] forState:UIControlStateNormal];
                 [cell.actionButton setImage:[UIImage imageNamed:@"call"] forState:UIControlStateHighlighted];
+                if ([[self.apartmentDetails[@"phoneNr"] objectAtIndex:0] isEqualToString:@""]) {
+                    cell.actionButton.enabled = NO;
+                }
                 [cell.actionButton addTarget:self action:@selector(call) forControlEvents:UIControlEventTouchUpInside];
                 return cell;
             }
@@ -196,16 +202,20 @@
 }
 
 - (void)showOnMap {
-    //    [self performSegueWithIdentifier:@"showMapSegueIdentifier" sender:nil];
-    
+//        [self performSegueWithIdentifier:@"showMapSegueIdentifier" sender:nil];
+
 }
 
 - (void)call {
-
+    NSURL *url = [NSURL URLWithString:[@"telprompt://" stringByAppendingString:[self.apartmentDetails[@"phoneNr"] objectAtIndex:0]]];
+    UIApplication *application = [UIApplication sharedApplication];
+     [application openURL:url options:@{} completionHandler:nil];
 }
 
 - (void)writeEmail {
-
+    NSString * encodedString = [self.apartmentDetails[@"email"] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+    UIApplication *application = [UIApplication sharedApplication];
+    [application openURL:[NSURL URLWithString: encodedString] options:@{} completionHandler:nil];
 }
 /*
  #pragma mark - Navigation
