@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) NSDictionary *apartmentDetails;
 @property (strong, nonatomic) NSString *address;
+@property (assign, nonatomic) BOOL isInFavorites;
 
 @end

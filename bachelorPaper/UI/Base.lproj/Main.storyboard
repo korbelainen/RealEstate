@@ -654,26 +654,29 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoritesListItemTableViewCellIdentifier" rowHeight="239" id="wZm-ZF-7nD" customClass="FavoritesListItemTableViewCell">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="239"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wZm-ZF-7nD" id="Y75-Hs-Gxf">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wZm-ZF-7nD" id="Y75-Hs-Gxf">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="238.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-Ul-2PH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-Ul-2PH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="233" id="55n-OJ-VI5"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-eB-mlZ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-eB-mlZ">
                                             <rect key="frame" x="16" y="169" width="343" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozx-7s-yCe">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozx-7s-yCe">
                                             <rect key="frame" x="16" y="189" width="343" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWq-pj-yMI">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWq-pj-yMI">
                                             <rect key="frame" x="16" y="211" width="343" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
@@ -687,7 +690,6 @@
                                         <constraint firstItem="TWq-pj-yMI" firstAttribute="top" secondItem="Ozx-7s-yCe" secondAttribute="bottom" constant="5" id="Hyu-4d-qTn"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="TWq-pj-yMI" secondAttribute="bottom" id="NHN-20-UFh"/>
                                         <constraint firstItem="rgE-eB-mlZ" firstAttribute="top" secondItem="yWS-Ul-2PH" secondAttribute="bottom" constant="7" id="Wxv-Kp-pKj"/>
-                                        <constraint firstItem="rgE-eB-mlZ" firstAttribute="centerX" secondItem="yWS-Ul-2PH" secondAttribute="centerX" id="Zqg-RO-c9q"/>
                                         <constraint firstItem="rgE-eB-mlZ" firstAttribute="leading" secondItem="Y75-Hs-Gxf" secondAttribute="leadingMargin" id="eIt-dK-cQe"/>
                                         <constraint firstItem="yWS-Ul-2PH" firstAttribute="top" secondItem="Y75-Hs-Gxf" secondAttribute="top" id="ga9-LK-V2p"/>
                                         <constraint firstItem="TWq-pj-yMI" firstAttribute="leading" secondItem="Ozx-7s-yCe" secondAttribute="leading" id="hLE-xT-i3c"/>
@@ -1920,7 +1922,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uX5-JQ-w50"/>
-        <segue reference="fkc-j7-SOM"/>
+        <segue reference="Mx9-P4-u5d"/>
         <segue reference="aIC-kb-efV"/>
     </inferredMetricsTieBreakers>
 </document>

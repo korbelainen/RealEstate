@@ -24,7 +24,11 @@
     self.title = self.address;
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     UIBarButtonItem *favoritesButton = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(manageFavorites:)];
-    favoritesButton.image = [UIImage imageNamed:@"add_to_favorites"];
+    if (self.isInFavorites == YES) {
+        favoritesButton.image = [UIImage imageNamed:@"white_favorites_filled"];
+    } else {
+         favoritesButton.image = [UIImage imageNamed:@"add_to_favorites"];
+    }
     self.navigationItem.rightBarButtonItem = favoritesButton;
 }
 
@@ -197,8 +201,12 @@
     return [[UITableViewCell alloc] init];
 }
 
-- (void)manageFavorites: (UIButton *)sender {
-    NSLog(@"!!!");
+- (void)manageFavorites: (UIBarButtonItem *)sender {
+    if ([sender.image isEqual:[UIImage imageNamed:@"white_favorites_filled"]] ) {
+        sender.image = [UIImage imageNamed:@"add_to_favorites"];
+    } else {
+        sender.image = [UIImage imageNamed:@"white_favorites_filled"];
+    }
 }
 
 - (void)showOnMap {
