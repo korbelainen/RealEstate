@@ -168,6 +168,7 @@
                     break;
             }
         }
+            //
         case 3: {
             if (indexPath.row == 0) {
                 ApartmentDescriptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ApartmentDescriptionTableViewCellIdentifier" forIndexPath:indexPath];
